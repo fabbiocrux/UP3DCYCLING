@@ -1,0 +1,73 @@
+---
+title: "Mécanique du Point"
+subtitle: "Introduction à la Mécanique pour Ingénieurs"
+details: |
+  La vitesse n'a jamais tué personne. Se retrouver brusquement immobile, c'est ça qui vous tue. - Jeremy Clarkson, *Top Gear*<br>
+  Université de Lorraine
+sidebar: false
+page-layout: full
+course-logo: /assets/img/logo-mdp.png
+format:
+  html:
+    template-partials:
+      - assets/html/title-block.html
+
+---
+
+
+:::: {.hero-banner}
+
+
+::: {.content-block}
+
+::: {.hero-text}
+
+
+
+::: {.grid .course-details}
+
+::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+### Instructor
+
+- {{< fa user >}} &nbsp; [{{< var guillaume.name >}}]({{< var instructor.url >}})
+- {{< fa user >}} &nbsp; [{{< var instructor.name >}}]({{< var instructor.url >}})
+- {{< fa university >}} &nbsp; {{< var instructor.office >}}
+- {{< fa envelope >}} &nbsp; <a href="mailto:{{< var instructor.email >}}">{{< var instructor.email >}}</a>
+- {{< fa brands twitter >}} &nbsp; [{{< var instructor.twitter >}}](https://www.twitter.com/{{< var instructor.twitter >}})
+- {{< fa calendar-check >}} &nbsp; [Schedule an appointment]({{< var instructor.appointment_url >}})
+:::
+
+::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+### Course details
+
+- {{< fa calendar >}} &nbsp; {{< var course.days >}}
+- {{< fa calendar-alt >}} &nbsp; {{< var course.dates >}}
+- {{< fa clock >}} &nbsp; {{< var course.time >}}
+- {{< fa location-dot >}} &nbsp; {{< var course.location >}}
+- {{< fa brands slack >}} &nbsp; [Slack]({{< var course.slack >}})
+:::
+
+::: {.g-col-12 .g-col-md-4 .contact-policy}
+### Contacting me
+
+{{< var instructor.contact_policy >}}
+:::
+
+:::
+
+
+::: {.hero-buttons}
+[Cours Magistraux](CM/){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button"}
+[Guide de Travaux Dirigés](TD/){#btn-guide .btn-action .btn .btn-info .btn-lg role="button"}
+::: 
+:::
+
+::: {.hero-animation}
+
+
+:::
+
+:::
+
+
+::::

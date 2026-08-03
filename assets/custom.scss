@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Fira+Sans+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*-- scss:defaults --*/
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #ddd !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+// Personalization for the Slides
+.slide-deck {
+     border: 3px solid #dee2e6;
+     width: 100%;
+     height: 475px;
+   }
+   
+   @media only screen and (max-width: 600px) {
+    .slide-deck {
+       height: 400px;
+     }
+   }
+   
+
+// Home page stuff
+.title-block {
+     margin: 1em 0;
+     border-bottom: 3px solid $gray-200;
+     padding-bottom: 1em;
+   }
+
+.course-details {
+     margin: 0 0 1em;
+     border-bottom: 3px solid $gray-200;
+     padding-bottom: 1em;
+   }   
+
+
+
+   .course-details h3 {
+     margin-top: 0;
+   }
+   
+   .course-title {
+     font-size: 3.5rem;
+     margin-top: 0;
+   }
+   
+   .course-subtitle {
+     font-size: 1.7rem;
+   }
+   
+   .course-meta {
+     font-size: 1.2rem;
+     color: $gray-600;
+   }
+   
+   .course-details ul {
+     list-style: none;
+     text-indent: -0.7rem;
+     padding-left: 1.4rem;
+   }
+   
+   .contact-policy p {
+     font-size: 1rem;
+     line-height: 1.5;
+   }
+   
+   .course-details-smaller li {
+     font-size: 1rem;
+   }
+   
+   .course-details-smaller h3 {
+     font-size: 1.4rem;
+   }
+   
+   

@@ -1,0 +1,193 @@
+---
+title: "TD 4: Exercice sur le changement de bases"
+---
+
+\pagestyle{fancy} 
+
+# Exercice 1 - Arme à l'ancienne
+L’une des armes utilisée au Moyen-âge pour envoyer des charges lourdes contre les murailles était ce que l’on appelle “un trébuchet”. Il est composé d’une poutre $AB$ à laquelle est fixée un contrepoids en $A$. 
+En $B$ est attachée une corde au bout de laquelle une poche contient le projectile $M$.
+
+Soit $R(O,x,y,z)$ le repère lié au sol et $R_B(B,x_1,y_1,z_1)$ le repère lié à la poutre. 
+Le mouvement a lieu dans le plan $(Oxy)$. 
+La base polaire $(\vec u_r, \vec u_\varphi)$ est liée à $RB$. On donne $OB = a$ et $BM = b$.
+
+
+
+:::: {layout="[ 70, 30 ]"}
+::: {#first-column}
+
+## Partie A
+1. Quel est le mouvement de $R_b$ par rapport à $R$?.
+2. On suppose que la corde $BM$ reste tendue. Donner l'expression de $\vec{BM}$. En déduire l'expression de $\vec v(M_{/R_B})$.
+3. Determiner l'expression du vecteur $\vec{OM}$.  En déduire l'expression de $\vec{ v(M_{/R})}$.
+
+Le projectile est est lâché lorsque $\theta=\pi$ et $\varphi=0$.
+
+4. Déterminer l'expression de $\vec v(M_{/R})$, en fonction de $a$, $b$, $\dot{\varphi}$, $\dot{\theta}$.
+5.  Montrer que la vitesse obtenue est plus grande que s’il n’y avait qu’un seul bras rigide de longueur $a+b$.
+:::
+
+::: {#second-column}
+![](Figures/TD5im12.jpeg)
+:::
+::::
+
+
+
+
+## Partie B
+
+On étudie désormais le projectile $M$ laché avec une vitesse horizontale $v_0=200km/h$, depuis la hauteur totale du trébuchet $H=16m$. 
+On se place dans un repère orthonormé ($\vec u_x$, $\vec u_y$). 
+On considère que le projectile a une masse $m=100kg$. Les frottements sont négligés.
+
+6. A l'aide du PFD, déterminer l'équation de la trajectoire $y(x)$.
+
+7. En déduire la distance que parcourt horizontalement le projectile avant de s'écraser au sol.
+
+
+## Solutions: Partie A
+
+### Question 1
+
+Il s'agit d'un mouvement de rotation.
+
+### Question 2
+
+$$
+    \vec{BM} = b (\cos{\phi} \vec u_r + \sin{\phi} \vec u_\phi)
+$$
+
+Ainsi : 
+
+$$
+    v(M_{/R_B}) = b \dot{\phi} (-\sin{\phi} \vec u_r + \cos{\phi} \vec u_\phi)
+$$
+
+### Question 3
+$$
+    \vec{OM} = \vec{OB} + \vec{BM}= (a+b \cos{\phi}) \vec u_r + b\sin{\phi} \vec u_\phi
+$$
+
+Ainsi on peut exprimer la vitesse:
+
+\begin{align*}
+    v(M_{/R}) &= \dfrac{d\vec{OM}}{dt}_{/R}= \dfrac{d((a+b \cos{\phi}) \vec u_r + b\sin{\phi} \vec u_\phi)}{dt}_{/R}\\
+    &= -b\dot{\phi}\sin{\phi} \vec u_r +(a+b \cos{\phi})\dot{\theta}\vec u_\phi+ b\dot{\phi}\cos{\phi} \vec u_\phi - b \sin{\phi}\dot{\theta}\vec u_r\\
+    &=b\dot{\theta}(-\sin{\phi}\vec u_r+\cos{\phi}\vec u_\phi) + b\dot{\phi}(\sin{\phi}\vec u_r+\cos{\phi}\vec u_\phi) + a\dot{\theta}\vec u_\phi
+\end{align*}
+
+### Question 4
+
+Le projectile est est lâché lorsque $\theta=\pi$ et $\phi=0$. On a : 
+\begin{align*}
+    v(M_{/R}) &=b\dot{\theta}(-\sin{0}\vec u_r+\cos{0}\vec u_\phi) + b\dot{\phi}(\sin{0}\vec u_r+\cos{0}\vec u_\phi) + a\dot{\theta}\vec u_\phi\\
+    &= (a\dot{\theta}+b(\dot{\theta}+\dot{\phi}))\vec u_\phi
+\end{align*}
+
+### Question 5
+
+S’il n’y avait qu’un seul bras rigide de longueur $a + b$, alors le mouvement de $M$ serait circulaire et de vitesse égale à $(a + b)\dot{\theta}$. Le fait qu’il y ait une articulation augment la vitesse de $b\dot{\phi}$.
+
+#### Question 6
+
+On applique le PFD, on obtient : 
+
+$$
+y(x)=-\dfrac{g(\dfrac{x}{v_0}})^2{2}+h_0
+$$
+
+### Question 7
+
+$$
+y(t_{max})=0\iff t_{max}=\sqrt{\dfrac{2h_0}{g}}
+$$
+
+on a finalement : 
+
+$$
+x_{max}=v_0\sqrt{\dfrac{2h_0}{g}}
+$$
+
+
+
+
+## Exercice 2 - Association de deux ressorts
+
+On place un bloc $M$ de masse  $m= 700g$ sur un rail horizontal et on le fixe aux extrémités de deux ressorts semblables $R_1$ et $R_2$ de mêmes constantes de raideur $k= 20N/m$. 
+La longueur initiale de chaque ressort est $l_{01} = l_{02} = 18cm$ et à l’équilibre, ils ont même allongement $\Delta l_1 = \Delta l_2 = 2cm$.
+
+On considère que dans cette position, le point $M$ et l'origine du repère $O$ sont confondus.
+
+
+```{r fig, engine = 'tikz', engine.opts = list(template = "../assets/tikz.tex"), cache=TRUE}
+
+\begin{tikzpicture}[black!75,thick, scale=2]
+\fill [pattern = north west lines] (0,-1.5) rectangle ++(-.2,1.5);
+\draw[thick] (0,-1.5) -- ++(0,1.5);
+\fill [pattern = north west lines] (6,-1.5) rectangle ++(.2,1.5);
+\draw[thick] (6,-1.5) -- ++(0,1.5);
+\draw
+[
+    decoration={
+        coil,
+        aspect=0.3, 
+        segment length=1.6mm, 
+        amplitude=2mm, 
+        pre length=3mm,
+        post length=3mm},
+    decorate
+] (0,-.75) -- ++(3.5,0) 
+    node[midway,above=0.25cm,black]{$k$} node[coordinate](c1){}; 
+\draw
+[
+    decoration={
+        coil,
+        aspect=0.3, 
+        segment length=1.2mm, 
+        amplitude=2mm, 
+        pre length=3mm,
+        post length=3mm},
+    decorate
+] (3.5,-.75) -- ++(2.5,0) 
+    node[midway,above=0.25cm,black]{$k$} node[coordinate](c2){};  
+\tkzDefPoint(3.5,-.75){M}
+\tkzLabelPoint[above](M){$M$} ;
+\tkzDrawPoint(M)
+\tkzDefPoint(3,-1.25){O}
+\tkzLabelPoint[below](O){$O$} ;
+\tkzDrawPoint(O)
+\tkzDefPoint(3.5,-1.25){x}
+\tkzLabelPoint[above left](x){$x$} ;
+\tkzDrawPoint(x)
+\tkzDefPoint(0,-1.25){x1}
+\tkzDefPoint(6.5,-1.25){x2}
+\tkzDrawSegment[->](x1,x2);
+\tkzLabelPoint[below](x2){$\vec x$} ;
+\tkzDefPointWith[linear normed](O,x2) \tkzGetPoint{ux}
+\tkzDrawSegment[red,->,thick](O,ux);
+\tkzLabelPoint[below, red](ux){$\vec u_x$} ;
+\draw[dashed,gray] (c2) -- ++(0,0.7) coordinate(c12);
+\draw[dashed,gray] (c1) -- ++(0,-.5)coordinate(c22);
+\draw[latex-latex] (c12)-- (c1|-c12)node[midway,above]{\small $l_2$};
+%\draw[latex-latex] (0|-c12)-- (c1|-c12)node[midway,above]{\small $l_1$};     
+\end{tikzpicture}
+```
+
+
+On écarte le bloc de sa position d’équilibre de $4cm$ dans le sens des $x$ positifs, puis on le lache sans vitesse initiale, à l’instant $t=0$. On considèrera les frottements comme négligeables.
+
+1. Déterminer les expressions des allongements de $\Delta l_1$ et $\Delta l_2$ pour chaque ressort en fonction de $x$ l’abscisse de $M$.
+2. Appliquer le PFD sur le système. En déduire l’équation différentielle du mouvement de $M$.
+3. Résoudre l'équation différentielle du mouvement de $M$. Comment se comporte le bloc $M$ dans le temps?
+
+
+On immerge le système dans un liquide. Sachant que la force de frottement appliquée par le liquide sur la plaque au cours du mouvement du bloc est de la forme $\vec F_f=-\alpha \vec v$, avec $\alpha$ une constante positive et $\vec v$ le vecteur vitesse de M.
+
+
+3. Appliquer le PFD sur le système. En déduire l’équation différentielle du mouvement de $M$.
+4. Résoudre l'équation différentielle du mouvement de $M$. Comment se comporte le bloc $M$ dans le temps?
+5. A partir de quel instant $t_1$ les oscillations du système restent-t-elles dans une fourchette de $1cm$ autour du point $O$?
+
+

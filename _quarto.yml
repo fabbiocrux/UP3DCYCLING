@@ -1,0 +1,134 @@
+project:
+  type: website
+  output-dir: docs
+  preview: 
+    port: 4040
+
+
+website:
+  title: "Mécanique du Point"
+  site-url: ""
+  repo-url: https://github.com/fabbiocrux/MdP  
+#  bread-crumbs: true
+  search:
+    type: overlay  
+  page-footer:
+    left: |
+      Développé par 
+      [![](https://raw.githubusercontent.com/fabbiocrux/Figures/main/Logos/ENSGSI/2022/Lorraine%20INP%20ENSGSI%20RS%20(couleur%2C%20CMJN).png){fig-alt="ENSGSI" width=65px}](https://www.ensgsi.univ-lorraine.fr/)
+    center:
+      - text: "About"
+#        href: about.qmd
+      - text: "FAQ"
+#        href: docs/faq/index.qmd
+      - text: "License"
+#        href: license.qmd
+      - text: "Trademark"
+#        href: trademark.qmd
+    right:
+      - icon: twitter
+        href: https://twitter.com/fabbiocrux
+        aria-label: Quarto Twitter
+      - icon: github
+        href: https://github.com/quarto-dev/quarto-cli
+        aria-label: Quarto GitHub
+      - icon: rss
+        href: https://quarto.org/docs/blog/index.xml
+        aria-label: Quarto Blog RSS  
+    background: light          
+
+  navbar:
+    background: light
+    logo: cover.png
+    logo-alt: "Quarto logo."
+#    title: true
+    collapse-below: lg
+    left:
+      - text: "Home"
+        file: index.qmd    
+      - text: "Cours Magistraux"
+        file: CM.qmd    
+      - text: "Travaux Dirigés"
+        file: TD.qmd    
+      - text: "Aide"
+        menu:
+          - text: "Report un Erreur"
+            icon: "bug"
+#            href: "https://github.com/quarto-dev/quarto-cli/issues"
+          - text: "Demandez une Question"
+            icon: "chat-right-text"
+#            href: "https://github.com/quarto-dev/quarto-cli/discussions"
+          - text: "FAQ"
+            icon: "question-circle"
+#            href: docs/faq/index.qmd
+    tools:
+      - icon: twitter
+        href: https://twitter.com/fabbiocrux
+        text: Quarto Twitter
+      - icon: github
+        href: https://github.com/fabbiocrux/MdP
+        text: MdP GitHub
+        
+  sidebar:
+    - title: "Cours Magistraux"
+      style: "floating"
+      contents:
+        - CM.qmd      
+        - CM/01-cinematique.qmd
+        - CM/02-dynamique.qmd
+        - CM/03-energetique.qmd
+        - CM/04-mecanique.qmd
+    - title: "Travaux Dirigés"
+      style: "floating"
+      contents:
+        - TD.qmd      
+        - TD/01-TD.qmd
+        - TD/02-TD.qmd
+        - TD/03-TD.qmd
+  page-navigation: true
+  back-to-top-navigation: true
+
+
+format:
+  html:
+    theme:
+      - litera
+      - assets/custom.scss
+    toc: true
+    number-sections: true
+    html-math-method: mathjax
+    include-in-header:
+      - text: |
+          <script>
+          window.MathJax = {
+            loader: {
+              load: ['[tex]/physics']
+            },
+            tex: {
+              packages: {'[+]': ['physics']}
+            }
+          };
+          </script>    
+#      css: assets/styles.css  
+  pdf:
+    documentclass: book
+    classoption: openany
+    filters: [remove_title.lua]
+    fontsize: 12pt
+    number-sections: true
+    keep-tex: false
+    colorlinks: true
+    geometry:
+      - top=20mm
+      - left=15mm
+      - right=15mm
+      - bottom=20mm 
+    include-in-header:
+      - file: "assets/latex.tex"
+
+execute:
+  cache: true
+  echo: false
+  #freeze: true
+
+bibliography: references.bib

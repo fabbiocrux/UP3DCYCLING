@@ -1,0 +1,44 @@
+author: Fabio A. Cruz Sanchez
+
+instructor:
+  name: Dr. Fabio A Cruz
+  name_no_title: Fabio Cruz Sanchez
+  email: fabio.cruz@univ-lorraine.fr
+  url: "https://www.andrewheiss.com"
+  twitter: andrewheiss
+  github: andrewheiss
+  office: "ENSGSI"
+  contact_policy: >-
+    E-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours (*really*), but also remember that life can be busy and chaotic for everyone (including me!), so if I don't respond right away, don't worry!
+  appointment_url: https://calendly.com/andrewheiss/
+
+guillaume:
+  name: Guillaume Pronost
+  email: guillaume.pronost@univ-lorraine.fr
+  url: /
+  twitter: /
+  github: /
+  office: "ENSGSI"
+  contact_policy: >-
+    E-mail and Slack are the best ways to get in contact with me. I will try to respond to all course-related e-mails and Slack messages within 24 hours (*really*), but also remember that life can be busy and chaotic for everyone (including me!), so if I don't respond right away, don't worry!
+  appointment_url: https://calendly.com/andrewheiss/
+
+course:
+  number: "PMAP 8521"
+  semester: "September 2023 - Janvier 2024"
+  days: "Thursdays"
+  time: "7:15–9:45 PM"
+  location: "ENSGSI"
+  dates: "January 9–May 2, 2023"
+  github: "https://www.github.com/andrewheiss/evalsp23.classes.andrewheiss.com"
+  url: "https://evalsp23.classes.andrewheiss.com"
+  copyright_year: "2023"
+  slack: "https://gsuevalsp2023.slack.com"
+
+university:
+  name: Université de Lorraine
+  url: "https://www.gsu.edu"
+
+school:
+  name: ENSGSI
+  url: "https://aysps.gsu.edu/"
