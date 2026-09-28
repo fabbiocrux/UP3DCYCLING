@@ -1,9 +1,8 @@
 ---
-title: "Mécanique du Point"
-subtitle: "Introduction à la Mécanique pour Ingénieurs"
+title: "Distributed upcycling of mixed plastic wastes: material, process, and socio-technical challenges"
+subtitle: "UP3DCYCLING"
 details: |
-  La vitesse n'a jamais tué personne. Se retrouver brusquement immobile, c'est ça qui vous tue. - Jeremy Clarkson, *Top Gear*<br>
-  Université de Lorraine
+   balblab la <br> Université de Lorraine
 sidebar: false
 page-layout: full
 course-logo: /assets/img/logo-mdp.png

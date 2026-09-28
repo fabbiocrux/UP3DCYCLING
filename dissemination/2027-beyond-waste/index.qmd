@@ -1,0 +1,48 @@
+---
+title: "Distributed upcycling of mixed plastic wastes: material challenges and opportunities for additive manufacturing."
+pdf:
+  documentclass: article
+  #classoption: openany
+  #filters: [remove_title.lua]
+  fontsize: 12pt
+  number-sections: true
+  keep-tex: false
+  colorlinks: true
+  geometry:
+    - top=20mm
+    - left=15mm
+    - right=15mm
+    - bottom=20mm 
+  #include-in-header:
+  #  - file: "assets/latex.tex"
+bibliography: ../../library.bib
+---
+
+**Highlights**
+
+- Evaluation of a distributed upcycling approach to process multi-material post-consumer plastic waste using open-source additive manufacturing (AM) technologies.
+- Identification of the role of material compatibilizers in enhancing the properties of rPET and rHDPE blends using two distinct processing methods: conventional extrusion-injection molding and large-scale FGF 3D printing.
+
+**Purpose**: The purpose of this study is to present the evaluation of a distributed upcycling approach to process multi-material post-consumer plastic waste using open-source additive manufacturing (AM) technologies. More precisely, the study aims to assess the technical feasibility and print quality of using mixed plastic wastes as a feedstock for AM mapping the role of material compatibilizers.
+
+**Materials and methods**: Post-consumer water bottles where collected from Nancy (France) and Kirkland (Canada). The composition is approximately 90 wt% PET (body) and 10 wt%. HDPE (cap). 
+The bottles were shredded and re-granulated to produce a feedstock for additive manufacturing. 
+Moreover, Kraton G-1650 and G-1652 by Kraton Polymers (Almere, Netherlands) were used as non-reactive compatibilizers.
+Both are linear SEBS copolymer including about 30 wt% of polystyrene units.
+Additionally, a maleated SEBS cirKular + C1010 (C1010) by Univar Solutions (France) was used as a reactive compatiblizer. 
+C1010 contains ~1.5% of grafted maleic anhydride.
+Blending and samples preparation were prepared in a co-rotating twin screw extruder and 3D printed using an open source large-format fused granular fabrication printer.
+Compounding process using a co-rotating twin-screw micro-compounder (DSM Xplore Instrument, Netherlands) and injection molding machine (DSM Xplore Instrument, Netherlands) was used as reference. 
+On the other hand, the printing process was implemented using a modified open-source FGF printer with three heat zones (Gigabot XL re:3D, Houston, TX, USA). 
+For all the ternary blends the quantity of compatibilizer utilized was 10 wt%.
+The mechanical properties of the printed parts were evaluated through tensile testing. Thermal, morphological and rehological characterizaion of the samples was performed.
+
+**Results and Discussion:** 
+This study highlights the role of compatibilizers in enhancing the properties of rPET and rHDPE blends using two distinct processing methods: conventional extrusion-injection molding and large-scale FGF 3D printing. 
+The results showed that the compatibilizers improves phase interaction, increasing the elongation at break by ~40 %, enhancing rheological behavior by reducing the MFI between 10 % and 47 %, depending on the compatibilizer used, and improving the morphological properties in reference samples. 
+In contrast, printed samples exhibited less degradation and a more crystalline structure at elevated temperatures, as confirmed by FTIR and DSC-TGA analyses. However, the mechanical properties of the printed samples were ~50 % inferior than those of the EI, primarily due to suboptimal layer adhesion, void formation, and insufficient material homogenization.
+
+**Conclusions and perspectives**:
+Distributed upcycling offers a pathway to reduce manufacturing costs by transforming plastic waste into 3D printing feedstock. 
+While compounding process remains a well-established technology, the direct 3D printing process still faces challenges in achieving consistent material properties. The single-screw extrusion mechanism of the FGF printer limits blend homogenization and reduces compatibilizer effectiveness. Nevertheless, this approach holds promise for recycling multimaterial blends and can be optimized through more reliable printing methods, including the implementation of a twin-screw or planetary roller extruder to enhance blend homogenization.
+Additionally, refining printing parameters adapted to the compatibilizers could further enhance the mechanical properties and consistency of printed objects. Future work should also investigate the recyclability of printed materials over multiple cycles, assess the environmental and economical feasibility of using FGF to process post-consumer plastic waste. Expanding this approach to other common plastics such as PP, LDPE, PS could expand its applicability of this method. This would require re-optimizing the compatibilizer system and adjusting printing parameters to account for the different processing behaviors of these polymers.

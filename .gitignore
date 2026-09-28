@@ -10,3 +10,5 @@
 .quarto
 _bibliography/
 /.luarc.json
+
+**/*.quarto_ipynb

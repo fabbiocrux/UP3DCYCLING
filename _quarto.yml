@@ -113,7 +113,7 @@ format:
   pdf:
     documentclass: book
     classoption: openany
-    filters: [remove_title.lua]
+    #filters: [remove_title.lua]
     fontsize: 12pt
     number-sections: true
     keep-tex: false
