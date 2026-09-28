@@ -6,16 +6,16 @@ project:
 
 
 website:
-  title: "Mécanique du Point"
+  title: "UP3DCYCLING"
   site-url: ""
-  repo-url: https://github.com/fabbiocrux/MdP  
+  repo-url: https://github.com/fabbiocrux/UP3DCYCLING  
 #  bread-crumbs: true
   search:
     type: overlay  
   page-footer:
     left: |
-      Développé par 
-      [![](https://raw.githubusercontent.com/fabbiocrux/Figures/main/Logos/ENSGSI/2022/Lorraine%20INP%20ENSGSI%20RS%20(couleur%2C%20CMJN).png){fig-alt="ENSGSI" width=65px}](https://www.ensgsi.univ-lorraine.fr/)
+      Funded by 
+      [![](https://raw.githubusercontent.com/fabbiocrux/Figures/main/Logos/ANR/ANR-logo-2021-sigle.jpg){fig-alt="ERPI" width=65px}](https://erpi.univ-lorraine.fr/)
     center:
       - text: "About"
 #        href: about.qmd
@@ -26,15 +26,15 @@ website:
       - text: "Trademark"
 #        href: trademark.qmd
     right:
-      - icon: twitter
-        href: https://twitter.com/fabbiocrux
-        aria-label: Quarto Twitter
+      # - icon: twitter
+      #   href: https://twitter.com/fabbiocrux
+      #   aria-label: Quarto Twitter
       - icon: github
         href: https://github.com/quarto-dev/quarto-cli
         aria-label: Quarto GitHub
-      - icon: rss
-        href: https://quarto.org/docs/blog/index.xml
-        aria-label: Quarto Blog RSS  
+      # - icon: rss
+      #   href: https://quarto.org/docs/blog/index.xml
+      #   aria-label: Quarto Blog RSS  
     background: light          
 
   navbar:
@@ -46,31 +46,32 @@ website:
     left:
       - text: "Home"
         file: index.qmd    
-      - text: "Cours Magistraux"
+      - text: "Project"
         file: CM.qmd    
-      - text: "Travaux Dirigés"
+      - text: "Outcomes"
         file: TD.qmd    
-      - text: "Aide"
-        menu:
-          - text: "Report un Erreur"
-            icon: "bug"
+      - text: "Team"
+        file: TD.qmd
+        # menu:
+        #   - text: "Report un Erreur"
+        #     icon: "bug"
 #            href: "https://github.com/quarto-dev/quarto-cli/issues"
-          - text: "Demandez une Question"
-            icon: "chat-right-text"
+          # - text: "Demandez une Question"
+          #   icon: "chat-right-text"
 #            href: "https://github.com/quarto-dev/quarto-cli/discussions"
-          - text: "FAQ"
-            icon: "question-circle"
+          # - text: "FAQ"
+          #   icon: "question-circle"
 #            href: docs/faq/index.qmd
     tools:
-      - icon: twitter
-        href: https://twitter.com/fabbiocrux
-        text: Quarto Twitter
+      # - icon: twitter
+      #   href: https://twitter.com/fabbiocrux
+      #   text: Quarto Twitter
       - icon: github
-        href: https://github.com/fabbiocrux/MdP
-        text: MdP GitHub
+        href: https://github.com/fabbiocrux/UP3DCYCLING
+        text: Open Science
         
   sidebar:
-    - title: "Cours Magistraux"
+    - title: "Working Packages"
       style: "floating"
       contents:
         - CM.qmd      
