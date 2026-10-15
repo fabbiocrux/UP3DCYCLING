@@ -12,3 +12,4 @@ _bibliography/
 /.luarc.json
 
 **/*.quarto_ipynb
+_admin/
