@@ -1,3 +1,0 @@
----
-title: "Mécanique du Solide Indeformable"
----

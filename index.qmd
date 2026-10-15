@@ -2,7 +2,7 @@
 title: "Distributed upcycling of mixed plastic wastes: material, process, and socio-technical challenges"
 subtitle: "UP3DCYCLING"
 details: |
-   balblab la <br> Université de Lorraine
+   ERPI Laboratory <br> Université de Lorraine
 sidebar: false
 page-layout: full
 course-logo: /assets/img/logo-mdp.png
@@ -26,7 +26,7 @@ format:
 ::: {.grid .course-details}
 
 ::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
-### Instructor
+# Instructor
 
 - {{< fa user >}} &nbsp; [{{< var guillaume.name >}}]({{< var instructor.url >}})
 - {{< fa user >}} &nbsp; [{{< var instructor.name >}}]({{< var instructor.url >}})
@@ -37,7 +37,7 @@ format:
 :::
 
 ::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
-### Course details
+# Course details
 
 - {{< fa calendar >}} &nbsp; {{< var course.days >}}
 - {{< fa calendar-alt >}} &nbsp; {{< var course.dates >}}
@@ -47,7 +47,7 @@ format:
 :::
 
 ::: {.g-col-12 .g-col-md-4 .contact-policy}
-### Contacting me
+# Contacting me
 
 {{< var instructor.contact_policy >}}
 :::

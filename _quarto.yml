@@ -44,14 +44,15 @@ website:
 #    title: true
     collapse-below: lg
     left:
-      - text: "Home"
-        file: index.qmd    
-      - text: "Project"
-        file: CM.qmd    
-      - text: "Outcomes"
+      - text: "Research"
+        file: research/index.qmd    
+      - text: "People"
         file: TD.qmd    
-      - text: "Team"
+      - text: "Publications"
         file: TD.qmd
+      - text: "News"
+        file: TD.qmd
+
         # menu:
         #   - text: "Report un Erreur"
         #     icon: "bug"
@@ -70,24 +71,24 @@ website:
         href: https://github.com/fabbiocrux/UP3DCYCLING
         text: Open Science
         
-  sidebar:
-    - title: "Working Packages"
-      style: "floating"
-      contents:
-        - CM.qmd      
-        - CM/01-cinematique.qmd
-        - CM/02-dynamique.qmd
-        - CM/03-energetique.qmd
-        - CM/04-mecanique.qmd
-    - title: "Travaux Dirigés"
-      style: "floating"
-      contents:
-        - TD.qmd      
-        - TD/01-TD.qmd
-        - TD/02-TD.qmd
-        - TD/03-TD.qmd
-  page-navigation: true
-  back-to-top-navigation: true
+  # sidebar:
+  #   - title: "Working Packages"
+  #     style: "floating"
+  #     contents:
+  #       - CM.qmd      
+  #       - CM/01-cinematique.qmd
+  #       - CM/02-dynamique.qmd
+  #       - CM/03-energetique.qmd
+  #       - CM/04-mecanique.qmd
+  #   - title: "Travaux Dirigés"
+  #     style: "floating"
+  #     contents:
+  #       - TD.qmd      
+  #       - TD/01-TD.qmd
+  #       - TD/02-TD.qmd
+  #       - TD/03-TD.qmd
+  # page-navigation: true
+  # back-to-top-navigation: true
 
 
 format:
@@ -97,39 +98,10 @@ format:
       - assets/custom.scss
     toc: true
     number-sections: true
-    html-math-method: mathjax
-    include-in-header:
-      - text: |
-          <script>
-          window.MathJax = {
-            loader: {
-              load: ['[tex]/physics']
-            },
-            tex: {
-              packages: {'[+]': ['physics']}
-            }
-          };
-          </script>    
-#      css: assets/styles.css  
-  pdf:
-    documentclass: book
-    classoption: openany
-    #filters: [remove_title.lua]
-    fontsize: 12pt
-    number-sections: true
-    keep-tex: false
-    colorlinks: true
-    geometry:
-      - top=20mm
-      - left=15mm
-      - right=15mm
-      - bottom=20mm 
-    include-in-header:
-      - file: "assets/latex.tex"
 
 execute:
   cache: true
   echo: false
-  #freeze: true
+  freeze: auto
 
-bibliography: references.bib
+bibliography: assets/library.bib

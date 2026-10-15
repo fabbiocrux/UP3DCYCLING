@@ -1,0 +1,154 @@
+---
+title: "Ethnographic Analysis of Urban Manufacturing Ecosystems"
+subtitle: "Internship proposition at the ERPI Laboratory"
+abstract-title: 'Objectif'
+abstract: "**Version 1**. <br> *Last updated on: {{< meta date >}}.*"
+#output-dir: 00-Stages/2027/Andrea-Ducuara/
+date: last-modified
+date-format: "[Version 1 — Updated on] MMMM D, YYYY"
+format:
+  html: default
+#  docx:
+#    toc: false
+#    number-sections: false
+#    highlight-style: github
+#    linkcolor: blue
+#    urlcolor: blue
+#    link-citations: true
+#    reference-doc: assets/template.docx
+#    prefer-html: true
+  # pdf:
+  #   documentclass: book
+  #   classoption: openany
+  #   #filters: [remove_title.lua]
+  #   fontsize: 12pt
+  #   number-sections: true
+  #   keep-tex: false
+  #   colorlinks: true
+  #   geometry:
+  #     - top=20mm
+  #     - left=15mm
+  #     - right=15mm
+  #     - bottom=20mm 
+  #   include-in-header:
+  #     - file: "assets/latex.tex"
+
+---
+
+
+# Context of the Internship
+
+ERPI laboratory ([https://erpi.univ-lorraine.fr/](https://erpi.univ-lorraine.fr/)) is interested in the development of methodologies, tools and  case studies in the area of innovation process management. 
+One of the research axis concerns the intersection on three major societal issues as follows:
+
+1. The circular economy of plastics as disruptor paradigm in political, industrial and societal perspective [@depascale2023; @ramli2024], 
+2. The development of open design [@bakirlioglu2019; @pacheco2025] including the open source technology as alternative approach of traditional technology development and,
+3. The experimental development of the urban manufacturing approaches [@herrmann2020;@ijassi2025] (i.e. Fablabs, Tiers Lieux, Recycleries and Matériauthèque) that usually are grassroot mouvements. 
+These approaches are reframing the manufacturing networks at a local level. 
+
+In this regard, ERPI Laboratory have been developing the concept of “*distributed recycling via additive manufacturing (DRAM)*” [@cruzsanchez2020] as illustrated in @fig-dram.
+It involves the technical feasibility of using recycled plastics into the additive manufacturing printing process chain.
+Particularly, the use systems based on material extrusion which are the most used in industry and general public.
+
+
+![Distributed recycling via additive manufacturing developed at the ERPI Laboratory](assets/DRAM.png){#fig-dram fig-alt="alt" width="85%"}
+
+The **Recovery (I)** phase addresses the logistical operations required to collect plastic waste for reuse within DRAM systems. 
+The **Preparation (II)** phase encompasses the identification, separation, sorting, size reduction, and cleaning of plastic waste to ensure adequate quality. 
+The **Compounding (III)** phase focuses on the development of mono- and composite materials.
+After, the **Feedstock (IV)** phase focuses on producing materials suitable for printing, either in filament form for FFF or as particles for FGF. 
+The **Printing (V)** phase addresses application development and process optimization for recycled materials.
+Finally, the **Quality (VI)** phase involves multi-level technical characterization of recycled materials and printed parts.
+
+Therefore, three major scales are simultaneaosly studied, as illustrated in @fig-dram :
+
+- **Material level**:
+The study of strategies for post-consumer plastic recycling/upcycling to enhance the structural properties of plastic waste.
+- **Process level**: 
+Open-source hardware (i.e additive manufacturing, manual injection, sheetpress etc) as a promising pathway to transform plastic waste into usable artifacts/products.
+- **Socio-technical level**:
+Urban manufacturing systems can provide a conducive environment for distributed upcycling, enabling the transformation of plastic waste into locally relevant products, closer to where the waste is generated. 
+
+For instance, using desktop-scale fused filament fabrication (FFF) [@cruzsanchez2014] and fused granular fabrication (FGF) [@alexandre2020], we have demonstrated their potential as technical enablers for the mechanical recycling of mono-thermoplastic waste, such as polylactic acid (PLA), from *material* [@cruz2015; @cruzsanchez2017], *process* [@cruzsanchez2014; @alexandre2020], and *socio-technical* perspectives [@santander2020; @caceres-mendoza2023]. 
+Recently, the work on multi-material [@suescungonzalez2024; @gonzalez2025] 
+have openend new explorative paths that aims to see the *upcycling* [@riondet2022] potential of this approach.
+
+
+# Main Issue
+
+This intership is placed at the *Socio-technical level*.
+Urban manufacturing is increasingly seen as a pathway to re-localize production through cleaner and more sustainable processes [@herrmann2019]. 
+It responds to major societal trends, including urbanization, resource scarcity, circularity, and demand for personalized production [@sajadieh2022].
+However, there is still limited research on the types of products and systems that are suitable for urban production environments. 
+Integrating recycling and manufacturing within cities has the potential to reduce transportation emissions, support local economies, and foster citizen engagement in sustainability practices.
+
+Therefore, the major question to answer is :
+
+- *What socio-technical reconfigurations does the implementation of distributed recycling/upcycling processes bring about within a given urban territory, and under which social, material and institutional conditions can these processes take hold? (RQ3)*
+
+Rather than treating social and environmental dimensions as side effects of a technical system, the project approaches them as constitutive of it: the collectives, skills, places and local policies through which plastic waste comes to be qualified as a resource are part of what makes distributed recycling possible, or not.
+
+
+## Objective of the Internship
+
+The internship takes place at an exploratory stage of the project, ahead of the in-depth ethnographic fieldwork in Nancy that will be carried out as part of a PhD (starting end of 2027). Its main goals are:
+
+- To map the actors, networks and public action frameworks shaping citizen-led plastic upcycling in urban manufacturing settings, from the Nancy area (local waste governance, metropolitan authority, waste collection, reuse and repair organizations, public support for third places) to regional and national networks.
+- To build an analytical framework and a first set of contrasts that will help situate the Nancy case (Green Fablab, Octroi Nancy third place) in the subsequent fieldwork.
+
+
+# Methodology
+
+The internship will combine a literature review in political sociology, the sociology of public action and the study of third places in France [@gauthier2025], with a mapping of the actors and institutions involved. 
+The mapping will rely on document analysis (policy documents, local waste plans, network resources) and on exploratory interviews with regional and national networks (e.g., French Network of Fablabs RFFLabs, Tiers-Lieux Grand Est, the Precious Plastic France network), as well as with local institutional actors in the Nancy area. 
+Initial contacts with the Green Fablab and the Octroi Nancy third place will prepare the in-depth fieldwork, without being the core of the internship. These interviews are not intended to generalize, but to provide points of contrast that will highlight what is specific to the Nancy configuration.
+
+
+::: {.callout-note title="Note on scope"}
+This programme should be read as a horizon rather than a fixed set of tasks; its actual scope will be adjusted with the intern according to their profile and the progress of the work.
+:::
+
+
+
+
+The internship combines theoretical grounding and empirical investigation. 
+
+The project will adopt a mixed qualitative and quantitative approach to analyze urban upcycling systems, using as conceptual framework a Design for Sustainability (DfS) perspective [@ceschin2019], focusing on its socio-technical implications. 
+First, a targeted literature review in political sociology, public action, and the role of third places in France [@gauthier2025] will establish an analytical framework for understanding citizen-led initiatives. 
+Assistant Professor Baptiste Monsaingeon will support this task, bringing expertise in waste sociology, particularly regarding citizen-led initiatives in France.
+
+This will be complemented by in-depth ethnographic fieldwork in Nancy, focusing on the Green Fablab and Octroi Nancy third place as a living laboratory. 
+Data collection will include participant observation, semi-structured interviews, and participatory workshops. Ethical considerations will be paramount, ensuring informed consent, confidentiality, and respectful engagement with all participants.
+To extend beyond the local scale, additional interviews will be conducted with national networks (e.g., fablabs in Lorraine, Tiers Lieux Grand Est, and Precious Plastic France network, French Network of Fablabs RFFLabs), enabling comparative insights. The analysis will map stakeholders' motivations, practices, constraints, and coordination mechanisms across the ecosystem.
+
+
+
+## Deliverable 
+
+1. A mapping report of the actors, networks and public action frameworks relevant to distributed plastic upcycling, from the Nancy area to the national level.
+2. A firts scientific document presenting the analytical framework, the methodology and the first results, as a basis for the PhD fieldwork.
+
+
+## Profile 
+
+- **Background**: Master M2 in Sociology of Innovation.
+- **Languages**: French and English.
+
+## Modalities
+
+- **Timming**: March 2027 -- September 2027
+- **Place**: ERPI, Université de Lorraine, Nancy, France.
+- **Salary**: Gratification for internships at the Université de Lorraine.
+ 
+
+## Contacts
+
+Send the CV and cover letter to:  
+
+- MCF Fabio A. Cruz Sanchez (fabio.cruz[at]univ-lorraine.fr)
+
+\newpage
+
+# References
+
+

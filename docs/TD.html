@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-<head>
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
 
-<meta charset="utf-8" />
-<meta name="generator" content="quarto-1.8.25" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Cours Magistraux – Mécanique du Point</title>
+<title>Cours Magistraux – UP3DCYCLING</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -24,7 +28,24 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 
-<!-- htmldependencies:E3FAD763 -->
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-a97b7566ed80122a2d2501afb84cc02a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -51,145 +72,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-window.MathJax = {
-  loader: {
-    load: ['[tex]/physics']
-  },
-  tex: {
-    packages: {'[+]': ['physics']}
-  }
-};
-</script>    
 
 
 </head>
 
-<body>
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="/index.html" class="navbar-brand navbar-brand-logo">
-    <img src="/cover.png" alt="Quarto logo." class="navbar-logo light-content" />
-    <img src="/cover.png" alt="Quarto logo." class="navbar-logo dark-content" />
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./cover.png" alt="Quarto logo." class="navbar-logo light-content">
+    <img src="./cover.png" alt="Quarto logo." class="navbar-logo dark-content">
     </a>
-    <a class="navbar-brand" href="/index.html">
-    <span class="navbar-title">Mécanique du Point</span>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">UP3DCYCLING</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-  aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation"
-  onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="/index.html"> 
-<span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./research/index.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/CM.html"> 
-<span class="menu-text">Cours Magistraux</span></a>
+    <a class="nav-link active" href="./TD.html" aria-current="page"> 
+<span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="/TD.html"> 
-<span class="menu-text">Travaux Dirigés</span></a>
+    <a class="nav-link" href="./TD.html"> 
+<span class="menu-text">Publications</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-aide" role="link" data-bs-toggle="dropdown" aria-expanded="false" >
- <span class="menu-text">Aide</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-aide">    
-        <li class="dropdown-header"><i 
-  class="bi bi-bug" 
-  role="img" 
->
-</i> 
- Report un Erreur</li>
-        <li class="dropdown-header"><i 
-  class="bi bi-chat-right-text" 
-  role="img" 
->
-</i> 
- Demandez une Question</li>
-        <li class="dropdown-header"><i 
-  class="bi bi-question-circle" 
-  role="img" 
->
-</i> 
- FAQ</li>
-    </ul>
-  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./TD.html"> 
+<span class="menu-text">News</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://twitter.com/fabbiocrux"  title="Quarto Twitter" class="quarto-navigation-tool px-1" aria-label="Quarto Twitter"><i class="bi bi-twitter"></i></a>
-    <a href="https://github.com/fabbiocrux/MdP"  title="MdP GitHub" class="quarto-navigation-tool px-1" aria-label="MdP GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/fabbiocrux/UP3DCYCLING" title="Open Science" class="quarto-navigation-tool px-1" aria-label="Open Science"><i class="bi bi-github"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn"
-      data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" 
-      aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation"
-      onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <h1 class="quarto-secondary-nav-title no-breadcrumbs"></h1>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" role="link"
-        aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation"
-        onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="/index.html" class="sidebar-logo-link">
-      </a>
-      </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="/TD.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Cours Magistraux</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="/TD/01-TD.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">TD 1: Referentiel de mouvement</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="/TD/02-TD.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">TD 2: XXX</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="/TD/03-TD.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">TD 4: Exercice sur le changement de bases</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" ></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <div id="quarto-toc-target"></div>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#presentations" id="toc-presentations" class="nav-link active" data-scroll-target="#presentations"><span class="header-section-number">1</span> Presentations</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -213,40 +156,15 @@ window.MathJax = {
 
 </header>
 
-<nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#presentations" id="toc-presentations"><span class="header-section-number">1</span> Presentations</a></li>
-  </ul>
-</nav>
+
 <section id="presentations" class="level2" data-number="1">
-<h2 data-number="1"><span class="header-section-number">1</span> Presentations</h2>
-<div id="quarto-navigation-envelope" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">Travaux Dirigés</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">Mécanique du Point</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uZXh0">TD 1: Referentiel de mouvement</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9URC5odG1sQ291cnMtTWFnaXN0cmF1eA==">Cours Magistraux</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9URC8wMS1URC5odG1sVEQtMTotUmVmZXJlbnRpZWwtZGUtbW91dmVtZW50">TD 1: Referentiel de mouvement</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9URC8wMi1URC5odG1sVEQtMjotWFhY">TD 2: XXX</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi9URC8wMy1URC5odG1sVEQtNDotRXhlcmNpY2Utc3VyLWxlLWNoYW5nZW1lbnQtZGUtYmFzZXM=">TD 4: Exercice sur le changement de bases</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6SG9tZQ==">Home</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2luZGV4Lmh0bWw=">/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6Q291cnMgTWFnaXN0cmF1eA==">Cours Magistraux</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L0NNLmh0bWw=">/CM.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6VHJhdmF1eCBEaXJpZ8Opcw==">Travaux Dirigés</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L1RELmh0bWw=">/TD.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6QWlkZQ==">Aide</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6UmVwb3J0IHVuIEVycmV1cg==">Report un Erreur</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6RGVtYW5kZXogdW5lIFF1ZXN0aW9u">Demandez une Question</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6RkFR">FAQ</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW5hdmJhci10b29sczpodHRwczovL3R3aXR0ZXIuY29tL2ZhYmJpb2NydXg=">https://twitter.com/fabbiocrux</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW5hdmJhci10b29sczpodHRwczovL2dpdGh1Yi5jb20vZmFiYmlvY3J1eC9NZFA=">https://github.com/fabbiocrux/MdP</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLUNvdXJzLU1hZ2lzdHJhdXg=">Cours Magistraux</span></p>
-<div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLWxlZnQ=">
-<p>Développé par <a href="https://www.ensgsi.univ-lorraine.fr/"><img src="https://raw.githubusercontent.com/fabbiocrux/Figures/main/Logos/ENSGSI/2022/Lorraine%20INP%20ENSGSI%20RS%20(couleur%2C%20CMJN).png" class="img-fluid" alt="ENSGSI" width="65" /></a></p>
-</div>
-<div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLWNlbnRlci1BYm91dA==">
-<p>About</p>
-</div>
-<div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLWNlbnRlci1GQVE=">
-<p>FAQ</p>
-</div>
-<div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLWNlbnRlci1MaWNlbnNl">
-<p>License</p>
-</div>
-<div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLWNlbnRlci1UcmFkZW1hcms=">
-<p>Trademark</p>
-</div>
-</div>
-<div id="quarto-meta-markdown" class="hidden">
-<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Cours Magistraux – Mécanique du Point</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Cours Magistraux – Mécanique du Point</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Cours Magistraux – Mécanique du Point</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">Mécanique du Point</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Mécanique du Point</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Mécanique du Point</span></p>
-</div>
+<h2 data-number="1" class="anchored" data-anchor-id="presentations"><span class="header-section-number">1</span> Presentations</h2>
+
+
 </section>
 
 </main> <!-- /main -->
-<script id = "quarto-html-after-body" type="application/javascript">
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -646,23 +564,12 @@ window.MathJax = {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a  href="/TD/01-TD.html" class="pagination-link" aria-label="TD 1: Referentiel de mouvement">
-        <span class="nav-page-text">TD 1: Referentiel de mouvement</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      <div class='footer-contents'>Développé par 
-[![](https://raw.githubusercontent.com/fabbiocrux/Figures/main/Logos/ENSGSI/2022/Lorraine%20INP%20ENSGSI%20RS%20(couleur%2C%20CMJN).png){fig-alt="ENSGSI" width=65px}](https://www.ensgsi.univ-lorraine.fr/)
-</div>  
-    </div>   
+<p>Funded by <a href="https://erpi.univ-lorraine.fr/"><img src="https://raw.githubusercontent.com/fabbiocrux/Figures/main/Logos/ANR/ANR-logo-2021-sigle.jpg" class="img-fluid" alt="ERPI" width="65"></a></p>
+</div>   
     <div class="nav-footer-center">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
@@ -682,32 +589,8 @@ window.MathJax = {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com/fabbiocrux">
-      <i 
-  class="bi bi-twitter" 
-  role="img" 
-  aria-label="Quarto Twitter" 
->
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/quarto-dev/quarto-cli">
-      <i 
-  class="bi bi-github" 
-  role="img" 
-  aria-label="Quarto GitHub" 
->
-</i> 
-    </a>
-  </li>  
-    <li class="nav-item compact">
-    <a class="nav-link" href="https://quarto.org/docs/blog/index.xml">
-      <i 
-  class="bi bi-rss" 
-  role="img" 
-  aria-label="Quarto Blog RSS" 
->
+      <i class="bi bi-github" role="img" aria-label="Quarto GitHub">
 </i> 
     </a>
   </li>  
@@ -716,6 +599,7 @@ window.MathJax = {
   </div>
 </footer>
 
-</body>
 
-</html>
+
+
+</body></html>

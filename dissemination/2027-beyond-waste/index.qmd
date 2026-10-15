@@ -15,7 +15,7 @@ pdf:
     - bottom=20mm 
   #include-in-header:
   #  - file: "assets/latex.tex"
-bibliography: ../../library.bib
+bibliography: ../../assets/library.bib
 ---
 
 **Highlights**
