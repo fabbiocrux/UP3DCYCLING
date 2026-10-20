@@ -1,0 +1,872 @@
+---
+title: "Distributed upcycling of mixed plastic wastes: material, process, and socio-technical challenges"
+# format: 
+
+format:
+  # html: default
+  # docx:
+  #   toc: false
+  #   number-sections: false
+  #   highlight-style: github
+  #   linkcolor: blue
+  #   urlcolor: blue
+  #   link-citations: true
+  #   reference-doc: template-2025/template.docx
+  #   prefer-html: true
+
+  pdf:
+    documentclass: article
+    toc: false
+    toc-depth: 4
+    #classoption: [twoside]
+    number-sections: true
+    geometry:
+      - top=23mm
+      - bottom=16mm      
+      - left=17mm
+      - right=17mm
+      - headheight=14mm
+      - footskip=32pt
+    fontsize: 11pt
+    linestretch: 1
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    fig-pos: 'H'
+    link-citations: true
+    toc-title: Contents
+    include-in-header: [assets/packages.tex]
+    keep-tex: false
+    default-image-extension: pdf
+    template-partials:
+       - assets/before-body.tex
+
+execute:
+  echo: false
+  warning: false    
+bibliography: [assets/library.bib , assets/catalina.bib]
+csl: assets/nature.csl
+#subparagraph: yes
+callout-icon: false
+filters:
+   - latex-environment
+environments: [center]
+commands: [marginnote]
+---
+
+\reversemarginpar
+
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.retina = 3, message = FALSE, warning = FALSE)
+options(knitr.kable.NA = '')
+
+library(tidyverse)
+library(kableExtra)
+library(readxl)
+
+library(flextable)
+
+set_flextable_defaults(
+  font.size = 9, theme_fun = theme_vanilla,
+  padding = 1)
+
+```
+
+\thispagestyle{fancy}
+
+\textbf{\Large Distributed upcycling of mixed plastic wastes: material, process, and socio-technical challenges. -- UP3DCYCLING}
+
+
+
+```{r}
+#| label: tbl-people
+#| tbl-cap: "Summary table of persons involved in the project"
+#| tbl-pos: H
+
+
+table <- read_excel(path="tables/tables.xlsx", sheet = "table1")
+
+  
+table %>%  
+  #mutate_all(linebreak) %>%
+  kbl(booktabs = T, 
+      escape = F, 
+      align = c('l','l','l','l','l', 'c'), 
+      longtable = F, 
+      linesep = "") %>%
+  kable_styling( full_width = F,   
+                 latex_options = c("HOLD_position"),
+                 font_size = 9) %>% 
+   row_spec(0, color = "black", bold = T, font_size = 10) %>%
+   row_spec(1:5 , background = "gray!6") %>%   
+   row_spec(8 , background = "gray!6" ) %>%   
+   row_spec(10 , background = "gray!6") %>%   
+   column_spec(1, bold=T, width = c("3.5cm")) %>%
+   column_spec(c(2,3,4,6), width = c("2cm")) %>%
+   column_spec(5, width = c("3.5cm")) %>%
+   row_spec(c(5,7,8,9) , hline_after=T) 
+```
+
+
+
+
+::: {.callout-tip title="UP3DCYCLING, in essence"}
+
+\begin{wrapfigure}{R}{3cm}
+\centering
+\includegraphics[width=2.7cm]{figures/fig-01.png}
+\end{wrapfigure}
+
+The main objective is to study, implement, and evaluate the upcycling potential of mixed plastic waste via in-situ reactive compatibilization using open-source additive manufacturing. The project is structured around three interconnected levels:
+
+1. **Material level**: to study blending and compabilization approaches for post-consumer packaging mixed plastics as upcycling strategy.
+2. **Process level**: to evaluate the open source fused granular fabrication for mixed plastics products.
+3. **Socio-technical level**: to implement a distributed upcycling in urban production territory.
+
+UP3DCYCLING aims to clarify the potential of upcycling mixed plastic waste via additive manufacturing as a socio-technical strategy to close material loops in urban manufacturing contexts.
+:::
+
+
+
+
+
+
+# Context, positioning and objective(s)
+
+<!-- 
+a.	Objectives and research hypothesis
+Present the objectives and the research hypothesis; 
+present the scientific and technical barriers to be lifted; present the expected results; 
+if applicable describe any final products developed.
+ -->
+
+<!-- [Plastic problem]{.marginnote} -->
+<!-- Plastics are ubiquitous in modern life, yet their accumulation as macro-, micro-, and nanoplastics is generating harmful environmental and societal consequences for future generations [@porta2021; @de-la-torre2021]. 
+Plastic pollution has been shown to exacerbate pressures across multiple planetary boundaries [@biermann2020; @villarrubia-gomez2024], thereby threatening the safe operating space for humanity.
+In response, the European Commission has identified plastics as a priority area, setting the objective that all packaging plastics placed on the EU market must be either reusable or can be recycled in a cost-effective manner by 2030.  -->
+
+Current centralized waste management systems remain structurally inadequate [@lerpiniere2025] to address the complex and systemic nature of plastic pollution, a crisis that increasingly threatens planetary boundaries [@villarrubia-gomez2024] and the safe operating space for humanity. 
+While upstream reduction of virgin plastic production is widely advocated [@baztan2024], political and economic barriers hinder rapid international action [@spring2025], placing disproportionate pressure on downstream solutions within the circular economy. 
+Plastic waste management strategies within a circular economy framework span a continuum from reuse and recycling approaches (including mechanical, chemical, and biological recycling) to thermolysis and energy recovery processes. 
+Among these, mechanical recycling is widely recognized as the most environmentally favorable option [@klotz2023] for relatively clean and homogeneous streams of plastic and bioplastic waste, offering significantly lower environmental impacts compared to landfilling or incineration alternatives [@helbig2022].
+However, mechanical recycling struggles to deal with  complex mixed plastic wastes and heterogeneous nature of post-consumer packaging plastic waste, which usually contains a mixture of different polymer types, additives, and contaminants, resulting in persistently low recycling performance.
+The major challenge is that mechanical recycling produces inferior mechanical properties compared to virgin materials given the presence of incompatible polymer contaminants in the recyclates. 
+In fact, polyolefins such as polyethylene (PE) and polypropylene (PP) alone account for more than half of the world's primary polymer production and waste generation, and they are the most critical example, with an estimated 95% loss of value after recycling.
+In France, only 27% of plastic packaging is recycled, far below both the EU average and the 2025 target of 50%.
+This inefficiency reflects a deeper structural paradox: upstream innovation driven by proprietary additives and plasticizers [@deromph2018] enhances product functionality while simultaneously undermining downstream sorting, identification, and material recovery [@detandt2021]. 
+Therefore, framing plastic pollution solely as a technical waste management issue risks reinforcing linear *business-as-usual* dynamics and overlooking the socio-economic lock-ins embedded across the value chain[@simoens2022]. 
+Recently, advances in upcycling approaches, both mechanical[@hassan2024] and chemical[@lepage2026], are emerging as a promising strategy to valorize plastic waste by transforming it into products of higher value.
+<!-- Conceptual framework: Upcycling -->
+Therefore, UP3DCYCLINIG is based on the concept of mechanical upcycling, understood as the transformation of disposable materials into objects of greater value [@muzata2024; @hassan2024; @jehanno2022]. 
+It aims to propose a paradigm shift toward a multi-level, systemic approach that integrates material, process  and socio-technical dimensions, including alternative communities of practice and roles of local actors [@monsaingeon2017] to unlock new pathways for plastic circularity [@salmenpera2021] at a local level.
+
+<!-- Grassroots Innovation -->
+<!-- [Grassroots on Recycling]{.marginnote} -->
+In response to the systemic limitations of centralized waste management highlighted above, a growing number of grassroots initiatives led by citizen networks, makerspaces, fablabs, and third places are experimenting with small-scale, community-based plastic recycling practices [@dijkstra2023]. 
+Often rooted in the social and solidarity economy, these initiatives seek to locally transform plastic waste into products that meet territorial needs, thereby re-embedding material flows within urban contexts. 
+Such practices can be understood as forms of urban manufacturing [@juraschek2022; @croxford2020], promoting distributed production models as alternatives to globalized value chains [@priavolou2022; @cerdas2017]. 
+In this perspective, urban factories[@ijassi2025], which are locally anchored resource-aware production systems tailored to specific community demands, open up new pathways for rethinking production and consumption.
+In fact, additive manufacturing (AM) is a key enabler as it allows the production of customized products on demand, reducing the need for large inventories and long supply chains.
+Likewise, the emerging paradigm of distributed recycling for additive manufacturing (DRAM)[@cruzsanchez2020; @gonzalez2025] makes possible the constitution of recycling networks that valorize plastic waste through decentralized, layer-by-layer processes, enabling the transformation of low-value waste into high-value products at a local level.
+
+Beyond their technical dimension, these initiatives signal a profound shift in the role of citizens -passing from passive waste sorters to active agents of refusal, reduction, reuse, and recycling- contributing to an emerging form of localized, proto-industrial transition [@sabel1985]. 
+This is supported by digital commons, open-source technologies, and peer-to-peer approaches [@kostakis2021], they embody a 'design global, manufacture local' logic that challenges dominant, growth-oriented innovation models by prioritizing use-value and local resilience [@robra2023].
+By reconnecting recycling and production within urban environments, they hold potential to reduce transport-related emissions, stimulate local economies, and strengthen community engagement in sustainability transitions.
+
+<!-- Problem -->
+However, despite their promise, these initiatives remain constrained by significant challenges. 
+At the material level, efficient and low-cost solutions for processing heterogeneous plastic waste streams currently rejected by conventional centralized waste facilities are still lacking.
+At the process level, key technologies for transforming recycled plastics into high-value products have yet to reach sufficient maturity for widespread adoption. 
+At the systems level, their overall impact remains uncertain: questions persist regarding the appropriate scales, conditions, and potential rebound effects [@giampietro2018] under which such distributed models can meaningfully contribute to addressing plastic pollution, without reinforcing the underlying waste–resource paradox [@greer2021].
+
+
+
+## Objectives of the project (O) and research hypotheses (H)
+
+The focus of **UP3DCYCLING** is the development of methods and open-source tools to better understand the upcycling of mixed plastic waste while assessing associated environmental and social externalities. 
+Building upon the concept of mechanical upcycling through polymer blending [@suescungonzalez2026], ***the main objective is to study, implement, and evaluate the upcycling potential of mixed plastic waste via in-situ reactive compatibilization using open-source additive manufacturing***.  
+
+This technical approach is embedded within the broader socio-technical dynamics of urban manufacturing [@ijassi2025], which constitutes a key enabler of distributed manufacturing and recycling paradigms.  
+Specifically, the project is structured around three interconnected objectives:
+
+- From a ***material perspective***, the first objective is *to characterize the properties of mixed polymer waste blends for their use as additive manufacturing (AM) feedstock* **(O1)**.
+
+- From a ***process perspective***, the second objective is *to upgrade, adapt, and instrument an open-source Fused Granular Fabrication (FGF) 3D printer by integrating advanced sensors and an optimized material blending system, with the aim of improving part quality during the manufacturing process* **(O2)**.
+
+- From a ***socio-technical perspective***, the third objective is *to assess the scalability and economic viability of the upcycling process, which is critical for the widespread adoption of recycled materials in additive manufacturing* **(O3)**.
+
+![Towards distributed upcycling via additive manufacturing.](figures/DRAM-ANR.pdf){#fig-dram width="100%" fig-align="center"}
+
+The implementation of distributed recycling via additive manufacturing (DRAM) is a promising and rapidly advancing field that I have explored at the ERPI Laboratory. 
+Using desktop-scale fused filament fabrication (FFF) [@cruzsanchez2014] and fused granular fabrication (FGF) [@alexandre2020], we have demonstrated their potential as technical enablers for the mechanical recycling of mono-thermoplastic waste, such as polylactic acid (PLA), from material [@cruzsanchez2017; @suescungonzalez2024; @gonzalez2025], manufacturing process [@cruz2015; @cruzsanchez2014; @alexandre2020], and system perspectives [@cruzsanchez2020; @santander2020; @caceres-mendoza2023], as illustrated in @fig-dram.
+
+The **Recovery (I)** phase addresses the logistical operations required to collect plastic waste for reuse within DRAM systems. 
+The **Preparation (II)** phase encompasses the identification, separation, sorting, size reduction, and cleaning of plastic waste to ensure adequate quality. 
+The **Compounding (III)** phase focuses on the development of mono- and composite materials.
+While promising results have been obtained for mono-materials such as PLA [@cruzsanchez2017], recent work on high-density polyethylene (HDPE)/polyethylene terephthalate (PET) blends (two of the most common polymers in packaging waste) [@suescungonzalez2024] highlights significant challenges, particularly in reducing interfacial tension and controlling crystallinity. 
+These limitations underscore the need for efficient strategies to process locally available mixed plastic waste.
+Accordingly, at the material level, the first research question is:
+*What strategies can enhance the structural properties of mixed plastic waste to make it suitable for urban manufacturing ecosystems?* **(RQ1)**
+
+After, the **Feedstock (IV)** phase focuses on producing materials suitable for printing, either in filament form for FFF or as particles for FGF. 
+The **Printing (V)** phase addresses application development and process optimization for recycled materials.
+Finally, the **Quality (VI)** phase involves multi-level technical characterization of recycled materials and printed parts.
+Although extensive research has been conducted on the characterization of 3D-printed mono-materials [@lodha2023], limited knowledge exists regarding optimal printing parameters for mixed plastic waste.
+This gap remains a major barrier to the widespread adoption of distributed recycling approaches.
+Therefore, at the manufacturing process level, the second research question is:  
+*How can open-source additive manufacturing processes be optimized for mixed recycled polymers while ensuring comparable mechanical and geometrical properties?* **(RQ2)**
+
+At the socio-technical level, this approach offers key advantages, including the use of local resources and the ability to design products tailored to local needs. 
+However, the implementation of distributed upcycling within urban manufacturing systems raises critical questions regarding environmental and social externalities (both positive and negative), as well as scalability and economic viability. 
+In consequence, the third research question is:
+*To what extent does the implementation of distributed upcycling processes generate technical, social, and environmental externalities within urban production systems?* **(RQ3)**
+
+This project addresses three major scientific and technical barriers in transitioning from distributed recycling to distributed upcycling of mixed plastic waste:
+1) To evaluate the quality of mixed plastic waste so that it can be considered a high-value feedstock,
+2) To expand open-source technological alternatives enabling local waste-to-product systems, and 
+3) To assess the extent to which community-driven initiatives foster forms of agency that align with global environmental assessment frameworks and existing regulatory structures addressing plastic waste.
+
+Therefore, the project is structured around three main hypotheses:
+
+- **Material level**:
+Blending and compatibilization strategies for post-consumer plastic upcycling can enhance the structural properties of mixed plastic waste **(H1)**.
+- **Process level**: 
+Open-source Fused Granular Fabrication (FGF) offers a promising pathway for multi-material processing; however, further technological adaptations are required to effectively process mixed recycled polymers **(H2)**.
+- **Socio-technical level**:
+Urban manufacturing systems can provide a conducive environment for distributed upcycling, enabling the transformation of plastic waste into locally relevant products, closer to where the waste is generated **(H3)**.
+
+
+
+## Added Value in Terms of Scientific Contribution
+
+The groundbreaking contribution of **UP3DCYCLING** lies in advancing the understanding of distributed upcycling within sustainability transitions research. 
+The project aims to clarify the potential of upcycling mixed plastic waste via additive manufacturing as a strategy to close material loops in urban manufacturing contexts.
+By bridging recycled materials, open-source manufacturing processes, and socio-technical dimensions, the project proposes an original and interdisciplinary approach that remains largely unexplored in the scientific literature. 
+If successful, UP3DCYCLING will lay the foundation for a more ambitious European-scale program, notably within the framework of an ERC proposal.
+
+
+
+## Position of the project as it relates to the State of the Art
+### Material compatibilization as upcycling strategy
+
+
+Results from the ANR project GreenLocal3D [@mendoza2025] confirm that centralized material recovery facilities are unable to adequately sort and separate plastic types, resulting in approximately 30% of collected plastic waste being incinerated or landfilled [@ranjbari2021; @singh2017b].
+The incompatibility between different plastic types—due to variations in chemical and molecular structures—remains a major limitation, leading to poor interfacial adhesion and low material performance [@kassab2023]. 
+**UP3DCYCLING** is positioned as an upcycling strategy targeting plastics that are sorted but not recycled due to the lack of viable value chains.
+
+The project will investigate the mechanical upcycling of mixed plastic waste through the incorporation of compatibilizers during the melting process. 
+Recent advances, such as universal dynamic crosslinkers (UDCs) [@gao2025a], will be explored. 
+Building on preliminary results in distributed recycling [@gonzalez2025], a baseline approach (*Task 1.1*) will be established to evaluate multiple strategies, including ad hoc processing techniques [@potiyaraj2012], compatibilizers [@ghosh2021], multi-block copolymers [@nomura2020b], and nanofillers [@liu2017d].
+Subsequently, the project will focus on sample preparation (*Task 1.2*) and experimental characterization (*Task 1.3*) of mixed polymer blends, with and without compatibilizers, to assess improvements in mechanical, chemical, and rheological properties for additive manufacturing applications.
+
+The main outcome of this phase will be a comprehensive benchmarking of compatibilization strategies applied to the six primary single-use plastics: 
+polyethylene terephthalate (PET), high density polyethylene (HDPE), polypropylene (PP),  low density polyethylene (LDPE), polystyrene (PS) and polylactic acid (PLA).
+The ambition is to establish a systematic framework defining minimum quality standards for additive manufacturing using blended recycled materials—an area that remains underdeveloped in current research.
+
+
+### Open source Fused Granular Fabrication as a promising technology for distributed upcycling
+
+
+Open-source Fused Granular Fabrication (FGF) is an emerging additive manufacturing technology that directly processes polymer pellets via a screw-based extrusion system, unlike Fused Filament Fabrication (FFF) [@alexandre2020]. 
+This approach enables the direct use of recycled polymers, reducing processing steps, improving material longevity, and lowering costs [@gonzalez2025; @romani2023].
+However, current systems primarily rely on single-screw extruders, which are insufficient for achieving homogeneous mixing of multiple materials, as demonstrated in previous work [@suescungonzalez2026]. 
+Achieving adequate blend homogeneity remains a critical challenge for mixed plastic processing.
+
+Recent advances in twin-screw and planetary roller extrusion technologies [@formela2024] offer promising solutions for improving mixing performance and material consistency. However, their integration into open-source additive manufacturing systems remains largely unexplored.
+Within **UP3DCYCLING**, we will develop an open-source FGF system based on twin-screw extrusion to process mixed recycled polymers, with a focus on improving blend homogeneity and printability (*Task 2.1*).
+Quality in printed product remains a major subject given the multiple parameters suchs temperature, pressure, rheology and thermal diffusion [@breznik2024].
+Thus, we will be complemented by the integration of real-time process monitoring and control systems (*Task 2.2*), leveraging recent advances in additive manufacturing [@deng2025] to ensure process stability, reproducibility, and quality.
+This real-time monitoring will help mitigate issues such as poor interfacial adhesion and phase separation due to their inherent incompatibility.
+Finally, the performance of the developed system will be evaluated through mechanical and geometrical characterization of printed components (*Task 2.3*).
+
+The main outcome of this phase will be an open-source FGF platform capable of processing mixed recycled plastics, along with along with a comprehensive evaluation of the mechanical and geometrical properties of the printed objects.
+
+
+### Urban Manufacturing as a socio-technical milieu to enable a distributed upcycling
+
+Urban manufacturing is increasingly seen as a pathway to re-localize production through cleaner and more sustainable processes [@herrmann2019]. 
+It responds to major societal trends, including urbanization, resource scarcity, circularity, and demand for personalized production [@sajadieh2022].
+However, there is still limited research on the types of products and systems that are suitable for urban production environments. 
+Integrating recycling and manufacturing within cities has the potential to reduce transportation emissions, support local economies, and foster citizen engagement in sustainability practices.
+
+In this context, **UP3DCYCLING** will explore distributed upcycling from a Design for Sustainability (DfS) perspective [@ceschin2019], focusing on its socio-technical implications.
+The project will adopt a mixed qualitative and quantitative approach to analyze urban upcycling systems. 
+It will investigate the role of local actors and their interactions with technical processes (*Task 3.1*), develop a system dynamics model to capture interactions across material, process, and socio-technical dimensions (*Task 3.2*), and establish multi-criteria indicators to assess environmental, economic, and social externalities (*Task 3.3*).
+While previous studies have explored distributed recycling through life-cycle assessment [@kerdlap2020; @kerdlap2022], the broader implications of distributed upcycling as a sustainability transition remain insufficiently understood [@eising-mertsch2024].
+
+Finally, a participatory action research approach will be implemented through a real-world case study at the 'Green Fablab' in Nancy [https://erpi.univ-lorraine.fr/projet/green-fablab/](https://erpi.univ-lorraine.fr/projet/green-fablab/), developed since 2017 in close collaboration with local stakeholders, notably within the associative third place Octroi Nancy [https://www.octroi-nancy.fr/](https://www.octroi-nancy.fr/).
+Within this framework, we will design and deploy an integrated workflow to collect, clean, sort, shred, and transform post-consumer plastic waste into new products via additive manufacturing, enabling the local valorization of materials currently excluded from conventional recycling systems [@cruzsanchez2020; @santander2020; @caceres-mendoza2023].
+
+
+## Methodology and risk management
+
+The UP3DCYCLING project is supported by multidisciplinary expertise spanning three domains: 1) polymer science, 2) additive manufacturing processes, and 3) socio-technical systems.
+The interaction across these three levels is supported by experimental, modeling, and scenario approaches, which constitute a key added value of the project, enabling a holistic understanding of both technical and social dynamics.
+@fig-methodology illustrates the overall methodology of the project, structured around four interconnected and mutually reinforcing work packages (WPs).
+
+![Methodology of UP2DCYCLING](figures/Methodology-final.pdf){#fig-methodology width=90% fig-align="center"}
+
+
+
+### WP1 – Material Characterization and Open Database Building
+
+:::{.callout-note title="**Objective:** WP1 seeks to establish an open-source database integrating the technical requirements for blending six common post-consumer packaging plastic waste. Special attention will be given to the role of compatibilization in improving interfacial adhesion between immiscible polymers. This work seeks to quantify in what extent compatibilization process can enhance blend homogeneity and printing quality, ultimately creating an open source database of formulation and processing parameters for multi-material blends. \hfill \textbf{M1-M8}"}
+
+
+**Participants**. PostDoc1, Master1, student under the supervision of Prof. Cécile Nouvel and Dr. Sandrine Hope (UL - LRGP) will contribute for the experimental work in WP1, with support from the scientific coordinator.
+
+
+
+#### Task 1.1: Open baseline of multi-material polymer blends for distributed recycling  \hfill M1-M6
+
+**Goal**: The task 1.1 seeks to establish a comprehensive baseline of the blend formulations and compatibilization on multi-material polymer blends, building on previous works [@suescungonzalez2024; @gonzalez2025] and scientific literature. 
+
+**Methodology**: 
+Using a PRISMA systematic review protocol, this task will identify compatible material combinations, compatibilization strategies, and additive systems relevant for distributed recycling. 
+An overview of the literature will be performed to collect, classify, and analyze existing studies on the blending and compatibilization of the six main single-use packaging plastics: polyethylene terephthalate (PET), high density polyethylene (HDPE), polypropylene (PP), low density polyethylene (LDPE), polystyrene (PS) and polylactic acid (PLA). 
+They represent 87% of the plastic packaging wastes.
+A specific focus will be given to multi-material polymer blends and their potential application in distributed recycling contexts.
+
+**Deliverables**: 
+An open-source database will be structured to identify blend formulations, compatibilization strategies, and processing parameters for multi-material polymer blends. 
+The ANR Open data platform, HAL and OSF plateforms will be used to host this open data, ensuring accessibility and visibility.
+This database will be enriched with the experimental results of task 1.2, and task 1.3, to facilitate access and use by researchers, practitioners, and stakeholders in the field of distributed recycling and additive manufacturing.
+
+**Risks and Fallback Solutions**: This task imply a low risk as it is based on a systematic review of the literature. However, potential challenges include the heterogeneity of the studies and the lack of standardized reporting in the field, which may limit the comparability of results. 
+To mitigate this risk, a rigorous data extraction and classification protocol will be implemented to ensure consistency and reliability in the database construction.
+
+
+
+#### Task 1.2 Structural assessment of multi-material polymer blends \hfill M3-M15
+
+**Goal**: 
+Task 1.2 aims the preparation of multi-material polymer blends in laboratory-scale using conventional injection and extrusion compounding equipement to asess the reprocessing,  structural and morphological charactersitics.
+
+**Methodology**:
+We will develop a factorial design of experiments (DoE) to  perform a screening process on the characterization of different blend combinations derived from the single-use packaging plastics identified in task 1.1, both with and without compatibilizers. 
+We have developed an open source smart collector [@gabriel2023] to collect the plastic waste in the city of Nancy, and we have already collected more than 100 kg of plastic waste that will be used as feedstock.
+The experiments will be conducted in laboratory-scale using conventional blending methodologies (extrusion-injection process), which will serve as a baseline for comparison with unconventional blending approaches based on additive manufacturing FGF. 
+An extensive material characterization of the blended samples will then be performed to evaluate the effect of compatibilizers.
+Prof. Cécile Nouvel will support the experimental work in this task, leveraging her expertise in polymer science regarding the chemical, rheological and thermal properties of polymers. 
+The assessment will include chemical analyses (FTIR) to determine molecular interactions, thermal test (DSC, TGA), and rheological tests to evaluate flow and printability behavior tha may be suitable for printing purposes. 
+
+
+**Deliverables**: 
+The deliverable of this task are the succesfully samples needed to be used as baseline for comparison with the WP2. 
+A scientific communication is also planned to disseminate the findings on blending approaches thta could be suitable for additive manufacturing in journals related on polymer science for additive manufacturing.
+
+**Risks and Fallback Solutions**: This task involves a moderate risk due to the potential challenges in achieving homogeneous blends and the variability in material properties. To mitigate this risk, a systematic approach will be taken in the design of experiments, and multiple replicates will be conducted to ensure the reliability of results. Additionally, alternative blending techniques or compatibilization strategies may be explored if initial attempts do not yield satisfactory results.
+
+
+
+#### Task 1.3 Mechanical and morphological assessment of multi-material polymer blends \hfill M9-M15
+
+**Goal**: Task 1.3 will assess mechanical and morphological properties through tensile, impact, and morphological analysis, using injection molding as a baseline for comparison with FGF-produced samples. 
+
+**Methodology**: Based on samples made in Task 1.2, experimental characterization will be performed to evaluate the mechanical properties of the blends, including tensile strength, impact resistance, and flexural modulus.
+Morphological analysis will be conducted using scanning electron microscopy (SEM) to examine the microstructure and phase distribution of the blends. 
+CR. Sandrine Hope  will support the experimental work in this task with her experience in polymer processing technologies including extrusion and compounding. 
+The results will be compared between samples produced through injection molding and those produced through FGF to assess the influence of processing methods on material properties.
+
+**Deliverables**: 
+A technical report will be made to include all results of the chemical, mechanical and rheological characterization. 
+The results will be added to the an open database of task 1.1 following open-science principles (FAIR) to facilitate reproducibility and community use, incorporating the raw data of the characterization results obtained in task 1.2 and task 1.3.
+The experimental results obtained will be the object of a scientific communication that systematizes the blending pathways of different types of plastics. 
+
+**Risks and Fallback Solutions**: The characterization of the samples implies a low risk of failure as we use laboratory conditions. 
+:::
+
+
+### WP2 – Open source Fused Granular Fabrication Development and Benchmarking
+
+
+:::{.callout-warning title="**Objective:** WP2 focuses on the instrumentation, adaptation and benchmarking of an open-source FGF system capable of processing heterogeneous waste blends. The goal is to optimize the FGF process for multi-material blends, integrating real-time monitoring and closed-loop control to enhance print quality and reliability. \hfill M9-M28
+"}
+
+**Participants**: Scientific Coordinator, PostDoc1, Master2, Prof. Joshua Pearce (Western University of Canada).
+
+#### Task 2.1 Design, fabrication, and development of an extruder system for an  open-source FGF \hfill M9-M21
+
+**Goal:**
+task 2.1 will focus the system design and development of an extruder system for an open source FGF 3D printer, specifically to treat blend of plastics derived from postconsumer plastic waste.
+
+**Methodology:** 
+Building on the open-hardware ecosystem, firstly, we will fabricate and adapt a prototype twin screw extruder to be implemented in a FGF system. There have been different laboratory prototypes documented in the scientific literature using co-rotating twin screw extrusion units, but that are difficult to replicated because they relied in heavy machining or expensive selective laser sintering (SLS) AM technology
+[@justinonetto2022; @justinonetto2021; @curmi2025], but that are difficult to replicated because they relied in heavy machining or expensive SLS AM technology
+Prof. Joshua Pearce has previous experience developing FGF extruders that are now commercialized with the re:3D GigabotX (which is a single screw extruder) and with low-cost methods of fabricating screws using an open source grinding machine [@franz2020]. 
+Therefore, our aim is to fabricate a twin-screw system using one of two approaches: 
+1) based on grinding machine manufacturing or 
+2)  based on developing a low-cost hybrid method of manufacturing screws from the existing literature without resorting to high end metal AM. 
+In addition, we will further develop an open source planetary roller screw system we have previously developed  to improve plastic blending, since in our recent experiments single-screw mixing has proven to be inefficient for heterogeneous recycled polymers [@suescungonzalez2026]. 
+This will allow us to evaluate and potentially validate the capacity of an open-source FGF system to process and blend heterogeneous plastic waste.
+
+
+**Deliverables**: 
+A functional open-source FGF prototype capable of processing multi-material blends will be developed and made available to the research community.
+
+
+**Risks and Fallback Solutions**: 
+
+This task is considered high risk due to the technical challenges associated with developing a reliable FGF system for heterogeneous waste blends. 
+To mitigate this risk, we will adopt an iterative design approach, starting with a basic prototype and progressively integrating advanced features. Collaboration with experts in mechanical engineering and additive manufacturing in the Western University will be sought to ensure the technical feasibility of the design.  
+
+#### Task 2.2 Real-time process monitoring and control integration \hfill M15-M24
+
+**Goal:** 
+To integrate real-time monitoring and closed-loop control of printing conditions to reduce defects such as under-extrusion, improving the print quality of the printed parts using multi-material plastic waste. From the results from WP1 the different combination of blends will be tested in the FGF prototype developed in Task 2.1 to evaluate the printability of the blends and to optimize the process parameters for multi-material printing.
+
+
+**Methodology:**
+We will implement in-situ defect detection system integrating mechanical and thermal control subsystems to optimize final printing quality.
+Building on previous work on digital twins [@petsiuk2022a] and open source computer vision-based monitoring , the objective is to develop a self-supervised or product-driven control system based on a digital twin and computer vision of the printed part throughout the entire fabrication process. 
+This system will focus on two key parameters that strongly influence print quality: temperature and material flow. 
+To achieve this, thermal cameras (which go beyond our previous work with visible light cameras) and pressure sensors will be integrated to monitor the process in real time. 
+In-situ defect detection and self-supervised digital twin models will be adapted for adaptive process control following recent developments in digital manufacturing [@deng2025].
+These models will enable predictive adjustment of process parameters to mitigate defects such as under-extrusion, over-extrusion, warping, or layer delamination. Overall, an in-situ product-driven control loop will be deployed to enable real-time adaptive printing, enhancing reliability and reproducibility of the FGF process.
+
+
+**Deliverables**: 
+A real-time monitoring and control system will be integrated into the FGF prototype, with documented protocols for its implementation and use in the scientific and maker communities.
+
+**Risks and Fallback Solutions**:
+
+This task is considered high risk due to the complexity of integrating real-time monitoring and control systems into the FGF process. 
+To mitigate this risk, we will leverage existing technologies and frameworks for process monitoring and control, and collaborate with experts in the field of digital manufacturing. For instance, approaches to find ideal parameters using opens source software of particle swarm optimization[@oberloier2022] could be adapted to our case to speed experimental cycles.
+
+
+#### Task 2.3 Geometrical and mechanical benchmarking of open source FGF  \hfill M18-M30
+
+**Goal:** 
+The task 2.3 will set up a benchmarking phase to compare open source FGF performance against standard extrusion and FFF techniques to identify process-specific limitations and opportunities. 
+We aim to establish a comprehensive framework for evaluating FGF performance against standard extrusion and FFF techniques, ultimately contributing to the advancement of additive manufacturing field.
+
+**Methodology:**
+We will the development, manufacture and testing of a geometrical benchmarking model (GBM) in order to evaluate the geometrical accuracy and the mechanical performance of open source FGF and compare them with the FFF.
+We have experience in this type of benchmarking in the context of FFF and FGF in small-size [@cruzsanchez2014; @alexandre2020; @lopez2022].
+The main purpose is to position the evaluated machine according to ANSI-ISO’s International Tolerance (IT) Grades. 
+A literature review will be conducted to identify relevant benchmarking metrics and methodologies [@santos2019]. 
+A root-mean-square deviation (RMSD) value will be used  as an accuracy estimator, while taguchi tools will be implemented to determine the control factors with the highest accuracy for the fabrication of the geomemtrical and mechanical benchmarks.
+Once the benchmark model has demonstrated the targeted printing quality, functional objects will be produced to serve as a case study for WP3.
+
+**Deliverables**: 
+The results of the benchmarking phase will be published in a scientific article in the field of additive manufacturing.
+The benchmarking protocols and datasets will be made available in an open-source repository to facilitate reproducibility and community use by scientific and maker communities.
+
+
+**Risks and Fallback Solutions**: 
+This task is considered moderate risk due to potential challenges in achieving consistent print quality and accurately benchmarking the performance of the FGF system.
+To mitigate this risk, we will ensure rigorous experimental design and data analysis protocols are in place. 
+Additionally, if initial benchmarking results indicate significant performance issues with the FGF system, we will revisit the design and control strategies implemented in Task 2.1 and Task 2.2 to identify and address any underlying issues.
+
+
+#### Task 2.4 Open-source repository for benchmarking data  \hfill M24-M30
+
+
+**Goal:**
+The task 2.4 an open-source aims to add the open data repository containing datasets, experimental protocols, and design files to ensure transparency, reproducibility, and
+accessibility for the wider research and maker communities.
+
+**Methodology:** We will establish an open-source repository using platforms such as HAL, OSF and Zenodo to host all datasets, experimental protocols, and design files generated throughout the benchmarking tests.
+
+**Deliverables**: An open-source repository will be established to host all datasets, experimental protocols, and design files generated throughout the benchmarking tests. 
+
+**Risks and Fallback Solutions**: This is a low-risk task, as it primarily involves data management and dissemination. To ensure the success of this task, we will implement best practices for data organization, documentation, and sharing, following FAIR principles to maximize the usability and impact of the repository. 
+We will also engage with the research and maker communities to promote the use of the repository and encourage contributions from other researchers working in the field of additive manufacturing and distributed recycling.
+:::
+
+
+
+### WP3 – A Multi-Level Design Framework for Distributed Plastic Upcycling Transitions
+
+:::{.callout-important title="**Objective:** WP3 aims to conceptualize and operationalize a socio-technical model of distributed upcycling within urban manufacturing systems, enabling pluralistic and multi-level evaluation of sustainability transitions. \hfill M12-M36"}
+
+**Participants**: Coordinator, PhD1, Master3. Assistant Professor Baptiste Monsaingeon will contribute ethnographic characterization for T3.1. Professor Andrea Espinoza will contribute to socio-technical modeling and indicators (T3.2 and T3.3).
+
+#### Task 3.1 – Ethnographic Analysis of Urban Manufacturing Ecosystems \hfill M12-M24
+
+
+**Goal**: To characterize the actors, practices, and interactions shaping urban manufacturing ecosystems engaged in plastic waste upcycling.
+
+**Methodology**: 
+The task combines theoretical grounding and empirical investigation. First, a targeted literature review in political sociology, public action, and the role of third places in France [@gauthier2025] will establish an analytical framework for understanding citizen-led initiatives. Assistant Professor Baptiste Monsaingeon will support this task, bringing expertise in waste sociology, particularly regarding citizen-led initiatives in France.
+
+This will be complemented by in-depth ethnographic fieldwork in Nancy, focusing on the Green Fablab and Octroi Nancy third place as a living laboratory. Data collection will include participant observation, semi-structured interviews, and participatory workshops. Ethical considerations will be paramount, ensuring informed consent, confidentiality, and respectful engagement with all participants.
+To extend beyond the local scale, additional interviews will be conducted with national networks (e.g., fablabs in Lorraine, Tiers Lieux Grand Est, and Precious Plastic France network), enabling comparative insights. The analysis will map stakeholders' motivations, practices, constraints, and coordination mechanisms across the ecosystem.
+
+
+**Deliverables**: 
+A comprehensive analytical report detailing actor configurations, practices, and socio-technical dynamics of urban plastic upcycling ecosystems. This report will inform system modeling (Task 3.2) and indicator development (Task 3.3).
+
+**Risks and Mitigation Strategies**: 
+Stakeholder engagement and data access at the Green Fablab and Nancy ecosystems are considered low risk due to established strong partnerships and prior engagement. 
+However, stakeholder engagement outside Nancy may present challenges. We will mitigate this risk by leveraging networks developed through the LAUDS Factories and TechTraPlastiCE projects. A mixed-methods approach, triangulating observations, interviews, and workshops, combined with existing partnerships, will ensure data access and relevance to real-world contexts.
+
+
+#### Task 3.2 – Structuring and Formalizing a Distributed Upcycling Approach in Urban Manufacturing Ecosystems Through System Dynamics \hfill M21-M36
+
+
+**Goal**: 
+Build a causal loop model to reveal the components and interactions of the distributed upcycling system in urban manufacturing ecosystems as a sustainability transition.
+
+**Methodology**: 
+System dynamics is a powerful tool for understanding complex systems and their behavior. Professor Andrea Espinoza will participate in this task, bringing expertise in system dynamics modeling and sustainability transitions [@espinozaperez2024]. This task applies system dynamics to formalize the complexity identified in Task 3.1, proceeding in three steps:
+
+- *Step 1 – System Definition*: Identify key components (material flows, actors, technologies, economic mechanisms) based on empirical data. The Green Fablab and Octroi ecosystems will serve as reference cases.
+- *Step 2 – Causal Loop Modeling*: Construct qualitative models to reveal feedback loops, interdependencies, and non-linear dynamics across material, social, and economic dimensions.
+- *Step 3 – Participatory Validation*: Iteratively refine the model through living lab workshops with stakeholders to ensure robustness, relevance, shared understanding, and pluralistic perspectives [@gunton2022].
+
+
+**Deliverables**: 
+A validated system dynamics model of distributed upcycling systems, documented and structured for reuse in evaluation and decision-support activities.
+
+**Risks and Mitigation Strategies**: 
+Technical knowledge from WP1 and WP2 will establish the technical feasibility of the process. The main risk is limited or uncertain data regarding social interactions for model construction. This will be addressed through hybridization of sources (empirical data, literature, expert input) and sensitivity analyses to test model robustness. Stakeholder validation will further ensure credibility and applicability.
+ 
+
+#### Task 3.3 – Sustainability and Circularity Indicators and Life-Cycle Metrics Connecting Material, Process, and Socio-Technical Levels \hfill M27-M36
+
+**Goal**: 
+Develop a comprehensive framework for analyzing sustainability, circularity metrics, and life-cycle assessment (LCA) methods to connect material recycling processes with urban manufacturing ecosystems.
+
+**Methodology**:
+Establishing pertinent sustainability indicators is central to UP3DCYCLING. An extensive literature review will identify relevant sustainability and circularity indicators for evaluating distributed upcycling systems in urban manufacturing contexts. This task establishes a multi-dimensional evaluation framework tailored to distributed upcycling systems, combining hybrid perspectives from circular economy metrics [@saidani2024], Life Cycle Assessment approaches [@rugani2019], ecosystem services perspectives [@liu2019; @bakshi2015], and recently *planetary boundaries* [@hussein2025]. This methodological framework serves as a boundary object connecting urban development and technical systems—a major innovation in distributed upcycling system design.
+
+**Deliverables**: 
+A coherent set of sustainability and circularity indicators, along with a methodological framework integrated into the system dynamics model (Task 3.2), enabling holistic and pluralistic evaluation of distributed upcycling systems. Results will feed into WP4 for testing and validation.
+
+**Risks and Mitigation Strategies**:
+Integration of heterogeneous indicators may lead to complexity and reduced operational clarity (medium risk). To mitigate this, we will engage sustainability assessment experts, leveraging Professor Andrea Espinoza's experience at USACH, to ensure selected indicators are robust, usable, and decision-relevant to the specific context of distributed upcycling in urban manufacturing ecosystems.
+
+:::
+
+
+
+### WP4 – Experimentation and Deployment in Local Territory
+
+:::{.callout-tip title="**Objective:** WP4 focuses on iterating, validating, and deploying the developed models and technologies in the local territory. Real-world case studies will be conducted in collaboration with the Green Fablab and local entrepreneurs at the Octroi Nancy third place. \hfill M27-M48"}
+
+**Participants**: Coordinator, PhD1, Master4. Professor Hakim Boudaoud will contribute to experimentation in T4.1, and Professor Mauricio Camargo will support multi-criteria decision analysis in T4.3.
+
+#### Task 4.1 – Sustainability Experimentations \hfill M27-M39
+
+**Goal**: To establish case studies in collaboration with the Green Fablab and local entrepreneurs at the Octroi Nancy third place.
+
+**Methodology**: 
+Participatory action research will be structured through the lens of sustainability experiments [@sengers2019]. The research will build on the distributed upcycling process using the open-source FGF system developed in WP2, the material formulations and compatibilization strategies identified in WP1, and the socio-technical models developed in WP3. Professor Hakim Boudaoud will contribute expertise from the GreenLocal3D project to support the design and implementation of experimentations in the local territory.
+
+The experimentation will be structured in four steps:
+
+- **Step 1**: Collaborate with local stakeholders at Octroi Nancy to select case studies for implementing and testing the developed models and technologies in real-world manufacturing recycling settings.
+- **Step 2**: Implement the distributed upcycling process using the open-source FGF system (WP2), material formulations and compatibilization strategies (WP1), and socio-technical models (WP3).
+- **Step 3**: Monitor and evaluate the sustainability performance of the implemented processes using the indicators and frameworks developed in WP3, focusing on technical, economic, and environmental dimensions.
+- **Step 4**: Conduct comparative analysis with Nancy's municipal waste management system to assess distributed upcycling as a complementary or alternative approach to conventional recycling.
+
+**Deliverables**: A comprehensive report documenting the sustainability experimentation results, including the performance of distributed upcycling processes across case study settings, and key drivers and barriers influencing implementation and scalability. Results will be disseminated through scientific publications and conference presentations to the broader research community.
+
+**Risks and Mitigation Strategies**: Real-world experimentation carries inherent uncertainties and implementation challenges. To mitigate these risks, we will maintain close engagement with local stakeholders to ensure experimentations are feasible and relevant to their contexts. We will implement a robust monitoring and evaluation framework to capture data and insights for iterative improvements.
+
+#### Task 4.2 – Multi-Criteria Decision-Making for Circular Business Models and Scenarios \hfill M36-M45
+
+**Goal**: Building on WP3 and Task 4.1, establish plausible scenarios for pluralistic evaluation [@gunton2022] of the distributed upcycling process, considering technical maturity, economic viability, and environmental impact. Develop a decision-support model for circular business models.
+
+**Methodology**:
+A key aspect of this task is integrating the outputs of Task 3.3 into the modeling framework to enable multi-level analysis of business models driving sustainability transitions [@aagaard2026]. 
+Professor Mauricio Camargo will provide expertise in multi-criteria decision-making and technology management. 
+The task will follow the multi-level perspective on sustainability transitions [@kohler2019], exploring niche-innovations of distributed upcycling within urban manufacturing ecosystems.
+
+**Deliverables**: A multi-criteria decision-making (MCDM) model integrating socio-technical, economic, and environmental dimensions of the distributed upcycling process. This model will evaluate different scenarios and business models for implementing distributed upcycling in urban manufacturing ecosystems, identifying the most promising pathways for sustainability transitions.
+
+**Risks and Mitigation Strategies**: Data scarcity poses the primary risk. We will mitigate this by combining expert judgment, literature data, and sensitivity analysis to ensure model robustness. We will also engage Octroi Nancy stakeholders to validate assumptions and parameters, ensuring real-world relevance and applicability.
+
+#### Task 4.3 – Dissemination and Urban Manufacturing Scalability Assessment \hfill M42-M48
+
+**Goal**: Disseminate findings and evaluate the scalability of the distributed upcycling system in urban manufacturing ecosystems using the open-source technology readiness level (OSTRL) framework.
+
+**Methodology**:
+We recently developed the submitted a proposition on open-source technology readiness level (OSTRL) framework [@romanisubmitted] to assess the openness and technical maturity of open-source technologies. We will apply this framework to evaluate the scalability of the distributed upcycling system within urban manufacturing ecosystems.
+
+**Deliverables**: Technical documentation of the open-source maturity level of developed technologies and models, along with a comprehensive scalability analysis for the distributed upcycling system in urban manufacturing ecosystems. 
+Results will be disseminated through scientific publications and presentations to maker communities, including the French fablab network and Precious Plastic France.
+
+**Risks and Mitigation Strategies**: Moderate risk exists due to uncertainties in scalability evaluation and dissemination challenges. We will ensure rigorous and comprehensive evaluation using the OSTRL framework to systematically assess technology openness and maturity. While replication in other contexts is beyond this project's scope, we will engage relevant communities and stakeholders to ensure targeted and effective dissemination, leveraging existing networks to maximize impact.
+
+:::
+
+
+
+
+
+:::{layout="[50,-3,50]"}
+
+
+```{r}
+#| label: tbl-deliverables
+#| tbl-pos: H
+#| tbl-cap: "UP3DCYCLING deliverables"
+
+table <- 
+tribble(
+~`Date`, ~`Item`, ~`Title`,~`Nature`,~`Open Science`,
+"M6", "T1.1", "Multi-material polymer blends for distributed upcycling", "Database", "Open data",
+"M15", "T1.2", "Structural assessment", "Material", "",
+"M15", "T1.3", "Mechanical assessment", "Article", "Open data",
+"M21", "T2.1", "Extruder system for an open-source FGF", "Functional prototype", "Open hardware",
+"M24", "T2.2", "Process monitoring and control", "Material", "",
+"M30", "T2.3", "Geometrical and mechanical benchmarking", "Article", "Open data",
+"M24", "T3.1", "Ethnographic analysis", "Workshops", "",
+"M36", "T3.2", "Distributed upcycling model", "Software", "Open repository",
+"M36", "T3.3", "Indicators upcycling model", "Software", "Open repository",
+"M39", "T4.1", "Experimentation", "Technical report", "",
+"M45", "T4.2", "Multi-criteria decision analysis", "Article", "",
+"M48", "T4.3", "Dissemination and scalability", "Article", "Open data",
+)
+
+table %>%
+  #mutate_all(linebreak) %>%
+  kbl("latex", booktabs = T,  align = c('l', 'l', 'l', 'l'),            
+        #toprule = "\\toprule[1pt]",
+        #midrule = "\\midrule[1pt]",
+        #bottomrule = "\\bottomrule[1pt]",
+        linesep = "") %>%
+   kable_styling(full_width = F, 
+                 latex_options = c("HOLD_position", "scale_down"),                
+                font_size = 6) %>% 
+   #row_spec(5, hline_after=T) %>% 
+   #row_spec(6, color = "black", background = "gray!6", bold = T, font_size = 10) %>%
+   column_spec(1, width = c("0.3cm")) %>%
+   column_spec(2, width = c("0.3cm")) %>%
+   column_spec(3, width = c("3.5cm")) %>%
+   column_spec(4, width = c("1.8cm")) %>%
+   column_spec(5, width = c("1.3cm")) 
+   
+```
+
+
+
+![UP3DCYCLING Gantt. **Project would start in January 2027**.](figures/Gantt.pdf){width=400px fig-align="center"}
+
+
+:::
+
+<!-- ## Ability of the project to address the research issues covered by the chosen research theme
+
+UP3CYCLING involves creating integrated workflows that can efficiently blend and process recycled plastic wastes for a production system for circular economy.  
+
+Bridging the gap between material development, process innovation, and socio-technical evaluation will offer a comprehensive understanding of how distributed upcycling via open-source FGF can support a viable, sustainable, and community-centered circular economy. 
+
+This is a major step forward in the localized, circular, and innovative manufacturing paradigm of the future. -->
+
+
+# Organisation and implementation of the project
+
+## Partnership 
+
+### Scientific Coordinator
+
+UP3DCYCLING is coordinated by Fabio A. Cruz Sanchez  
+(\orcidlink{0000-0001-8529-5327} [https://orcid.org/0000-0001-8529-5327](https://orcid.org/0000-0001-8529-5327)) (PhD defense: 12/2016; recruitment: 09/2023).
+He is an Assistant Professor (MCF) in Mechanical Engineering at Université de Lorraine / ERPI (EA 3767). He will dedicate 67% of his research time (32 person-months) to the project.
+His research focuses on distributed recycling via additive manufacturing (DRAM) as a socio-technical niche supporting sustainability transitions toward alternative, post-growth manufacturing models. Since his PhD, he has developed an urban living lab demonstrator—the *Green Fablab* ([https://lf2l.fr/projects/green-fablab](https://lf2l.fr/projects/green-fablab))—in Nancy, France, adopting a research-action approach.
+Since 2016, he has been actively involved in the French fablab network, a key grassroots community within the urban manufacturing landscape. He has coordinated tasks in the H2020 project INEDIT (GA: 869952) and the ANR GreenLocal3D project. He has also managed Erasmus+ projects (Climatelabs) and currently coordinates the Erasmus+ KA2 project TechTraplastiCE.
+**UP3DCYCLING** represents a strategic step toward consolidating an international research network, with the long-term ambition of developing an ERC project focused on distributed recycling as a complex socio-technical system, particularly in a Europe–Latin America context.
+
+**Host Laboratory ERPI:**
+The project will be hosted by the *Équipe de Recherche sur les Processus Innovatifs* (ERPI) at Université de Lorraine (Nancy, France). ERPI is an industrial engineering laboratory specializing in innovation processes, focusing on methods, tools, and competencies for managing and optimizing innovative projects.
+UP3DCYCLING provides a unique opportunity to strengthen a research axis on distributed recycling and socio-technical sustainability transitions within an engineering framework, integrating material, process, and systemic perspectives at the laboratory. This is a interesting research path for an industrial and innovation management laboratory, as it allows to explore the intersection of technical and social dimensions in the context of circular economy and urban manufacturing systems.
+
+
+***Scientific coordinator’s team***: 
+
+The complementary expertise of the scientific coordinator will be provided by a multidisciplinary team of researchers with expertise in polymer science, additive manufacturing, sustainability assessment, and socio-technical systems.
+
+\begin{wrapfigure}{R}{5cm}
+\centering
+\includegraphics[width=4.5cm]{figures/people.pdf}
+\end{wrapfigure}
+
+
+From the ERPI side, **Prof. Mauricio Camargo** (UL - Director ERPI) will add his expertise on multi-criteria evaluation and technology management on product-process design/integration. His involvement will be 3 PM, and he will support the project in the design of the multi-criteria decision-making model in Task 4.2.
+Additionally, **Prof. Hakim Boudaoud** (UL - ERPI) will support the project regarding its expertise in the distributed recycling and its expertise from the ANR GreenLocal3D.
+
+WP1 will be supported by \orcidlink{0000-0002-4154-187X}**Prof. Cécile Nouvel** (Université de lorraine, LRGP -UMR 7274-), with an involvement of 2 PM and **Dr. Sandrine Hope** CR CNRS (LRGP), with an involvement of 1 PM.
+Both are members of the [Reactions and Process Engineering Laboratory (UMR 7274)](https://lrgp-nancy.cnrs.fr/), a leading research unit in chemical engineering and materials science. Their expertise includes polymer chemistry, formulation, polymerization processes, and material processing. They will contribute to the development of blending and compatibilization strategies for polymer upcycling.
+  
+Then in WP2, \orcidlink{0000-0001-9802-3056}**Prof. Joshua Pearce** (Western University - Canada) will bring his expertise in open-source hardware with an involvement of 3 PM.
+Prof. Pearce leads the [Free Appropriate Sustainability Technology (FAST)](https://www.appropedia.org/FAST) research group in areas of engineering of solar photovoltaic technology, open hardware, and distributed recycling and additive manufacturing (DRAM) using RepRap 3-D printing.
+Prof. Pearce is a pioneer in the field of open-source hardware and distributed recycling and has published extensively on the open source hardware movement and its implications for sustainability and innovation.
+UP3DCYCLING will benefit from his experience and their team on the design and development of open-source FGF systems for processing recycled plastics in WP2. 
+
+After in WP3, \orcidlink{0000-0002-6362-9100}**Prof. Andrea Espinoza** (USACH - Chile) is strongly grounded in the development, integration, and application of sustainability indicators within complex industrial and energy systems. Her involvement rate will be 3PM.
+Her work stands out for combining engineering-based modeling with multi-dimensional sustainability evaluation, enabling more informed decision-making with a strong focus on system dynamics modeling and policy-oriented sustainability assessment.
+Her expertise in sustainability sciences, and multi-criteria decision-making will be instrumental in developing the socio-technical models and evaluation frameworks in T3.2 and T3.3.
+
+Lastly, **Assist. Prof Baptiste Monsaingeon** (CNRS – LISIS & Université de Reims Champagne-Ardenne) will bring his expertise as a sociologist to understand the social representations and practices of the community to foster urban manufacturing as niche transitions. 
+His involvement will be 3 PM, and he will support the project in the design and implementation of the ethnographic analysis in Task 3.1, as well as in the interpretation of the socio-technical dynamics revealed in Task 4.1 and Task 4.3.
+
+Moreover, UP3CDCYCLING aims to have a multidisciplinary PhD position spanning WP3 and WP4, combining engineering and sociology. This interdisciplinary supervision will enable an in-depth analysis of the socio-technical integration of distributed upcycling systems at the territorial level (Nancy case study), with a strong focus on community dynamics at urban manufacturing ecosystems and sustainability transitions.
+
+
+```{r}
+#| label: tbl-coordinator
+#| tbl-cap: "Implication of the scientific coordinator in on-going projects"
+#| tbl-pos: H
+
+
+table <- 
+tribble(
+~`Names`, ~`PM`,~`Call, funding agency, grant allocated`, ~`Title of the project`, ~`Scientific coordinator`, ~`Start - End`, 
+"Fabio Cruz", "9","Erasmus+ -- KA2, k€800", "TechTraPlastiCE -- Strengthening University tech transfer capabilities to support circular economy value chains for plastics in Latin America", "Fabio Cruz", "02/2025 - 01/2028",
+
+"Fabio Cruz", "4","ANR -- PRC, k€507 ", "GreenLocal3D -- Global approach for the recycling in short circuit of used plastic by additive manufacturing ", "Prof. Hakim Boudaoud", "09/2022 - 09/2026",
+
+"Fabio Cruz", "8","EU Horizon --  M€ 2.8", "LAUDS -- Local Accessible Urban Digital and Sustainable Factories: New European Bauhaus Approach to Open and Decentralised Urban Manufacturing", "PhD Robert Mies", "01/2024 - 12/2026"
+
+)
+
+#table <- read_excel(path="tables/tables.xlsx", sheet = "table2")
+
+
+table %>%
+  #mutate_all(linebreak) %>%
+  kbl("latex", booktabs = T,  align = c('l', 'l', 'l', 'l', 'l', 'l'),
+        #toprule = "\\toprule[1pt]",
+        #midrule = "\\midrule[1pt]",
+        #bottomrule = "\\bottomrule[1pt]",
+        linesep = "\\midrule[1pt]") %>%
+   kable_styling(full_width = F, 
+                 latex_options = c("HOLD_position"),                
+                font_size = 8) %>% 
+   row_spec(0, color = "black", background = "gray!6", bold = T, font_size = 9) %>%
+   column_spec(1, width = c("1cm"))  %>% 
+   column_spec(2, width = c("0.5cm"))  %>% 
+   column_spec(3, width = c("2.5cm"))  %>% 
+   column_spec(4, width = c("7cm"))  %>% 
+   column_spec(5, width = c("2cm"))  %>% 
+   column_spec(6, width = c("1.5cm"))  
+   
+```
+
+
+
+## Implemented and requested resources to reach the objectives
+
+### Staff expenses ($€244.08k$):
+
+<!-- Funding will be necessary to build my research team at ERPI and, in particular, to enroll:  -->
+One **post-doctorate researcher** (PostDoc1, M1--M24) (24PM -- $€102k$) with a solid background on mechanical engineering and strong skills in polymer processing and experimental tests on fused granular fabrication will be focused in WP1 and WP2.
+One **Ph.D. student** (PhD1, M12--M48) (36PM -- $€125.2k$) with a solid knowledge on sociology of innovation, sustainability sciences and transitions, and key skills in system dynamics will be funded for the WP3 and WP4. Additionally, a total of **4 M2 trainees** (24PM -- $€16.8k$) will be involved in the project.
+Two Master 2 trainees with a chemical and mechanical engineering (M1-M6, and M12-M18) background will support the experimental work in WP1. Then, one Master 2 trainee with a background sociology and innovation management will support in the modeling and  data collection, analysis, and dissemination activities for WP3 and WP4.
+And one Master 2 trainee with a background in engineering and sustainability will support the multi-criteria decision-making model in WP3 and WP4.
+
+### Equipments ($€70k$)
+
+We need to build a custom-built FGF system to optimize the screw extruder experimentation and the size of printed products to be easily modified and improved as we progress with the project.
+
+At the material level, we plan use diferents [styrene-b-(ethylene-co-butylene)-b-styrene] (SEBS) compatibilizers  and characterize the mechanical (i.e tensile and flexion) and rheological properties of blends materials ($€3k$) to be used in the FGF process.
+At the process level, we will acquire a CNC machine (Tormach 1100MX, $€48k$), a compact 4-axis tool that will enable us to experiment with different steel components needed to manufacture our compact co-extrusion FGF system.
+The main purpose is to test compression screw profiles and co-rotating twin-screw extrusion units [@justinonetto2022; @justinonetto2021] as the core components of the FGF system, with the goal of evaluating the requirements for processing heterogeneous waste blends. Additionally, we will purchase particle extruders MDPE10 ($€13k$), to conduct a benchmarking analysis.
+We will need to acquire a set of sensors and control systems (temperature, pressure, flow) for real-time monitoring and closed-loop control integration in the FGF process ($€3k$).
+A custom-built open source FGF system is targeted that can be modified to meet our specific requirements for processing recycled plastics. 
+Two computers ($€3k$) for the Ph.D. and Post-Doc will be funded. 
+
+### Service delivery ($€10k$)
+
+We will publish at least 5 articles in Q1 scientific journals ($€10k$) material (Materials Today Sustainability) , process (e.g. Additive Manufacturing) and socio-technical level (e.g Sustainability Science) in open acces to ensure the wide dissemination of our results and to contribute to the scientific community.
+Preprints will be disseminated in French platform of HAL.
+
+### Other cost ($€18k$)
+
+To disseminate the results, the Ph.D. candidate and I will present our scientific contributions at international conferences ($€10k$) on open source hardware and sustainability transitions (e.g. Open Source Hardware Summit, European Conference on Sustainability Transitions).
+We aim to present the advances four times during the project, with a focus on sharing our findings with both academic and practitioner communities. 
+
+:::{layout="[50,50]"}
+
+We estimate materials consumables on steel, aluminium and open source electronics (i.e arduino) for the development of the FGF system ($€4k$). 
+We estimate four participatory research workshops ($€4k$) during project, resources for conducting interviews, focus group at the Green Fablab facilities with the Third place of Octroi Nancy. Two workshops relative to the urban manufacturing practices, and two on design and fabrication of at the end of the project to create and strengthen scientific collaborations and encourage technology transfer.
+
+
+```{r}
+#| label: tbl-money
+#| tbl-pos: H
+#| tbl-cap: "Requested means by item of expendidure"
+
+table <- 
+tribble(
+~`Type`, ~`Mont`,
+"Staff expenses", "€244.08k",
+"Equipements", "€70k",
+"Service delivery", "€10k",
+"Other costs", "€18k",
+"Structure costs**", "€45.1k",
+"Requested funding", "€388.2k"
+)
+
+table %>%
+  #mutate_all(linebreak) %>%
+  kbl("latex", booktabs = T,  align = c('l', 'l'),
+        #toprule = "\\toprule[1pt]",
+        #midrule = "\\midrule[1pt]",
+        #bottomrule = "\\bottomrule[1pt]",
+        linesep = "") %>%
+   kable_styling(full_width = F, 
+                 latex_options = c("HOLD_position"),                
+                font_size = 9) %>% 
+   row_spec(5, hline_after=T) %>% 
+   row_spec(6, color = "black", background = "gray!6", bold = T, font_size = 10) %>%
+   column_spec(1, width = c("5cm")) 
+   
+```
+
+:::
+
+<!-- Impact scientifique et impact potentiel dans les domaines économique, social ou culturel -->
+
+#	Scientific, Societal, and Open Science Impact
+
+<!-- UP3DCYCLING aims to impact the scientific, technological and socio-technical dimensions of the circular economy for plastics. -->
+<!-- This section will detail the expected impacts and benefits of the project in these dimensions, highlighting how the project will contribute to advancing knowledge, fostering innovation, and promoting sustainable practices in the context of plastic waste management and urban manufacturing.  -->
+
+
+UP3DCYCLING will contribute to advancing the scientific understanding of the material, process, and socio-technical dimensions of distributed upcycling as a niche experimentation within urban manufacturing systems.
+
+In the short term, the project will generate new knowledge on material compatibility by advancing the understanding of how to effectively blend and process heterogeneous plastic waste streams for additive manufacturing applications. This represents a key research frontier in sustainable materials science and polymer engineering. 
+The project aims to produce high-quality scientific outputs in leading Q1 journals such as *Materials Today Sustainability* and *Sustainable Materials and Technologies*, while expanding its reach to top-tier journals such as *Progress in Polymer Science*. These contributions will support the development of new materials and processing techniques that enhance the performance and sustainability of recycled plastics in additive manufacturing.
+
+In the medium term, the project seeks to demonstrate the technical feasibility and cost-effectiveness of distributed upcycling through open-source Fused Granular Fabrication (FGF).
+Expanding the range of processable materials and upcycled products constitutes a major contribution to sustainable manufacturing and circular economy research.
+The results will be disseminated through high-impact journals such as *Additive Manufacturing* and *Cleaner Engineering and Technology*, strengthening the positioning of distributed upcycling as a complementary alternative to centralized recycling systems.
+
+In the long term, UP3DCYCLING aims to contribute to sustainability transitions research by positioning distributed upcycling as a form of niche experimentation capable of driving systemic change [@kohler2019]. This represents a high-risk, high-impact dimension of the project, as grassroots innovations often face challenges in scaling and influencing dominant socio-technical regimes.
+On the one hand, the project will contribute to academic debates through publications in journals such as *Research Policy*, *Technological Forecasting and Social Change*, and *Sustainability Science*, addressing the role of grassroots innovation and niche experimentation in tackling plastic pollution.
+On the other hand, the project will actively engage with practitioner networks, including the French fablab community and France Tiers-Lieux, to ensure that results are actionable and relevant for actors involved in urban manufacturing and open production systems.
+
+The project will also provide an in-depth scientific analysis of the Green Fablab as a case of niche experimentation, contributing to the understanding of community-based, sustainable, and locally embedded production models.
+
+
+## Openness in Materials and Hardware as Global Commons
+
+UP3DCYCLING is grounded in principles of openness in the design of materials, hardware, and software, promoting the democratization of technology and upcycling practices. 
+The scientific coordinator will be responsible for the open science practices and data management, in collaboration with each partner. 
+The UL Open science and research data department will provide support for all aspects of open science throughout the project. The development of open-source solutions enhances technological accessibility and fosters local empowerment in addressing plastic pollution.
+
+This approach is particularly relevant for communities in regions such as Latin America and Africa, where grassroots and distributed manufacturing initiatives are complementary to the European context. 
+The project aims to contribute to these dynamics by supporting knowledge transfer, strategic decision-making, and future research in sustainable systems.
+
+
+## Social Impact and Communication
+
+The Green Fablab serves as a pedagogical platform for engineering education at the *École Nationale Supérieure en Génie des Systèmes et de l’Innovation (ENSGSI)* in Nancy. 
+UP3DCYCLING will strengthen this role by engaging students in hands-on activities and real-world case studies, fostering a deeper understanding of the challenges and opportunities associated with plastic waste management and circular economy practices.
+By involving students in experimental and participatory activities at the third place Octroi Nancy, the project will contribute to training a new generation of engineers equipped to address complex sustainability challenges.
+
+Moreover, the Green Fablab operates at the interface between science and society, within a citizen-oriented third place, creating strong opportunities for public engagement. 
+The Université de Lorraine holds the “Science avec et pour la Société” (SAPS) label, supporting initiatives that enhance the societal impact of research. 
+I participate as an ENSGSI ambassador for this program, and the project will actively contribute to the objectives of technical and cultural scientific dissemination.
+**UP3DCYCLING** will promote science communication and public engagement through workshops with citizens, school outreach activities, and participatory events. The project will also ensure broad dissemination of results through open platforms, including HAL, social media channels (e.g., LinkedIn), and the Lorraine Fab Living Lab network.
+All outputs will be documented in accessible formats to engage a wide audience and raise awareness about the role of distributed upcycling and additive manufacturing in sustainable urban systems.
+
+
+# References
+
+
+\scriptsize

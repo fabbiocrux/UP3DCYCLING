@@ -4,69 +4,75 @@ subtitle: "UP3DCYCLING"
 details: |
    ERPI Laboratory <br> Université de Lorraine
 sidebar: false
-page-layout: full
+page-layout: article
 course-logo: /assets/img/logo-mdp.png
+# format:
+#   html:
+#     template-partials:
+#       - assets/html/title-block.html
+
 format:
   html:
-    template-partials:
-      - assets/html/title-block.html
-
+    toc: false
+    number-sections: false
 ---
 
 
-:::: {.hero-banner}
-
-
-::: {.content-block}
-
-::: {.hero-text}
+::: {.grid .align-items-center }
+::: {.g-col-12}
 
 
 
-::: {.grid .course-details}
+![Banner de la Sexitude](https://blocks.astratic.com/img/general-img-landscape.png){width="85%"}
 
-::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
-# Instructor
 
-- {{< fa user >}} &nbsp; [{{< var guillaume.name >}}]({{< var instructor.url >}})
-- {{< fa user >}} &nbsp; [{{< var instructor.name >}}]({{< var instructor.url >}})
-- {{< fa university >}} &nbsp; {{< var instructor.office >}}
-- {{< fa envelope >}} &nbsp; <a href="mailto:{{< var instructor.email >}}">{{< var instructor.email >}}</a>
-- {{< fa brands twitter >}} &nbsp; [{{< var instructor.twitter >}}](https://www.twitter.com/{{< var instructor.twitter >}})
-- {{< fa calendar-check >}} &nbsp; [Schedule an appointment]({{< var instructor.appointment_url >}})
+:::
 :::
 
-::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
-# Course details
+::: {.grid .align-items-center }
 
-- {{< fa calendar >}} &nbsp; {{< var course.days >}}
-- {{< fa calendar-alt >}} &nbsp; {{< var course.dates >}}
-- {{< fa clock >}} &nbsp; {{< var course.time >}}
-- {{< fa location-dot >}} &nbsp; {{< var course.location >}}
-- {{< fa brands slack >}} &nbsp; [Slack]({{< var course.slack >}})
+::: {.g-col-4}
+
+## Our Aim
+
+Our overall research aims is to study, implement, and evaluate the ***upcycling potential*** of mixed plastic waste via in-situ reactive compatibilization using **open-source additive manufacturing**.
+
 :::
 
-::: {.g-col-12 .g-col-md-4 .contact-policy}
-# Contacting me
+::: {.g-col-8}
 
-{{< var instructor.contact_policy >}}
+
+![Logo of UP3Dcycling](https://blocks.astratic.com/img/general-img-landscape.png){width="85%"}
+
 :::
 
 :::
 
+---
 
-::: {.hero-buttons}
-[Cours Magistraux](CM/){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button"}
-[Guide de Travaux Dirigés](TD/){#btn-guide .btn-action .btn .btn-info .btn-lg role="button"}
+::: {.grid .align-items-center }
+
+::: {.g-col-8}
+
+
+![Logo of UP3Dcycling](https://blocks.astratic.com/img/general-img-landscape.png){width="85%"}
+
+:::
+
+::: {.g-col-4}
+
+# Mission
+
+Our overall research aims is to study, implement, and evaluate the ***upcycling potential*** of mixed plastic waste via in-situ reactive compatibilization using **open-source additive manufacturing**.
+
+
+:::
+
 ::: 
-:::
-
-::: {.hero-animation}
 
 
-:::
 
-:::
+# News of the Project
 
 
-::::
+
