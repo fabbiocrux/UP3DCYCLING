@@ -98,6 +98,9 @@ format:
       - assets/custom.scss
     toc: true
     number-sections: true
+    grid: 
+      body-width: 1200px
+
 
 execute:
   cache: true

@@ -18,20 +18,27 @@ format:
 ---
 
 
-::: {.grid .align-items-center }
-::: {.g-col-12}
-
-
-
-![Banner de la Sexitude](https://blocks.astratic.com/img/general-img-landscape.png){width="85%"}
-
-
+:::{.column-screen-inset}
+![Banner de la Sexitude](https://placehold.co/1500x200){width="100%"}
 :::
-:::
+
+
 
 ::: {.grid .align-items-center }
 
-::: {.g-col-4}
+::: {.g-col-12 }
+
+![Banner de la Sexitude](https://placehold.co/1500x400){width="100%"}
+:::
+:::
+
+
+
+
+
+::: {.grid .align-items-center }
+
+::: {.g-col-4 }
 
 ## Our Aim
 
@@ -42,7 +49,7 @@ Our overall research aims is to study, implement, and evaluate the ***upcycling 
 ::: {.g-col-8}
 
 
-![Logo of UP3Dcycling](https://blocks.astratic.com/img/general-img-landscape.png){width="85%"}
+![Logo of UP3Dcycling](https://blocks.astratic.com/img/general-img-landscape.png){width="85%" fig-align="center"}
 
 :::
 
@@ -75,4 +82,47 @@ Our overall research aims is to study, implement, and evaluate the ***upcycling 
 # News of the Project
 
 
+
+:::{.column-screen-inset}
+![News](https://placehold.co/1500x200){width="100%"}
+:::
+
+
+
+# Our Academical Allies {style="text-align: center"}
+
+::: {.grid .align-items-center }
+
+::: {.g-col-3}
+![LRGP](images/logos/LGRP.png){width="85%" fig-align="center"}
+:::
+
+::: {.g-col-3}
+![Western University](images/logos/Western.svg){width="85%" fig-align="center"}
+:::
+
+::: {.g-col-3}
+![](images/logos/LISIS.jpg){width="85%" fig-align="center"}
+:::
+
+::: {.g-col-3}
+![](images/logos/Western.svg){width="85%" fig-align="center"}
+:::
+
+::: 
+
+# Our Societal Allies {.title-block style="text-align: center"}
+
+
+::: {.grid .align-items-center }
+
+::: {.g-col-3 .g-start-2}
+![Réseau Français des Fablab](images/logos/RFF.svg){width="85%" fig-align="center"}
+:::
+
+::: {.g-col-3 .g-start-5}
+![Assotiation L'OK3 Nancy](images/logos/Octroi.png){width="85%" fig-align="center"}
+:::
+
+::: 
 

@@ -4,6 +4,8 @@ subtitle: "Towards distributed upcycling approach"
 ---
 
 
+
+# Motivation {style}
 # Additive Manufacturing
 The use of additive manufacturing is revolutionizing the manner that plastics could be processed and transformed. In spite of the great promise of additive manufacturing as an advanced form of future manufacturing, there are still fundamental challenges with respect to sustainability that need to be addressed. Some of the material needs for additive manufacturing include sustainable sources of printing inks, resins, and filaments, as well as pathways for polymer recycling, upcycling, and chemical circularity.
 
