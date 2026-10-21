@@ -7,15 +7,14 @@ subtitle: "Towards distributed upcycling approach"
 
 # Motivation 
 
-At the ERPI laboratory ([https://erpi.univ-lorraine.fr/](https://erpi.univ-lorraine.fr/)) of the Universiré de Lorraine, one major interest is the the development of methodologies, tools and  case studies in the area of innovation process management. 
-
 ::: {.column-margin}
-
 {{< arrow from="0,0" to="100,0" control1="150,-20" head="stealth" head-size="5" >}}
 
-[![See on the Website of ERPI](ERPI.png){width="80%"}](https://erpi.univ-lorraine.fr/){target="_blank"}
+See on the Website of ERPI
 
+[![](ERPI.png){width="80%"}](https://erpi.univ-lorraine.fr/){target="_blank"}
 :::
+At the ERPI laboratory ([https://erpi.univ-lorraine.fr/](https://erpi.univ-lorraine.fr/)) of the Universiré de Lorraine, one major interest is the the development of methodologies, tools and  case studies in the area of innovation process management. 
 
 From engineering and design and territorial perspectives, the laboratory has been developing research on the intersection of additive manufacturing, circular economy and urban manufacturing. 
 
@@ -23,12 +22,19 @@ From engineering and design and territorial perspectives, the laboratory has bee
 One of the research axis concerns the intersection on three major societal issues as follows:
 
 1. The circular economy of plastics as disruptor paradigm in political, industrial and societal perspective [@depascale2023; @ramli2024], 
+
 2. The development of open design [@bakirlioglu2019; @pacheco2025] including the open source technology as alternative approach of traditional technology development and,
-3. The experimental development of the urban manufacturing approaches [@herrmann2020; @ijassi2025] (i.e. Fablabs, Tiers Lieux, Recycleries and Matériauthèque) that usually are grassroot mouvements. 
-These approaches are reframing the manufacturing networks at a local level and can give perspective on eco-innovation process for circular economy [@kasmi2021a]. 
+
+3. The experimental development of the urban manufacturing approaches [@herrmann2020; @ijassi2025] (i.e. Fablabs, Tiers Lieux, Recycleries and Matériauthèque) that usually are grassroot mouvements. These approaches are reframing the manufacturing networks at a local level and can give perspective on eco-innovation process for circular economy [@kasmi2021a]. 
 
 
-Current centralized waste management systems remain structurally inadequate [@lerpiniere2025] to address the complex and systemic nature of plastic pollution, a crisis that increasingly threatens planetary boundaries [@villarrubia-gomez2024] and the safe operating space for humanity. 
+
+:::{.column-margin}
+See for instance the LAUDS Factories EU Project 
+[![](LAUDS.png){width="80%"}](https://lauds.eu/#archive){target="_blank"} 
+:::
+
+Indeed, current centralized waste management systems remain structurally inadequate [@lerpiniere2025] to address the complex and systemic nature of plastic pollution, a crisis that increasingly threatens planetary boundaries [@villarrubia-gomez2024] and the safe operating space for humanity. 
 
 In this regard, ERPI Laboratory have been developing the concept of “*distributed recycling via additive manufacturing (DRAM)*” [@cruzsanchez2020] as illustrated in @fig-dram.
 It involves the technical feasibility of using recycled plastics into the additive manufacturing printing process chain.
@@ -60,8 +66,14 @@ have openend new explorative paths that aims to see the *upcycling* [@riondet202
 
 
 
+:::{.column-page-right}
 
 ## Material compatibilization as upcycling strategy
+
+
+::: {.grid .align-items-center }
+
+::: {.g-col-8}
 
 The incompatibility between different plastic types—due to variations in chemical and molecular structures—remains a major limitation, leading to poor interfacial adhesion and low material performance [@kassab2023]. 
 
@@ -77,30 +89,62 @@ polyethylene terephthalate (PET), high density polyethylene (HDPE), polypropylen
 The ambition is to establish a systematic framework defining minimum quality standards for additive manufacturing using blended recycled materials—an area that remains underdeveloped in current research.
 
 
-## Additive Manufacturing
 
-The use of additive manufacturing is revolutionizing the manner that plastics could be processed and transformed.
-In spite of the great promise of additive manufacturing as an advanced form of future manufacturing, there are still fundamental challenges with respect to sustainability that need to be addressed. 
+:::
 
-Some of the material needs for additive manufacturing include sustainable sources of printing inks, resins, and filaments, as well as pathways for polymer recycling, upcycling, and chemical circularity.
+::: {.g-col-4}
+
+![Logo of UP3Dcycling](https://blocks.astratic.com/img/general-img-landscape.png){width="85%"}
+
+:::
 
 
-1. Catalysis Development
-Catalytic transformations will eventually be necessary to move to a more sustainable plastic economy.
+::: 
 
-CATALYSIS
-2. Sustainable Polymers
-While traditionally plastics have been designed for performance and durability, the current non-sustainable scenario is fueling the implementation of more sustainable polymers. 
+:::
 
-Sustainable Polymers. Sardon Lab
 
-Additive Manufacturing. SardonLab
-4. Chemical Recycling
+---
 
 
 
 ## Open source Fused Granular Fabrication as a promising technology for distributed upcycling
 
+The use of open source additive manufacturing (*aka 3D Printing*) is revolutionizing the manner that plastics could be processed and transformed.
+In spite of the great promise of additive manufacturing as an advanced form of future manufacturing, there are still fundamental challenges with respect to sustainability that need to be addressed. 
+
+Some of the material needs for additive manufacturing include sustainable sources of printing inks, resins, and filaments, as well as pathways for polymer recycling, upcycling, and chemical circularity.
+
+![Logo of UP3Dcycling](https://blocks.astratic.com/img/general-img-landscape.png){width="85%"}
+
+---
 
 
-### References
+:::{.column-page-left}
+
+
+
+## Urban Manufacturing as a socio-technical milieu to enable a distributed upcycling
+
+
+::: {.grid .align-items-center }
+
+::: {.g-col-4}
+![Urban Manufacturing](https://blocks.astratic.com/img/general-img-landscape.png){width="85%"}
+:::
+::: {.g-col-8}
+
+**UP3DCYCLING** aims to explore distributed upcycling from a Design for Sustainability (DfS) perspective [@ceschin2019], focusing on its socio-technical implications.
+The project will adopt a mixed qualitative and quantitative approach to analyze urban upcycling systems. 
+
+Previous research studies have explored distributed recycling through life-cycle assessment [@kerdlap2020; @kerdlap2022], the broader implications of distributed upcycling as a sustainability transition remain insufficiently understood [@eising-mertsch2024].
+
+Finally, a participatory action research approach will be implemented through a real-world case study at the 'Green Fablab' in Nancy [https://erpi.univ-lorraine.fr/projet/green-fablab/](https://erpi.univ-lorraine.fr/projet/green-fablab/), developed since 2017 in close collaboration with local stakeholders, notably within the associative third place Octroi Nancy [https://www.octroi-nancy.fr/](https://www.octroi-nancy.fr/).
+Within this framework, we will design and deploy an integrated workflow to collect, clean, sort, shred, and transform post-consumer plastic waste into new products via additive manufacturing, enabling the local valorization of materials currently excluded from conventional recycling systems [@cruzsanchez2020; @santander2020; @caceres-mendoza2023].
+:::
+:::
+
+
+:::{.column-screen}
+![Banner de la Sexitude](https://placehold.co/1500x100){width="100%"}
+:::

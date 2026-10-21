@@ -266,11 +266,11 @@ The ambition is to establish a systematic framework defining minimum quality sta
 
 ### Open source Fused Granular Fabrication as a promising technology for distributed upcycling
 
-
 Open-source Fused Granular Fabrication (FGF) is an emerging additive manufacturing technology that directly processes polymer pellets via a screw-based extrusion system, unlike Fused Filament Fabrication (FFF) [@alexandre2020]. 
 This approach enables the direct use of recycled polymers, reducing processing steps, improving material longevity, and lowering costs [@gonzalez2025; @romani2023].
 However, current systems primarily rely on single-screw extruders, which are insufficient for achieving homogeneous mixing of multiple materials, as demonstrated in previous work [@suescungonzalez2026]. 
 Achieving adequate blend homogeneity remains a critical challenge for mixed plastic processing.
+
 
 Recent advances in twin-screw and planetary roller extrusion technologies [@formela2024] offer promising solutions for improving mixing performance and material consistency. However, their integration into open-source additive manufacturing systems remains largely unexplored.
 Within **UP3DCYCLING**, we will develop an open-source FGF system based on twin-screw extrusion to process mixed recycled polymers, with a focus on improving blend homogeneity and printability (*Task 2.1*).
