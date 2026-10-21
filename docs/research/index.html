@@ -26,7 +26,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -130,13 +149,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#motivation-style" id="toc-motivation-style" class="nav-link active" data-scroll-target="#motivation-style"><span class="header-section-number">1</span> Motivation {style}</a></li>
-  <li><a href="#additive-manufacturing" id="toc-additive-manufacturing" class="nav-link" data-scroll-target="#additive-manufacturing"><span class="header-section-number">2</span> Additive Manufacturing</a></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">Motivation</a>
+  <ul class="collapse">
+  <li><a href="#material-compatibilization-as-upcycling-strategy" id="toc-material-compatibilization-as-upcycling-strategy" class="nav-link" data-scroll-target="#material-compatibilization-as-upcycling-strategy">Material compatibilization as upcycling strategy</a></li>
+  <li><a href="#additive-manufacturing" id="toc-additive-manufacturing" class="nav-link" data-scroll-target="#additive-manufacturing">Additive Manufacturing</a></li>
+  <li><a href="#open-source-fused-granular-fabrication-as-a-promising-technology-for-distributed-upcycling" id="toc-open-source-fused-granular-fabrication-as-a-promising-technology-for-distributed-upcycling" class="nav-link" data-scroll-target="#open-source-fused-granular-fabrication-as-a-promising-technology-for-distributed-upcycling">Open source Fused Granular Fabrication as a promising technology for distributed upcycling</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -158,23 +184,137 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="motivation-style" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Motivation {style}</h1>
-</section>
-<section id="additive-manufacturing" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Additive Manufacturing</h1>
-<p>The use of additive manufacturing is revolutionizing the manner that plastics could be processed and transformed. In spite of the great promise of additive manufacturing as an advanced form of future manufacturing, there are still fundamental challenges with respect to sustainability that need to be addressed. Some of the material needs for additive manufacturing include sustainable sources of printing inks, resins, and filaments, as well as pathways for polymer recycling, upcycling, and chemical circularity.</p>
+<section id="motivation" class="level1 page-columns page-full">
+<h1>Motivation</h1>
+<p>At the ERPI laboratory (<a href="https://erpi.univ-lorraine.fr/">https://erpi.univ-lorraine.fr/</a>) of the Universiré de Lorraine, one major interest is the the development of methodologies, tools and case studies in the area of innovation process management.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><svg width="180.0" height="50.0" viewbox="0 0 180.0 50.0" xmlns="http://www.w3.org/2000/svg" style="overflow: visible;"><defs><marker id="arrow-788703" markerwidth="6.0" markerheight="5" refx="1.8" refy="2.5" orient="auto-start-reverse" markerunits="strokeWidth"><path d="M 0 0 L 6.0 2.5 L 0 5 L 1.8 2.5 z" fill="black"></path></marker></defs><path d="M 15.0,35.0 Q 165.0,15.0 115.0,35.0" stroke="black" stroke-width="2" fill="none" marker-end="url(#arrow-788703)"></path></svg></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://erpi.univ-lorraine.fr/" target="_blank"><img src="ERPI.png" class="img-fluid figure-img" style="width:80.0%"></a></p>
+<figcaption>See on the Website of ERPI</figcaption>
+</figure>
+</div>
+</div></div><p>From engineering and design and territorial perspectives, the laboratory has been developing research on the intersection of additive manufacturing, circular economy and urban manufacturing.</p>
+<p>One of the research axis concerns the intersection on three major societal issues as follows:</p>
 <ol type="1">
-<li>Catalysis Development Catalytic transformations will eventually be necessary to move to a more sustainable plastic economy. Our aim is to develop fully organic catalyst to be implemented in industrially relevant processes. In this sense our mission is to design catalysts but always considering their scalability.</li>
+<li>The circular economy of plastics as disruptor paradigm in political, industrial and societal perspective <span class="citation" data-cites="depascale2023 ramli2024">(<a href="#ref-depascale2023" role="doc-biblioref">De Pascale et al. 2023</a>; <a href="#ref-ramli2024" role="doc-biblioref">Ramli et al. 2024</a>)</span>,</li>
+<li>The development of open design <span class="citation" data-cites="bakirlioglu2019 pacheco2025">(<a href="#ref-bakirlioglu2019" role="doc-biblioref">Bakırlıoğlu and Kohtala 2019</a>; <a href="#ref-pacheco2025" role="doc-biblioref">Pacheco et al. 2025</a>)</span> including the open source technology as alternative approach of traditional technology development and,</li>
+<li>The experimental development of the urban manufacturing approaches <span class="citation" data-cites="herrmann2020 ijassi2025">(<a href="#ref-herrmann2020" role="doc-biblioref">Herrmann et al. 2020</a>; <a href="#ref-ijassi2025" role="doc-biblioref">Ijassi et al. 2025</a>)</span> (i.e.&nbsp;Fablabs, Tiers Lieux, Recycleries and Matériauthèque) that usually are grassroot mouvements. These approaches are reframing the manufacturing networks at a local level and can give perspective on eco-innovation process for circular economy <span class="citation" data-cites="kasmi2021a">(<a href="#ref-kasmi2021a" role="doc-biblioref">Kasmi et al. 2021</a>)</span>.</li>
 </ol>
-<p>CATALYSIS 2. Sustainable Polymers While traditionally plastics have been designed for performance and durability, the current non-sustainable scenario is fueling the implementation of more sustainable polymers. Our group intends to design new polymers with not only competitive mechanical properties but also considering their end-of-life assessment. To do so we investigate not only the use of monomers from renewable sources but also from plastic waste.</p>
+<p>Current centralized waste management systems remain structurally inadequate <span class="citation" data-cites="lerpiniere2025">(<a href="#ref-lerpiniere2025" role="doc-biblioref">Lerpiniere et al. 2025</a>)</span> to address the complex and systemic nature of plastic pollution, a crisis that increasingly threatens planetary boundaries <span class="citation" data-cites="villarrubia-gomez2024">(<a href="#ref-villarrubia-gomez2024" role="doc-biblioref">Villarrubia-Gómez et al. 2024</a>)</span> and the safe operating space for humanity.</p>
+<p>In this regard, ERPI Laboratory have been developing the concept of “<em>distributed recycling via additive manufacturing (DRAM)</em>” <span class="citation" data-cites="cruzsanchez2020">(<a href="#ref-cruzsanchez2020" role="doc-biblioref">Cruz Sanchez et al. 2020</a>)</span> as illustrated in <a href="#fig-dram" class="quarto-xref">Figure&nbsp;1</a>. It involves the technical feasibility of using recycled plastics into the additive manufacturing printing process chain. Particularly, the use systems based on material extrusion which are the most used in industry and general public.</p>
+<div id="fig-dram" class="quarto-float quarto-figure quarto-figure-center anchored" alt="alt">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../images/DRAM.png" class="img-fluid figure-img" style="width:85.0%" alt="alt">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Distributed recycling via additive manufacturing developed at the ERPI Laboratory
+</figcaption>
+</figure>
+</div>
+<p>The <strong>Recovery (I)</strong> phase addresses the logistical operations required to collect plastic waste for reuse within DRAM systems. The <strong>Preparation (II)</strong> phase encompasses the identification, separation, sorting, size reduction, and cleaning of plastic waste to ensure adequate quality. The <strong>Compounding (III)</strong> phase focuses on the development of mono- and composite materials. After, the <strong>Feedstock (IV)</strong> phase focuses on producing materials suitable for printing, either in filament form for FFF or as particles for FGF. The <strong>Printing (V)</strong> phase addresses application development and process optimization for recycled materials. Finally, the <strong>Quality (VI)</strong> phase involves multi-level technical characterization of recycled materials and printed parts.</p>
+<p>Therefore, three major scales are simultaneaosly studied, as illustrated in <a href="#fig-dram" class="quarto-xref">Figure&nbsp;1</a> :</p>
+<ul>
+<li><strong>Material level</strong>: The study of strategies for post-consumer plastic recycling/upcycling to enhance the structural properties of plastic waste.</li>
+<li><strong>Process level</strong>: Open-source hardware (i.e additive manufacturing, manual injection, sheetpress etc) as a promising pathway to transform plastic waste into usable artifacts/products.</li>
+<li><strong>Socio-technical level</strong>: Urban manufacturing systems can provide a conducive environment for distributed upcycling, enabling the transformation of plastic waste into locally relevant products, closer to where the waste is generated.</li>
+</ul>
+<p>For instance, using desktop-scale fused filament fabrication (FFF) <span class="citation" data-cites="cruzsanchez2014">(<a href="#ref-cruzsanchez2014" role="doc-biblioref">Cruz Sanchez et al. 2014</a>)</span> and fused granular fabrication (FGF) <span class="citation" data-cites="alexandre2020">(<a href="#ref-alexandre2020" role="doc-biblioref">Alexandre et al. 2020</a>)</span>, we have demonstrated their potential as technical enablers for the mechanical recycling of mono-thermoplastic waste, such as polylactic acid (PLA), from <em>material</em> <span class="citation" data-cites="cruz2015 cruzsanchez2017">(<a href="#ref-cruz2015" role="doc-biblioref">Cruz et al. 2015</a>; <a href="#ref-cruzsanchez2017" role="doc-biblioref">Cruz Sanchez et al. 2017</a>)</span>, <em>process</em> <span class="citation" data-cites="cruzsanchez2014 alexandre2020">(<a href="#ref-cruzsanchez2014" role="doc-biblioref">Cruz Sanchez et al. 2014</a>; <a href="#ref-alexandre2020" role="doc-biblioref">Alexandre et al. 2020</a>)</span>, and <em>socio-technical</em> perspectives <span class="citation" data-cites="santander2020 caceres-mendoza2023">(<a href="#ref-santander2020" role="doc-biblioref">Santander et al. 2020</a>; <a href="#ref-caceres-mendoza2023" role="doc-biblioref">Caceres-Mendoza et al. 2023</a>)</span>. Recently, the work on multi-material <span class="citation" data-cites="suescungonzalez2024 gonzalez2025">(<a href="#ref-suescungonzalez2024" role="doc-biblioref">Suescun Gonzalez et al. 2024</a>; <a href="#ref-gonzalez2025" role="doc-biblioref">Gonzalez et al. 2025</a>)</span> have openend new explorative paths that aims to see the <em>upcycling</em> <span class="citation" data-cites="riondet2022">(<a href="#ref-riondet2022" role="doc-biblioref">Riondet et al. 2022</a>)</span> potential of this approach.</p>
+<section id="material-compatibilization-as-upcycling-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="material-compatibilization-as-upcycling-strategy">Material compatibilization as upcycling strategy</h2>
+<p>The incompatibility between different plastic types—due to variations in chemical and molecular structures—remains a major limitation, leading to poor interfacial adhesion and low material performance <span class="citation" data-cites="kassab2023">(<a href="#ref-kassab2023" role="doc-biblioref">Kassab et al. 2023</a>)</span>.</p>
+<p>Our aim in <em>UP3DCYCLING</em> is to fully develop an upcycling strategy targeting plastics that are sorted but not recycled due to the lack of viable value chains.</p>
+<p>In this sense our mission is to investigate the mechanical upcycling of mixed plastic waste through the incorporation of compatibilizers during the melting process.</p>
+<p>design catalysts but always considering their scalability. Our main outcome of is a comprehensive benchmarking of compatibilization strategies applied to the six primary single-use plastics: polyethylene terephthalate (PET), high density polyethylene (HDPE), polypropylene (PP), low density polyethylene (LDPE), polystyrene (PS) and polylactic acid (PLA).</p>
+<p>The ambition is to establish a systematic framework defining minimum quality standards for additive manufacturing using blended recycled materials—an area that remains underdeveloped in current research.</p>
+</section>
+<section id="additive-manufacturing" class="level2">
+<h2 class="anchored" data-anchor-id="additive-manufacturing">Additive Manufacturing</h2>
+<p>The use of additive manufacturing is revolutionizing the manner that plastics could be processed and transformed. In spite of the great promise of additive manufacturing as an advanced form of future manufacturing, there are still fundamental challenges with respect to sustainability that need to be addressed.</p>
+<p>Some of the material needs for additive manufacturing include sustainable sources of printing inks, resins, and filaments, as well as pathways for polymer recycling, upcycling, and chemical circularity.</p>
+<ol type="1">
+<li>Catalysis Development Catalytic transformations will eventually be necessary to move to a more sustainable plastic economy.</li>
+</ol>
+<p>CATALYSIS 2. Sustainable Polymers While traditionally plastics have been designed for performance and durability, the current non-sustainable scenario is fueling the implementation of more sustainable polymers.</p>
 <p>Sustainable Polymers. Sardon Lab</p>
-<p>Additive Manufacturing. SardonLab 4. Chemical Recycling The vast majority of commodity plastics do not degrade and less than 20% of post-consumer plastic waste is recycled mostly for energy recovery or by mechanical recycling in lower quality products. In our group we exploit the chemical recycling of plastics as 1) it offers an opportunity to revert plastics back to monomers for repolymerization and 2) to transform plastics as a source to produce added value monomers for the plastic industry.</p>
+<p>Additive Manufacturing. SardonLab 4. Chemical Recycling</p>
+</section>
+<section id="open-source-fused-granular-fabrication-as-a-promising-technology-for-distributed-upcycling" class="level2">
+<h2 class="anchored" data-anchor-id="open-source-fused-granular-fabrication-as-a-promising-technology-for-distributed-upcycling">Open source Fused Granular Fabrication as a promising technology for distributed upcycling</h2>
+<section id="references" class="level3">
+
+
 
 
 </section>
+</section>
+</section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-alexandre2020" class="csl-entry" role="listitem">
+Alexandre, Arthur, Fabio A. Cruz Sanchez, Hakim Boudaoud, Mauricio Camargo, and Joshua M. Pearce. 2020. <span>“Mechanical <span>Properties</span> of <span>Direct Waste Printing</span> of <span>Polylactic Acid</span> with <span>Universal Pellets Extruder</span>: <span>Comparison</span> to <span>Fused Filament Fabrication</span> on <span>Open-Source Desktop Three-Dimensional Printers</span>.”</span> <em>3D Printing and Additive Manufacturing</em>, April 24, 3dp.2019.0195. <a href="https://doi.org/10.1089/3dp.2019.0195">https://doi.org/10.1089/3dp.2019.0195</a>.
+</div>
+<div id="ref-bakirlioglu2019" class="csl-entry" role="listitem">
+Bakırlıoğlu, Yekta, and Cindy Kohtala. 2019. <span>“Framing <span>Open Design</span> Through <span>Theoretical Concepts</span> and <span>Practical Applications</span>: <span>A Systematic Literature Review</span>.”</span> <em>Human–Computer Interaction</em> 34 (5–6): 389–432. <a href="https://doi.org/10.1080/07370024.2019.1574225">https://doi.org/10.1080/07370024.2019.1574225</a>.
+</div>
+<div id="ref-caceres-mendoza2023" class="csl-entry" role="listitem">
+Caceres-Mendoza, Cristian, Pavlo Santander-Tapia, Fabio A. Cruz Sanchez, Nadège Troussier, Mauricio Camargo, and Hakim Boudaoud. 2023. <span>“Life Cycle Assessment of Filament Production in Distributed Plastic Recycling via Additive Manufacturing.”</span> <em>Cleaner Waste Systems</em> 5 (August): 100100. <a href="https://doi.org/10.1016/j.clwas.2023.100100">https://doi.org/10.1016/j.clwas.2023.100100</a>.
+</div>
+<div id="ref-cruz2015" class="csl-entry" role="listitem">
+Cruz, Fabio, Silvia Lanza, Hakim Boudaoud, Sandrine Hoppe, and Mauricio Camargo. 2015. <span>“Polymer <span>Recycling</span> and <span>Additive Manufacturing</span> in an <span>Open Source</span> Context : <span>Optimization</span> of Processes and Methods.”</span> <em>Solid <span>Freeform Fabrication</span></em> (Austin, Texas), 1591–600.
+</div>
+<div id="ref-cruzsanchez2020" class="csl-entry" role="listitem">
+Cruz Sanchez, Fabio A., Hakim Boudaoud, Mauricio Camargo, and Joshua M. Pearce. 2020. <span>“Plastic Recycling in Additive Manufacturing: <span>A</span> Systematic Literature Review and Opportunities for the Circular Economy.”</span> <em>Journal of Cleaner Production</em> 264 (August): 121602. <a href="https://doi.org/10.1016/j.jclepro.2020.121602">https://doi.org/10.1016/j.jclepro.2020.121602</a>.
+</div>
+<div id="ref-cruzsanchez2017" class="csl-entry" role="listitem">
+Cruz Sanchez, Fabio A., Hakim Boudaoud, Sandrine Hoppe, and Mauricio Camargo. 2017. <span>“Polymer Recycling in an Open-Source Additive Manufacturing Context: <span>Mechanical</span> Issues.”</span> <em>Additive Manufacturing</em> 17 (October): 87–105. <a href="https://doi.org/10.1016/j.addma.2017.05.013">https://doi.org/10.1016/j.addma.2017.05.013</a>.
+</div>
+<div id="ref-cruzsanchez2014" class="csl-entry" role="listitem">
+Cruz Sanchez, Fabio Alberto, Hakim Boudaoud, Laurent Muller, and Mauricio Camargo. 2014. <span>“Towards a Standard Experimental Protocol for Open Source Additive Manufacturing.”</span> <em>Virtual and Physical Prototyping</em> 9 (3): 151–67. <a href="https://doi.org/10.1080/17452759.2014.919553">https://doi.org/10.1080/17452759.2014.919553</a>.
+</div>
+<div id="ref-depascale2023" class="csl-entry" role="listitem">
+De Pascale, Angelina, Giuseppe Di Vita, Carlo Giannetto, et al. 2023. <span>“The Circular Economy Implementation at the <span>European Union</span> Level. <span>Past</span>, Present and Future.”</span> <em>Journal of Cleaner Production</em> 423 (October): 138658. <a href="https://doi.org/10.1016/j.jclepro.2023.138658">https://doi.org/10.1016/j.jclepro.2023.138658</a>.
+</div>
+<div id="ref-gonzalez2025" class="csl-entry" role="listitem">
+Gonzalez, Catalina Suescun, Aditi Basdeo, Fabio A. Cruz Sanchez, Cécile Nouvel, Joshua M. Pearce, and Hakim Boudaoud. 2025. <span>“Strategies for Recycling Multi-Material Polymer Blends for Additive Manufacturing.”</span> <em>Sustainable Materials and Technologies</em> 44 (July): e01430. <a href="https://doi.org/10.1016/j.susmat.2025.e01430">https://doi.org/10.1016/j.susmat.2025.e01430</a>.
+</div>
+<div id="ref-herrmann2020" class="csl-entry" role="listitem">
+Herrmann, Christoph, Max Juraschek, Peter Burggräf, and Sami Kara. 2020. <span>“Urban Production: <span>State</span> of the Art and Future Trends for Urban Factories.”</span> <em>CIRP Annals</em> 69 (2): 764–87. <a href="https://doi.org/10.1016/j.cirp.2020.05.003">https://doi.org/10.1016/j.cirp.2020.05.003</a>.
+</div>
+<div id="ref-ijassi2025" class="csl-entry" role="listitem">
+Ijassi, Walid, Damien Evrard, and Peggy Zwolinski. 2025. <span>“Characterizing Value Chain Patterns of Urban Factories: <span>A</span> Case Study in the Grenoble Urban Area.”</span> <em>Journal of Cleaner Production</em> 520 (August): 146061. <a href="https://doi.org/10.1016/j.jclepro.2025.146061">https://doi.org/10.1016/j.jclepro.2025.146061</a>.
+</div>
+<div id="ref-kasmi2021a" class="csl-entry" role="listitem">
+Kasmi, Fedoua, Ferney Osorio, Laurent Dupont, Brunelle Marche, and Mauricio Camargo. 2021. <span>“Innovation <span>Spaces</span> as <span>Drivers</span> of <span>Eco</span>-Innovations <span>Supporting</span> the <span>Circular Economy</span>: <span>A Systematic Literature Review</span>.”</span> <em>Journal of Innovation Economics &amp; Management</em> Prépublica (0): Ij–XLII. <a href="https://doi.org/10.3917/jie.pr1.0113">https://doi.org/10.3917/jie.pr1.0113</a>.
+</div>
+<div id="ref-kassab2023" class="csl-entry" role="listitem">
+Kassab, Ali, Dawood Al Nabhani, Pravansu Mohanty, Christopher Pannier, and Georges Y. Ayoub. 2023. <span>“Advancing <span>Plastic Recycling</span>: <span>Challenges</span> and <span>Opportunities</span> in the <span>Integration</span> of <span>3D Printing</span> and <span>Distributed Recycling</span> for a <span>Circular Economy</span>.”</span> <em>Polymers</em> 15 (19): 3881. <a href="https://doi.org/10.3390/polym15193881">https://doi.org/10.3390/polym15193881</a>.
+</div>
+<div id="ref-lerpiniere2025" class="csl-entry" role="listitem">
+Lerpiniere, David J., David C. Wilson, and Costas A. Velis. 2025. <span>“Official Development Finance in Solid Waste Management Reveals Insufficient Resources for Tackling Plastic Pollution: <span>A</span> Global Analysis of Two Decades of Data.”</span> <em>Resources, Conservation and Recycling</em> 212 (January): 107918. <a href="https://doi.org/10.1016/j.resconrec.2024.107918">https://doi.org/10.1016/j.resconrec.2024.107918</a>.
+</div>
+<div id="ref-pacheco2025" class="csl-entry" role="listitem">
+Pacheco, Jose Nicolas, Andreu Turro, and David Urbano. 2025. <span>“Open Social Innovation: <span>A</span> Systematic Literature Review and Future Research Agenda.”</span> <em>Technological Forecasting and Social Change</em> 216 (July): 124160. <a href="https://doi.org/10.1016/j.techfore.2025.124160">https://doi.org/10.1016/j.techfore.2025.124160</a>.
+</div>
+<div id="ref-ramli2024" class="csl-entry" role="listitem">
+Ramli, Abu Hanifah Mohammad, Latifah Abd. Manaf, Zufarzaana Zulkefli, and Sapto Andriyono. 2024. <span>“Advancing Circular Economy Approaches in Plastic Waste Management: <span>A</span> Systematic Literature Review in Developing Economies.”</span> <em>Sustainable Production and Consumption</em>, ahead of print, August 22. <a href="https://doi.org/10.1016/j.spc.2024.08.018">https://doi.org/10.1016/j.spc.2024.08.018</a>.
+</div>
+<div id="ref-riondet2022" class="csl-entry" role="listitem">
+Riondet, Lucas, Maud Rio, Véronique Perrot-Bernardet, and Peggy Zwolinski. 2022. <span>“For an Upscaling Assessment Integration in Product Design.”</span> <em>Procedia CIRP</em>, 32nd <span>CIRP Design Conference</span> (<span>CIRP Design</span> 2022) - <span>Design</span> in a changing world, vol. 109 (January): 89–94. <a href="https://doi.org/10.1016/j.procir.2022.05.219">https://doi.org/10.1016/j.procir.2022.05.219</a>.
+</div>
+<div id="ref-santander2020" class="csl-entry" role="listitem">
+Santander, Pavlo, Fabio A Cruz Sanchez, Hakim Boudaoud, and Mauricio Camargo. 2020. <span>“Closed Loop Supply Chain Network for Local and Distributed Plastic Recycling for <span>3D</span> Printing: A <span>MILP</span>-Based Optimization Approach.”</span> <em>Resources, Conservation and Recycling</em> 154 (March): 104531. <a href="https://doi.org/10.1016/j.resconrec.2019.104531">https://doi.org/10.1016/j.resconrec.2019.104531</a>.
+</div>
+<div id="ref-suescungonzalez2024" class="csl-entry" role="listitem">
+Suescun Gonzalez, Catalina, Fabio A. Cruz Sanchez, Hakim Boudaoud, Cécile Nouvel, and Joshua M. Pearce. 2024. <span>“Multi-Material Distributed Recycling via Material Extrusion: Recycled High Density Polyethylene and Poly (Ethylene Terephthalate) Mixture.”</span> <em>Polymer Engineering &amp; Science</em> n/a (n/a). <a href="https://doi.org/10.1002/pen.26643">https://doi.org/10.1002/pen.26643</a>.
+</div>
+<div id="ref-villarrubia-gomez2024" class="csl-entry" role="listitem">
+Villarrubia-Gómez, Patricia, Bethanie Carney Almroth, Marcus Eriksen, Morten Ryberg, and Sarah E. Cornell. 2024. <span>“Plastics Pollution Exacerbates the Impacts of All Planetary Boundaries.”</span> <em>One Earth</em> 7 (12): 2119–38. <a href="https://doi.org/10.1016/j.oneear.2024.10.017">https://doi.org/10.1016/j.oneear.2024.10.017</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

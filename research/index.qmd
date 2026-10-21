@@ -5,20 +5,102 @@ subtitle: "Towards distributed upcycling approach"
 
 
 
-# Motivation {style}
-# Additive Manufacturing
-The use of additive manufacturing is revolutionizing the manner that plastics could be processed and transformed. In spite of the great promise of additive manufacturing as an advanced form of future manufacturing, there are still fundamental challenges with respect to sustainability that need to be addressed. Some of the material needs for additive manufacturing include sustainable sources of printing inks, resins, and filaments, as well as pathways for polymer recycling, upcycling, and chemical circularity.
+# Motivation 
+
+At the ERPI laboratory ([https://erpi.univ-lorraine.fr/](https://erpi.univ-lorraine.fr/)) of the Universiré de Lorraine, one major interest is the the development of methodologies, tools and  case studies in the area of innovation process management. 
+
+::: {.column-margin}
+
+{{< arrow from="0,0" to="100,0" control1="150,-20" head="stealth" head-size="5" >}}
+
+[![See on the Website of ERPI](ERPI.png){width="80%"}](https://erpi.univ-lorraine.fr/){target="_blank"}
+
+:::
+
+From engineering and design and territorial perspectives, the laboratory has been developing research on the intersection of additive manufacturing, circular economy and urban manufacturing. 
+
+
+One of the research axis concerns the intersection on three major societal issues as follows:
+
+1. The circular economy of plastics as disruptor paradigm in political, industrial and societal perspective [@depascale2023; @ramli2024], 
+2. The development of open design [@bakirlioglu2019; @pacheco2025] including the open source technology as alternative approach of traditional technology development and,
+3. The experimental development of the urban manufacturing approaches [@herrmann2020; @ijassi2025] (i.e. Fablabs, Tiers Lieux, Recycleries and Matériauthèque) that usually are grassroot mouvements. 
+These approaches are reframing the manufacturing networks at a local level and can give perspective on eco-innovation process for circular economy [@kasmi2021a]. 
+
+
+Current centralized waste management systems remain structurally inadequate [@lerpiniere2025] to address the complex and systemic nature of plastic pollution, a crisis that increasingly threatens planetary boundaries [@villarrubia-gomez2024] and the safe operating space for humanity. 
+
+In this regard, ERPI Laboratory have been developing the concept of “*distributed recycling via additive manufacturing (DRAM)*” [@cruzsanchez2020] as illustrated in @fig-dram.
+It involves the technical feasibility of using recycled plastics into the additive manufacturing printing process chain.
+Particularly, the use systems based on material extrusion which are the most used in industry and general public.
+
+
+![Distributed recycling via additive manufacturing developed at the ERPI Laboratory](../images/DRAM.png){#fig-dram fig-alt="alt" width="85%"}
+
+The **Recovery (I)** phase addresses the logistical operations required to collect plastic waste for reuse within DRAM systems. 
+The **Preparation (II)** phase encompasses the identification, separation, sorting, size reduction, and cleaning of plastic waste to ensure adequate quality. 
+The **Compounding (III)** phase focuses on the development of mono- and composite materials.
+After, the **Feedstock (IV)** phase focuses on producing materials suitable for printing, either in filament form for FFF or as particles for FGF. 
+The **Printing (V)** phase addresses application development and process optimization for recycled materials.
+Finally, the **Quality (VI)** phase involves multi-level technical characterization of recycled materials and printed parts.
+
+Therefore, three major scales are simultaneaosly studied, as illustrated in @fig-dram :
+
+- **Material level**:
+The study of strategies for post-consumer plastic recycling/upcycling to enhance the structural properties of plastic waste.
+- **Process level**: 
+Open-source hardware (i.e additive manufacturing, manual injection, sheetpress etc) as a promising pathway to transform plastic waste into usable artifacts/products.
+- **Socio-technical level**:
+Urban manufacturing systems can provide a conducive environment for distributed upcycling, enabling the transformation of plastic waste into locally relevant products, closer to where the waste is generated. 
+
+For instance, using desktop-scale fused filament fabrication (FFF) [@cruzsanchez2014] and fused granular fabrication (FGF) [@alexandre2020], we have demonstrated their potential as technical enablers for the mechanical recycling of mono-thermoplastic waste, such as polylactic acid (PLA), from *material* [@cruz2015; @cruzsanchez2017], *process* [@cruzsanchez2014; @alexandre2020], and *socio-technical* perspectives [@santander2020; @caceres-mendoza2023]. 
+Recently, the work on multi-material [@suescungonzalez2024; @gonzalez2025] 
+have openend new explorative paths that aims to see the *upcycling* [@riondet2022] potential of this approach.
+
+
+
+
+
+## Material compatibilization as upcycling strategy
+
+The incompatibility between different plastic types—due to variations in chemical and molecular structures—remains a major limitation, leading to poor interfacial adhesion and low material performance [@kassab2023]. 
+
+
+Our aim in *UP3DCYCLING* is to fully develop an upcycling strategy targeting plastics that are sorted but not recycled due to the lack of viable value chains.
+
+ In this sense our mission is to investigate the mechanical upcycling of mixed plastic waste through the incorporation of compatibilizers during the melting process.  
+ 
+ design catalysts but always considering their scalability.
+Our main outcome of is a comprehensive benchmarking of compatibilization strategies applied to the six primary single-use plastics: 
+polyethylene terephthalate (PET), high density polyethylene (HDPE), polypropylene (PP),  low density polyethylene (LDPE), polystyrene (PS) and polylactic acid (PLA).
+
+The ambition is to establish a systematic framework defining minimum quality standards for additive manufacturing using blended recycled materials—an area that remains underdeveloped in current research.
+
+
+## Additive Manufacturing
+
+The use of additive manufacturing is revolutionizing the manner that plastics could be processed and transformed.
+In spite of the great promise of additive manufacturing as an advanced form of future manufacturing, there are still fundamental challenges with respect to sustainability that need to be addressed. 
+
+Some of the material needs for additive manufacturing include sustainable sources of printing inks, resins, and filaments, as well as pathways for polymer recycling, upcycling, and chemical circularity.
 
 
 1. Catalysis Development
-Catalytic transformations will eventually be necessary to move to a more sustainable plastic economy. Our aim is to develop fully organic catalyst to be implemented in industrially relevant processes. In this sense our mission is to design catalysts but always considering their scalability.
+Catalytic transformations will eventually be necessary to move to a more sustainable plastic economy.
 
 CATALYSIS
 2. Sustainable Polymers
-While traditionally plastics have been designed for performance and durability, the current non-sustainable scenario is fueling the implementation of more sustainable polymers. Our group intends to design new polymers with not only competitive mechanical properties but also considering their end-of-life assessment. To do so we investigate not only the use of monomers from renewable sources but also from plastic waste.
+While traditionally plastics have been designed for performance and durability, the current non-sustainable scenario is fueling the implementation of more sustainable polymers. 
 
 Sustainable Polymers. Sardon Lab
 
 Additive Manufacturing. SardonLab
 4. Chemical Recycling
-The vast majority of commodity plastics do not degrade and less than 20% of post-consumer plastic waste is recycled mostly for energy recovery or by mechanical recycling in lower quality products. In our group we exploit the chemical recycling of plastics as 1) it offers an opportunity to revert plastics back to monomers for repolymerization and 2) to transform plastics as a source to produce added value monomers for the plastic industry.
+
+
+
+## Open source Fused Granular Fabrication as a promising technology for distributed upcycling
+
+
+
+### References

@@ -97,11 +97,13 @@ format:
       - litera
       - assets/custom.scss
     toc: true
-    number-sections: true
+    number-sections: false
     grid: 
       body-width: 1200px
 
-
+filters:
+  - arrows
+  
 execute:
   cache: true
   echo: false
