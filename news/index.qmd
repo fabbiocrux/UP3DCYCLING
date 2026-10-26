@@ -1,0 +1,22 @@
+---
+title: "News and Advances of UP3DCYCLING"
+subtitle: "Research · Pedagogy · Open Science"
+citation: false
+comments: false
+#description: |
+
+listing: 
+  contents: 
+    - "**/index.qmd"    
+  sort: "date desc"
+  type: default
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, categories, date, image]
+  image-placeholder: Blog-sidebar.jpg
+  image-align: right
+  page-size: 5
+
+toc: false
+---

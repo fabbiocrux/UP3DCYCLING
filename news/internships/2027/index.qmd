@@ -1,13 +1,12 @@
 ---
+lang: en
 title: "Ethnographic Analysis of Urban Manufacturing Ecosystems"
 subtitle: "Internship proposition at the ERPI Laboratory"
 #abstract-title: 'Objectif'
 #abstract: "**Version 1**. <br> *Last updated on: {{< meta date >}}.*"
-output-dir: 00-Stages/2027/Andrea-Ducuara/
 date: last-modified
-date-format: "[Version 1 — Updated on] MMMM D, YYYY"
+date-format: "[Updated on] MMMM D, YYYY"
 
-lang: en
 format:
   html: default
   pdf:
@@ -47,6 +46,9 @@ format:
 bibliography: [../../../assets/library.bib]
 csl: ../../../assets/journal-of-cleaner-production.csl
 #output-dir: pdf
+categories:
+  - internships
+image: ../../../images/logos/ERPI.svg
 ---
 
 
@@ -91,7 +93,7 @@ tribble(
 "Feb/March - August 2027 – 6 months",
 
 "More Information",
-"fabio.cruz[at]univ-lorraine.fr -- \\href{https://up3dcycling.fr/}{https://up3dcycling.fr/}"
+"fabio.cruz[at]univ-lorraine.fr -- (https://up3dcycling.fr/) "
 )
 
 table %>%
@@ -108,9 +110,10 @@ table %>%
 
 # Context of the Internship
 
+
 The internship takes place at the  [Équipe de Recherche sur les Processus Innovatifs -- ERPI (https://erpi.univ-lorraine.fr/)](https://erpi.univ-lorraine.fr/), research laboratory of the Université de Lorraine. 
 The ERPI is interested is the the development of methodologies, tools and  case studies in the area of innovation process management.
-Particularly, one of its current areas of focus is on urban manufacturing approaches at the [UP3DCYCLING project](https://up3dcycling.fr/), where the main goal scope on the intersection of additive manufacturing, circular economy and urban manufacutirng spaces such as Fablabs, Tiers-places and other manufacturing approaches of the social and solidarity economy. 
+Particularly, one of its current areas of focus is on urban manufacturing approaches at the [UP3DCYCLING project (https://up3dcycling.fr/)](https://up3dcycling.fr/), where the main goal scope on the intersection of additive manufacturing, circular economy and urban manufacutirng spaces such as Fablabs, Tiers-places and other manufacturing approaches of the social and solidarity economy. 
 
 # Main Issue
 
@@ -138,9 +141,9 @@ The internship takes place at an exploratory stage of the project, ahead of the 
 
 The methodology need to combine theoretical grounding and empirical in-field inquiry.
 The internship will combine a literature review in political sociology, the sociology of public action and the study of third places in France [@gauthier2025], with a mapping of the actors and institutions involved.
-The mapping will rely on document analysis (policy documents, local waste plans, network resources) and on exploratory interviews with regional and national networks (e.g., French Network of Fablabs RFFLabs [https://www.rfflabs.fr/](https://www.rfflabs.fr/), Tiers-Lieux Grand Est [https://tierslieuxgrandest.org/](https://tierslieuxgrandest.org/), the Precious Plastic France [https://preciousplastic.fr/](https://preciousplastic.fr/) network), as well as with local institutional actors in the Nancy area.
+The mapping will rely on document analysis (policy documents, local waste plans, network resources) and on exploratory interviews with regional and national networks (e.g., French Network of Fablabs RFFLabs [(https://www.rfflabs.fr/)](https://www.rfflabs.fr/), Tiers-Lieux Grand Est [(https://tierslieuxgrandest.org/)](https://tierslieuxgrandest.org/), the Precious Plastic France [(https://preciousplastic.fr/)](https://preciousplastic.fr/) network), as well as with local institutional actors in the Nancy area.
 
-Initial contacts with the Green Fablab and the Octroi Nancy [https://www.octroi-nancy.fr/](https://www.octroi-nancy.fr/) third place will prepare the in-depth fieldwork, without being the core of the internship. 
+Initial contacts with the [Green Fablab (https://lf2l.fr/projects/green-fablab/)](https://lf2l.fr/projects/green-fablab/) and the Octroi Nancy [https://www.octroi-nancy.fr/](https://www.octroi-nancy.fr/) third place will prepare the in-depth fieldwork, without being the core of the internship. 
 These interviews are not intended to generalize, but to provide points of contrast that will highlight what is specific to the Nancy configuration.
 Support from the Laboratoire Interdisciplinaire Sciences Innovations Sociétés --LISIS-- [https://umr-lisis.fr/](https://umr-lisis.fr/) will be established to align the expertise on  waste sociology, particularly regarding citizen-led initiatives in France.
 Ethical considerations will be paramount, ensuring informed consent, confidentiality, and respectful engagement with all participants.
@@ -154,12 +157,12 @@ This programme should be read as a horizon rather than a fixed set of tasks; its
 ## Deliverable 
 
 1. A mapping report of the actors, networks and public action frameworks relevant to distributed plastic upcycling, from the Nancy area to the national level.
+
 2. A scientific document presenting the analytical framework, the methodology and the first results, as a basis for the PhD fieldwork.
 
-
+3. Participation on a scientific/practitioner conference is intended. Networks collaboration will be established during the internship. 
 
  
-
 # Application and Contact
 
 Send the CV and cover letter to:  

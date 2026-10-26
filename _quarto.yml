@@ -18,14 +18,14 @@ website:
     left: |
       Funded by 
       [![](https://raw.githubusercontent.com/fabbiocrux/Figures/main/Logos/ANR/ANR-logo-2021-sigle.jpg){fig-alt="ERPI" width=65px}](https://erpi.univ-lorraine.fr/)
-    center:
-      - text: "About"
+#    center:
+#      - text: "About"
 #        href: about.qmd
-      - text: "FAQ"
+#      - text: "FAQ"
 #        href: docs/faq/index.qmd
-      - text: "License"
+#      - text: "License"
 #        href: license.qmd
-      - text: "Trademark"
+#      - text: "Trademark"
 #        href: trademark.qmd
     right:
       # - icon: twitter
@@ -49,11 +49,11 @@ website:
       - text: "Research"
         file: research/index.qmd    
       - text: "People"
-        file: TD.qmd    
-      - text: "Publications"
-        file: TD.qmd
+        file: people/index.qmd
+      # - text: "Publications"
+      #   file: TD.qmd
       - text: "News"
-        file: TD.qmd
+        file: news/index.qmd
 
         # menu:
         #   - text: "Report un Erreur"
