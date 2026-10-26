@@ -3,6 +3,8 @@ project:
   output-dir: docs
   preview: 
     port: 4040
+  resources:
+    - "images/*"  
 
 
 website:

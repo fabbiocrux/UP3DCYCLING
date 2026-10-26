@@ -15,7 +15,6 @@ See on the Website of ERPI
 [![](ERPI.png){width="80%"}](https://erpi.univ-lorraine.fr/){target="_blank"}
 :::
 At the ERPI laboratory ([https://erpi.univ-lorraine.fr/](https://erpi.univ-lorraine.fr/)) of the Universiré de Lorraine, one major interest is the the development of methodologies, tools and  case studies in the area of innovation process management. 
-
 From engineering and design and territorial perspectives, the laboratory has been developing research on the intersection of additive manufacturing, circular economy and urban manufacturing. 
 
 
@@ -62,8 +61,6 @@ Urban manufacturing systems can provide a conducive environment for distributed 
 For instance, using desktop-scale fused filament fabrication (FFF) [@cruzsanchez2014] and fused granular fabrication (FGF) [@alexandre2020], we have demonstrated their potential as technical enablers for the mechanical recycling of mono-thermoplastic waste, such as polylactic acid (PLA), from *material* [@cruz2015; @cruzsanchez2017], *process* [@cruzsanchez2014; @alexandre2020], and *socio-technical* perspectives [@santander2020; @caceres-mendoza2023]. 
 Recently, the work on multi-material [@suescungonzalez2024; @gonzalez2025] 
 have openend new explorative paths that aims to see the *upcycling* [@riondet2022] potential of this approach.
-
-
 
 
 :::{.column-page-right}

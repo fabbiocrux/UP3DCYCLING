@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>OSTLR – UP3DCYCLING</title>
+<title>Exploring the applicability of the Open Source Technology Readiness Levels (OSTRL) framework to circular economy practices in LAUDS Factories – UP3DCYCLING</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,7 +26,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -102,15 +121,15 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../TD.html"> 
+    <a class="nav-link" href="../TD.qmd"> 
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../TD.html"> 
+    <a class="nav-link" href="../TD.qmd"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../TD.html"> 
+    <a class="nav-link" href="../TD.qmd"> 
 <span class="menu-text">News</span></a>
   </li>  
 </ul>
@@ -125,16 +144,27 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#opening-frame" id="toc-opening-frame" class="nav-link active" data-scroll-target="#opening-frame">Opening Frame</a></li>
+  <li><a href="#key-concepts-framework" id="toc-key-concepts-framework" class="nav-link" data-scroll-target="#key-concepts-framework">Key concepts &amp; Framework</a></li>
+  <li><a href="#methods-tools" id="toc-methods-tools" class="nav-link" data-scroll-target="#methods-tools">Methods &amp; Tools</a></li>
+  <li><a href="#luads-in-practice" id="toc-luads-in-practice" class="nav-link" data-scroll-target="#luads-in-practice">LUADS in Practice</a></li>
+  <li><a href="#key-lessaons-recommendations" id="toc-key-lessaons-recommendations" class="nav-link" data-scroll-target="#key-lessaons-recommendations">Key Lessaons &amp; Recommendations</a></li>
+  <li><a href="#further-ressources" id="toc-further-ressources" class="nav-link" data-scroll-target="#further-ressources">Further Ressources</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">OSTLR</h1>
-<p class="subtitle lead">LAUDS Factories</p>
+<h1 class="title">Exploring the applicability of the Open Source Technology Readiness Levels (OSTRL) framework to circular economy practices in LAUDS Factories</h1>
 </div>
 
 
@@ -151,10 +181,118 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="opening-frame" class="level1">
+<h1>Opening Frame</h1>
+<p>In recent years the advancement of digital communities make possible the development of an open design approach, becoming source for product innovation instead of conventional and proprietary product development <span class="citation" data-cites="shi2025 bakirlioglu2019">(<a href="#ref-shi2025" role="doc-biblioref">Shi and Jiang 2025</a>; <a href="#ref-bakirlioglu2019" role="doc-biblioref">Bakırlıoğlu and Kohtala 2019</a>)</span>. Aiming at a <em>‘design global / manufacturing local’</em> <span class="citation" data-cites="kostakis2018">(<a href="#ref-kostakis2018" role="doc-biblioref">Kostakis et al. 2018</a>)</span> seems a proto-industrialization <span class="citation" data-cites="sabel1985">(<a href="#ref-sabel1985" role="doc-biblioref">Sabel and Zeitlin 1985</a>)</span> transition that is taking place in urban settlements that could a major impact in the next short future. <!-- FOSH and P2P --> The Open Source Appropriate Technology (OSAT)<span class="citation" data-cites="pearce2010">(<a href="#ref-pearce2010" role="doc-biblioref">Pearce et al. 2010</a>)</span> and peer-to-peer (P2P)<span class="citation" data-cites="kostakis2013">(<a href="#ref-kostakis2013" role="doc-biblioref">Kostakis 2013</a>)</span> approaches have been seen potential drivers to propose an alternative globalisation manufacturing paradigm <span class="citation" data-cites="heikkinen2020a">(<a href="#ref-heikkinen2020a" role="doc-biblioref">Heikkinen 2020</a>)</span>. Indeed, open-design can be defined as ’<em>the state of a design project where both the process and the sources of its outputs are accessible and (re)usable, by anyone and for any purpose’</em><span class="citation" data-cites="boisseau2018">(<a href="#ref-boisseau2018" role="doc-biblioref">Boisseau et al. 2018</a>)</span>. In that sense, open design make it possible the development of small-scale, economically affordable, decentralised, energy-efficient, environmentally sound technologies that could easily utilized by local communities to meet their needs <span class="citation" data-cites="pearce2012b pacheco2025">(<a href="#ref-pearce2012b" role="doc-biblioref"><strong>pearce2012b?</strong></a>; <a href="#ref-pacheco2025" role="doc-biblioref">Pacheco et al. 2025</a>)</span>. This approach have been valuable for software development because free and open source software (FOSS) providing: i) diversification and open innovation <span class="citation" data-cites="colombo2014">(<a href="#ref-colombo2014" role="doc-biblioref"><strong>colombo2014?</strong></a>)</span>, ii) cumulative innovation <span class="citation" data-cites="boudreau2016">(<a href="#ref-boudreau2016" role="doc-biblioref"><strong>boudreau2016?</strong></a>)</span>, iii) development efficiency <span class="citation" data-cites="hienerth2014">(<a href="#ref-hienerth2014" role="doc-biblioref">Hienerth et al. 2014</a>)</span>, iv) organizational innovation <span class="citation" data-cites="alexy2013">(<a href="#ref-alexy2013" role="doc-biblioref">Alexy et al. 2013</a>)</span>, v) higher technical quality of code <span class="citation" data-cites="soderberg2015">(<a href="#ref-soderberg2015" role="doc-biblioref"><strong>soderberg2015?</strong></a>)</span>, vi) encourages creativity <span class="citation" data-cites="martinez2015">(<a href="#ref-martinez2015" role="doc-biblioref"><strong>martinez2015?</strong></a>)</span> and vii) perhaps most importantly, it avoids redundant work <span class="citation" data-cites="ardal2016">(<a href="#ref-ardal2016" role="doc-biblioref">Årdal and Røttingen 2016</a>)</span>. Likewise, scientific equipement to reduce the cost with equal of quality <span class="citation" data-cites="pearce2014k pearce2016">(<a href="#ref-pearce2014k" role="doc-biblioref"><strong>pearce2014k?</strong></a>; <a href="#ref-pearce2016" role="doc-biblioref">Pearce 2016</a>)</span>, and having implication in national level <span class="citation" data-cites="pearce2022">(<a href="#ref-pearce2022" role="doc-biblioref">Pearce 2022</a>)</span>. By relying on local resources, materials, and competencies, these approaches often challenge conventional product development models, including product functions and consumption patterns. An open source technodiversity could be a strong breakthrough contribution to sustainability and CE than traditional manufacturing paradigms to foster the creation of urban closed-loop supply chains inside urban settlements.</p>
+<p>According the Open Source Hardware Association, the development of open hardware defines :</p>
+<blockquote class="blockquote">
+<p><em>Hardware whose design is made publicly available so that anyone can study, modify, distribute, make, and sell the design or hardware based on that design. The hardware’s source, the design from which it is made, is available in the preferred format for making modifications to it. Ideally, open source hardware uses readily-available components and materials, standard processes, open infrastructure, unrestricted content, and open-source design tools to maximize the ability of individuals to make and use hardware. Open source hardware gives people the freedom to control their technology while sharing knowledge and encouraging commerce through the open exchange of designs</em></p>
+</blockquote>
+<p>However, one major question remains. As OS hardware matures from a largely hobbyist-driven activity to a professional form of technological development:</p>
+<ol type="1">
+<li>How can be mapped the maturity level of the artifacts that are issue from an open desing approach?.</li>
+<li>What are the observable traces that make explain the evolution of the design towards a complete <em>openess</em> ?, and</li>
+<li>In what extent open-source (OS) technologies could be synergic support of sustainable and circular economy (CE) practices, especially in urban manufacturing contexts.</li>
+</ol>
+<p>While OS hardware has been shown to offer over 90% cost savings for research equipment and fosters increased innovation within national economies [heikkinen2020], the absence of robust methodologies to assess the real-world implementation of OS technologies in CE contexts remains challenging, especially considering readiness, transferability, and maturity. Although several evaluation frameworks exist, e.g., material circularity index, most focus on environmental or system-level perspectives, often limiting practitioners (makers, tier-places) and researchers working on real-world OS technologies.</p>
+<p>The main purpose of this chapter is to ..</p>
+</section>
+<section id="key-concepts-framework" class="level1">
+<h1>Key concepts &amp; Framework</h1>
+<p>Urban manufacturing <span class="citation" data-cites="herrmann2020 juraschek2022 herrmann2019">(<a href="#ref-herrmann2020" role="doc-biblioref">Herrmann et al. 2020</a>; <a href="#ref-juraschek2022" role="doc-biblioref">Juraschek 2022</a>; <a href="#ref-herrmann2019" role="doc-biblioref">Herrmann et al. 2019</a>)</span> is increasingly seen as a pathway to re-localize production through cleaner and more sustainable processes. Customised products to be produced in regions close to the consumer that create a virtuous cycle based on design-produce-use-repair-recycle loops may alternative paths resource scarcity, circularity <span class="citation" data-cites="sajadieh2022">(<a href="#ref-sajadieh2022" role="doc-biblioref">Sajadieh et al. 2022</a>)</span>. This decentralized approach contrast with the current mass manufacturing paradigm are often globalized value chains products. The mass production system, in the lens of a deep transition framework, is the fruit of a complex co-evolution of single unit productions and interconnected systems <span class="citation" data-cites="kanger2022">(<a href="#ref-kanger2022" role="doc-biblioref">Kanger et al. 2022</a>)</span>. However, several forms of environmental degradation have been intensified without fully assuring the social foundation’s minimum standards (e.g.&nbsp;healthcare, energy, water etc) <span class="citation" data-cites="raworth2017">(<a href="#ref-raworth2017" role="doc-biblioref">Raworth 2017</a>)</span>.</p>
+<p>To support their continuous adoption, the establishment the OS Technology Readiness Levels (OSTRL) framework is aims to establish a a technological blueprint in the development. OSTRL was originally developed to translate readiness into OS contexts, facilitating the assessment and development of openness in OS technologies. This project aims to refine the OSTRL framework and extend its use by testing its applicability within CE contexts beyond DRAM ecosystems. Following a practice-oriented approach, the proposal involves potential target users in evaluating real-world OS projects using OSTRLs and collecting structured feedback on their clarity, usability, and limitations. The OSTRLs are refined accordingly, and complementary uses with CE-focused assessment frameworks are evaluated for real-world adoption.</p>
+</section>
+<section id="methods-tools" class="level1">
+<h1>Methods &amp; Tools</h1>
+<ul>
+<li>Explanation of OSTRL</li>
+<li>Explanation of the Workshops (LAUDS consortium + Students)</li>
+</ul>
+</section>
+<section id="luads-in-practice" class="level1">
+<h1>LUADS in Practice</h1>
+<ul>
+<li>The starting activity is a structured workshop organized within the Horizon 2020 LAUDS project (https://lauds.eu/) meeting hosted at ERPI (Fall 2026). Researchers, project partners, and practitioners will apply OSTRLs to selected CE-related case studies from LAUDS through guided activities. The feedback collected during the workshop, together with further feedback at ERPI during the visiting period, will be used to refine the OSTRLs, improving their clarity and applicability. The expected outcomes include: an updated, tested version of the OSTRLs; refined use guidelines and documentation; and additional case studies as examples of OSTRL use. These elements will be included in a peer-reviewed publication and OS repositories for open dissemination and future follow-up.</li>
+</ul>
+</section>
+<section id="key-lessaons-recommendations" class="level1">
+<h1>Key Lessaons &amp; Recommendations</h1>
+<ul>
+<li></li>
+</ul>
+</section>
+<section id="further-ressources" class="level1">
+<h1>Further Ressources</h1>
+</section>
+<section id="references" class="level1">
 
 
 
-</main> <!-- /main -->
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-alexy2013" class="csl-entry" role="listitem">
+Alexy, Oliver, Joachim Henkel, and Martin W. Wallin. 2013. <span>“From Closed to Open: <span>Job</span> Role Changes, Individual Predispositions, and the Adoption of Commercial Open Source Software Development.”</span> <em>Research Policy</em> 42 (8): 1325–40. <a href="https://doi.org/10.1016/j.respol.2013.04.007">https://doi.org/10.1016/j.respol.2013.04.007</a>.
+</div>
+<div id="ref-ardal2016" class="csl-entry" role="listitem">
+Årdal, Christine, and John Arne Røttingen. 2016. <span>“Financing and Collaboration on Research and Development for Nodding Syndrome.”</span> <em>Health Research Policy and Systems</em> 14 (1): 1–7. <a href="https://doi.org/10.1186/s12961-016-0091-6">https://doi.org/10.1186/s12961-016-0091-6</a>.
+</div>
+<div id="ref-bakirlioglu2019" class="csl-entry" role="listitem">
+Bakırlıoğlu, Yekta, and Cindy Kohtala. 2019. <span>“Framing <span>Open Design</span> Through <span>Theoretical Concepts</span> and <span>Practical Applications</span>: <span>A Systematic Literature Review</span>.”</span> <em>Human–Computer Interaction</em> 34 (5–6): 389–432. <a href="https://doi.org/10.1080/07370024.2019.1574225">https://doi.org/10.1080/07370024.2019.1574225</a>.
+</div>
+<div id="ref-boisseau2018" class="csl-entry" role="listitem">
+Boisseau, Étienne, Jean François Omhover, and Carole Bouchard. 2018. <span>“Open-Design: <span>A</span> State of the Art Review.”</span> <em>Design Science</em> 4: 1–44. <a href="https://doi.org/10.1017/dsj.2017.25">https://doi.org/10.1017/dsj.2017.25</a>.
+</div>
+<div id="ref-heikkinen2020a" class="csl-entry" role="listitem">
+Heikkinen, Tiina. 2020. <span>“A Study of Degrowth Paths Based on the von <span>Neumann</span> Equilibrium Model.”</span> <em>Journal of Cleaner Production</em> 251 (April): 119562. <a href="https://doi.org/10.1016/j.jclepro.2019.119562">https://doi.org/10.1016/j.jclepro.2019.119562</a>.
+</div>
+<div id="ref-herrmann2020" class="csl-entry" role="listitem">
+Herrmann, Christoph, Max Juraschek, Peter Burggräf, and Sami Kara. 2020. <span>“Urban Production: <span>State</span> of the Art and Future Trends for Urban Factories.”</span> <em>CIRP Annals</em> 69 (2): 764–87. <a href="https://doi.org/10.1016/j.cirp.2020.05.003">https://doi.org/10.1016/j.cirp.2020.05.003</a>.
+</div>
+<div id="ref-herrmann2019" class="csl-entry" role="listitem">
+Herrmann, Christoph, Max Juraschek, Sami Kara, and Sebastian Thiede. 2019. <span>“Urban <span>Factories</span>: <span>Identifying Products</span> for <span>Production</span> in <span>Cities</span>.”</span> In <em>Technologies and <span>Eco</span>-Innovation Towards <span>Sustainability I</span>: <span>Eco Design</span> of <span>Products</span> and <span>Services</span></em>, edited by Allen H. Hu, Mitsutaka Matsumoto, Tsai Chi Kuo, and Shana Smith. Springer. <a href="https://doi.org/10.1007/978-981-13-1181-9_15">https://doi.org/10.1007/978-981-13-1181-9_15</a>.
+</div>
+<div id="ref-hienerth2014" class="csl-entry" role="listitem">
+Hienerth, Christoph, Eric von Hippel, and Morten Berg Jensen. 2014. <span>“User Community Vs. Producer Innovation Development Efficiency: <span>A</span> First Empirical Study.”</span> <em>Research Policy</em> 43 (1): 190–201. <a href="https://doi.org/10.1016/j.respol.2013.07.010">https://doi.org/10.1016/j.respol.2013.07.010</a>.
+</div>
+<div id="ref-juraschek2022" class="csl-entry" role="listitem">
+Juraschek, Max. 2022. <em>Analysis and <span>Development</span> of <span>Sustainable Urban Production Systems</span></em>. Sustainable <span>Production</span>, <span>Life Cycle Engineering</span> and <span>Management</span>. Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-76602-3">https://doi.org/10.1007/978-3-030-76602-3</a>.
+</div>
+<div id="ref-kanger2022" class="csl-entry" role="listitem">
+Kanger, Laur, Frédérique Bone, Daniele Rotolo, W. Edward Steinmueller, and Johan Schot. 2022. <span>“Deep Transitions: <span>A</span> Mixed Methods Study of the Historical Evolution of Mass Production.”</span> <em>Technological Forecasting and Social Change</em> 177 (April): 121491. <a href="https://doi.org/10.1016/j.techfore.2022.121491">https://doi.org/10.1016/j.techfore.2022.121491</a>.
+</div>
+<div id="ref-kostakis2013" class="csl-entry" role="listitem">
+Kostakis, Vasilis. 2013. <em>At the <span>Turning Point</span> of the <span>Current Techno-Economic Para</span>- Digm : <span>Commons-Based Peer Production</span> , <span>Desktop Manufac</span>- Turing and the <span>Role</span> of <span>Civil Society</span> in the <span>Perezian Frame</span>- Work</em>. 11 (1): 173–90.
+</div>
+<div id="ref-kostakis2018" class="csl-entry" role="listitem">
+Kostakis, Vasilis, Kostas Latoufis, Minas Liarokapis, and Michel Bauwens. 2018. <span>“The Convergence of Digital Commons with Local Manufacturing from a Degrowth Perspective: <span>Two</span> Illustrative Cases.”</span> <em>Journal of Cleaner Production</em> 197: 1684–93. <a href="https://doi.org/10.1016/j.jclepro.2016.09.077">https://doi.org/10.1016/j.jclepro.2016.09.077</a>.
+</div>
+<div id="ref-pacheco2025" class="csl-entry" role="listitem">
+Pacheco, Jose Nicolas, Andreu Turro, and David Urbano. 2025. <span>“Open Social Innovation: <span>A</span> Systematic Literature Review and Future Research Agenda.”</span> <em>Technological Forecasting and Social Change</em> 216 (July): 124160. <a href="https://doi.org/10.1016/j.techfore.2025.124160">https://doi.org/10.1016/j.techfore.2025.124160</a>.
+</div>
+<div id="ref-pearce2016" class="csl-entry" role="listitem">
+Pearce, J. M. 2016. <span>“Return on Investment for Open Source Scientific Hardware Development.”</span> <em>Science and Public Policy</em> 43 (2): 192–95. <a href="https://doi.org/10.1093/scipol/scv034">https://doi.org/10.1093/scipol/scv034</a>.
+</div>
+<div id="ref-pearce2022" class="csl-entry" role="listitem">
+Pearce, Joshua M. 2022. <span>“Strategic <span>Investment</span> in <span>Open Hardware</span> for <span>National Security</span>.”</span> <em>Technologies</em> 10 (2): 53. <a href="https://doi.org/10.3390/technologies10020053">https://doi.org/10.3390/technologies10020053</a>.
+</div>
+<div id="ref-pearce2010" class="csl-entry" role="listitem">
+Pearce, Joshua .M., Christine Morris Blair, Kristen J. Laciak, Rob Andrews, Amir Nosrat, and Ivana Zelenika-Zovko. 2010. <span>“3-<span>D Printing</span> of <span>Open Source Appropriate Technologies</span> for <span>Self-Directed Sustainable Development</span>.”</span> <em>Journal of Sustainable Development</em> 3 (4): 17–29. <a href="https://doi.org/10.5539/jsd.v3n4p17">https://doi.org/10.5539/jsd.v3n4p17</a>.
+</div>
+<div id="ref-raworth2017" class="csl-entry" role="listitem">
+Raworth, Kate. 2017. <span>“A <span>Doughnut</span> for the <span>Anthropocene</span>: Humanity’s Compass in the 21st Century.”</span> <em>The Lancet Planetary Health</em> 1 (2): e48–49. <a href="https://doi.org/10.1016/S2542-5196(17)30028-1">https://doi.org/10.1016/S2542-5196(17)30028-1</a>.
+</div>
+<div id="ref-sabel1985" class="csl-entry" role="listitem">
+Sabel, Charles, and Jonathan Zeitlin. 1985. <span>“Historical <span>Alternatives</span> to <span>Mass Production</span>: <span>Politics</span>, <span>Markets</span> and <span>Technology</span> in <span>Nineteenth-Century Industrialization</span>.”</span> <em>Past &amp; Present</em>, no. 108: 133–76. <a href="http://www.jstor.org/stable/650576">http://www.jstor.org/stable/650576</a>.
+</div>
+<div id="ref-sajadieh2022" class="csl-entry" role="listitem">
+Sajadieh, Seyed Mohammad Mehdi, Yoo Ho Son, and Sang Do Noh. 2022. <span>“A <span>Conceptual Definition</span> and <span>Future Directions</span> of <span>Urban Smart Factory</span> for <span>Sustainable Manufacturing</span>.”</span> <em>Sustainability</em> 14 (3): 1221. <a href="https://doi.org/10.3390/su14031221">https://doi.org/10.3390/su14031221</a>.
+</div>
+<div id="ref-shi2025" class="csl-entry" role="listitem">
+Shi, Jincheng, and Shan Jiang. 2025. <span>“Toward Open-Source Foundation Model Ecosystem: <span>Impact</span> Evaluation Framework and Promotion Mechanism.”</span> <em>Technological Forecasting and Social Change</em> 221 (December): 124328. <a href="https://doi.org/10.1016/j.techfore.2025.124328">https://doi.org/10.1016/j.techfore.2025.124328</a>.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
