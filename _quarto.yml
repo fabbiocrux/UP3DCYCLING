@@ -111,4 +111,7 @@ execute:
   echo: false
   freeze: auto
 
-bibliography: assets/library.bib
+bibliography: 
+  - assets/library.bib
+  - assets/catalina.bib
+  
