@@ -91,12 +91,12 @@ tribble(
 "Feb/March - August 2027 – 6 months",
 
 "More Information",
-"fabio.cruz[@]univ-lorraine.fr -- \\href{https://up3dcycling.fr/}{https://up3dcycling.fr/}"
+"fabio.cruz[at]univ-lorraine.fr -- \\href{https://up3dcycling.fr/}{https://up3dcycling.fr/}"
 )
 
 table %>%
   mutate_all(linebreak) %>%
-  kbl("latex", booktabs = T, escape = F, align = c('l','l', 'l', 'l'),
+  kbl( booktabs = T, escape = F, align = c('l','l', 'l', 'l'),
       linesep = " ") %>%
    kable_styling(full_width = TRUE,                 
                 font_size = 11)  |> 
