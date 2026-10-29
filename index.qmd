@@ -10,8 +10,8 @@ course-logo: /assets/img/logo-mdp.png
 #   html:
 #     template-partials:
 #       - assets/html/title-block.html
-title-block-banner: images/banner/banner-00.jpg
-title-block-banner-color: white
+#title-block-banner: images/banner/banner-00.jpg
+#title-block-banner-color: white
 format:
   html:
     toc: false
