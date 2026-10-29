@@ -38,7 +38,7 @@ format:
 
 ::: {.grid .align-items-center }
 
-::: {.g-col-4 }
+::: {.g-col-12 .g-col-md-8 }
 
 ## Our Aim
 
@@ -46,7 +46,7 @@ Our overall research aims is to study, implement, and evaluate the ***upcycling 
 
 :::
 
-::: {.g-col-8}
+::: {.g-col-12 .g-col-md-4 }
 
 
 ![Logo of UP3Dcycling](https://blocks.astratic.com/img/general-img-landscape.png){width="85%" fig-align="center"}
@@ -59,14 +59,14 @@ Our overall research aims is to study, implement, and evaluate the ***upcycling 
 
 ::: {.grid .align-items-center }
 
-::: {.g-col-8}
+::: {.g-col-12 .g-col-md-4}
 
 
 ![Logo of UP3Dcycling](https://blocks.astratic.com/img/general-img-landscape.png){width="85%"}
 
 :::
 
-::: {.g-col-4}
+::: {.g-col-12 .g-col-md-8 }
 
 # Mission
 

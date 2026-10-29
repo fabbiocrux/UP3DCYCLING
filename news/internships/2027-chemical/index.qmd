@@ -49,6 +49,7 @@ csl: ../../../assets/journal-of-cleaner-production.csl
 categories:
   - internships
 image: ../../../images/logos/ERPI.svg
+draft: true
 ---
 
 
