@@ -10,7 +10,8 @@ course-logo: /assets/img/logo-mdp.png
 #   html:
 #     template-partials:
 #       - assets/html/title-block.html
-
+title-block-banner: images/banner/banner-00.jpg
+title-block-banner-color: white
 format:
   html:
     toc: false
@@ -19,17 +20,7 @@ format:
 
 
 :::{.column-screen-inset}
-![Banner de la Sexitude](https://placehold.co/1500x200){width="100%"}
-:::
-
-
-
-::: {.grid .align-items-center }
-
-::: {.g-col-12 }
-
-![Banner de la Sexitude](https://placehold.co/1500x400){width="100%"}
-:::
+![](images/banner/banner-00.jpg){width="100%"}
 :::
 
 
@@ -59,14 +50,14 @@ Our overall research aims is to study, implement, and evaluate the ***upcycling 
 
 ::: {.grid .align-items-center }
 
-::: {.g-col-12 .g-col-md-4}
+::: {.g-col-12 .g-col-md-4 .order-last .order-md-first}
 
 
 ![Logo of UP3Dcycling](https://blocks.astratic.com/img/general-img-landscape.png){width="85%"}
 
 :::
 
-::: {.g-col-12 .g-col-md-8 }
+::: {.g-col-12 .g-col-md-8 .order-first .order-md-last}
 
 # Mission
 

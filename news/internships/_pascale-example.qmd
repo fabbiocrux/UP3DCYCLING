@@ -1,0 +1,24 @@
+🎓 OFFRE DE THÈSE | Régénération de flottes de systèmes critiques confrontées à l'obsolescence
+
+🔎 Comment prolonger la durée d'utilisation de systèmes industriels complexes tout en préservant les ressources et les possibilités de régénération futures ?
+Dans les secteurs de l'énergie, des transports, de la défense ou des infrastructures industrielles, de nombreux systèmes critiques sont exploités pendant plusieurs décennies. Pourtant, certains de leurs constituants peuvent devenir obsolètes bien avant la fin de leur durée d'utilisation.
+Face à ces situations, plusieurs stratégies peuvent être envisagées : réparation, reconditionnement, refabrication, mise à niveau, réutilisation ou récupération de constituants.
+Mais comment articuler ces stratégies à l'échelle d'une flotte, lorsque les décisions prises sur un équipement influencent les possibilités de pérennisation des autres ?
+C'est la problématique au cœur de la thèse que nous proposons au CRAN · Laboratoire de recherche fondamentale et appliquée, Université de Lorraine, dans le cadre du projet ANR PHENIX.
+
+🎯 L'objectif est de développer des modèles et des méthodes permettant de représenter et d'évaluer les trajectoires de régénération de flottes de systèmes critiques, en tenant compte des interdépendances entre équipements et des conséquences des décisions présentes sur leurs possibilités futures de pérennisation.
+
+🌱 Ce sujet, à l'interface du génie industriel, de la modélisation des systèmes à événements discrets et de l'aide à la décision, s'inscrit dans les enjeux de développement durable, d'économie circulaire et de préservation des ressources.
+
+👤 Profil recherché
+Nous recherchons un(e) candidat(e) titulaire d'un diplôme d'ingénieur ou d'un Master 2 en génie industriel, automatique ou dans un domaine connexe.
+Des connaissances en modélisation et simulation des systèmes à événements discrets, un intérêt pour la programmation, un goût pour la recherche scientifique et une sensibilité aux problématiques de développement durable seront particulièrement appréciés.
+
+📍 Lieu : CRAN – Université de Lorraine, Nancy
+📅 Début envisagé : janvier 2027
+👥 Direction de thèse : Éric Levrat et Pascale Marangé
+Encadrement : Sébastien Remy
+
+🔁 N'hésitez pas à partager cette offre auprès des étudiants de Master 2, des élèves ingénieurs et des jeunes diplômés intéressés par la recherche et les enjeux de durabilité des systèmes industriels.
+
+#OffreDeThèse #Doctorat #PhD #CRAN #UniversitéDeLorraine #Modélisation #AideÀLaDécision #Obsolescence #ÉconomieCirculaire #DéveloppementDurable

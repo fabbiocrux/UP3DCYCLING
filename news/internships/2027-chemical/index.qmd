@@ -50,6 +50,7 @@ categories:
   - internships
 image: ../../../images/logos/ERPI.svg
 draft: true
+draft-mode: gone
 ---
 
 
