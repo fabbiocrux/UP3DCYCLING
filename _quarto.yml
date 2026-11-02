@@ -105,7 +105,8 @@ format:
 
 filters:
   - arrows
-  
+  - highlight-text
+    
 execute:
   cache: true
   echo: false

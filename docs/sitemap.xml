@@ -14,15 +14,11 @@
   </url>
   <url>
     <loc>/people/index.html</loc>
-    <lastmod>2026-10-29T13:32:05.069Z</lastmod>
+    <lastmod>2026-10-29T16:35:36.298Z</lastmod>
   </url>
   <url>
     <loc>/index.html</loc>
-    <lastmod>2026-10-29T16:23:43.952Z</lastmod>
-  </url>
-  <url>
-    <loc>/news/internships/2027-chemical/index.html</loc>
-    <lastmod>2026-10-29T16:22:05.374Z</lastmod>
+    <lastmod>2026-11-02T21:55:32.859Z</lastmod>
   </url>
   <url>
     <loc>/research/index.html</loc>
@@ -31,5 +27,9 @@
   <url>
     <loc>/index2.html</loc>
     <lastmod>2026-10-20T20:46:30.098Z</lastmod>
+  </url>
+  <url>
+    <loc>/test.html</loc>
+    <lastmod>2026-11-02T17:13:04.420Z</lastmod>
   </url>
 </urlset>

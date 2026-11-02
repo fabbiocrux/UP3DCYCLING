@@ -6,22 +6,98 @@ details: |
 sidebar: false
 page-layout: article
 course-logo: /assets/img/logo-mdp.png
-# format:
-#   html:
-#     template-partials:
-#       - assets/html/title-block.html
-#title-block-banner: images/banner/banner-00.jpg
-#title-block-banner-color: white
 format:
   html:
     toc: false
     number-sections: false
+    template-partials:
+      - assets/html/title-block.html
 ---
 
 
-:::{.column-screen-inset}
-![](images/banner/banner-00.jpg){width="100%"}
+
+<!-- HERO -->
+:::{.hero-section .column-screen}
+:::{.hero-content}
+
+[RESEARCH · MATERIALS · CIRCULARITY]{.eyebrow}
+
+# Turning plastic waste into tomorrow's   <span>materials.</span>
+
+Exploring distributed upcycling of mixed plastic waste through open-source additive manufacturing.
+
+:::{.hero-buttons}
+
+[Discover the project →](research/){.btn-primary}
+
+[Explore our research ↓](research/){.btn-secondary}
+
 :::
+:::
+:::
+
+
+
+
+
+
+<br><br>
+
+[OUR AIM]{.eyebrow}
+
+## From waste to new [possibilities]{style="color: green;"}
+
+Our overall research aims is to study, implement, and evaluate the ***upcycling potential*** of mixed plastic waste via in-situ reactive compatibilization using **open-source additive manufacturing**.
+
+
+
+
+::: {.grid .align-items-center .process-section}
+
+::: {.g-col-12 .g-col-md-3 .process-card}
+
+![](images/plastic-waste.jpg){alt="Mixed plastic waste"}
+[01]{.step-number}
+
+### Mixed plastic waste
+Give a new purpose to post-consumer plastics.
+
+:::
+
+::: {.g-col-12 .g-col-md-3 .process-card}
+
+![](images/plastic-waste.jpg){alt="Mixed plastic waste"}
+[02]{.step-number}
+
+### Reactive compatibilization
+
+Enhance the properties of mixed plastic blends.
+
+:::
+
+::: {.g-col-12 .g-col-md-3 .process-card}
+
+![](images/recycled-object.jpg){alt="Mixed plastic waste"}
+[03]{.step-number}
+
+### Open-source 3D printing
+Give a new purpose to post-consumer plastics.
+
+:::
+
+
+::: {.g-col-12 .g-col-md-3 .process-card}
+
+![](images/plastic-waste.jpg){alt="Mixed plastic waste"}
+[04]{.step-number}
+
+### Socio-technical
+Give a new purpose to post-consumer plastics.
+
+:::
+
+:::
+
 
 
 
@@ -31,7 +107,9 @@ format:
 
 ::: {.g-col-12 .g-col-md-8 }
 
-## Our Aim
+[OUR APPRAOCH]{.eyebrow}
+
+## Multi-level perspective of the [Distributed Upcycling]{fg="orange"}
 
 Our overall research aims is to study, implement, and evaluate the ***upcycling potential*** of mixed plastic waste via in-situ reactive compatibilization using **open-source additive manufacturing**.
 
@@ -70,9 +148,7 @@ Our overall research aims is to study, implement, and evaluate the ***upcycling 
 
 
 
-# News of the Project
-
-
+# Latest project [News]{fg="green"}
 
 :::{.column-screen-inset}
 ![News](https://placehold.co/1500x200){width="100%"}

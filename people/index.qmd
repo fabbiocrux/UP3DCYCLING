@@ -14,24 +14,24 @@ subtitle: ""
 ::: {.g-col-8 }
 
 :::{.grid .align-items-center }
-::: {.g-col-2 }
-![](../images/people/fabio-cruz.jpg){width="100%" fig-align="center"}
+::: {.g-col-2 .people}
+![](../images/people/fabio-cruz.jpg){width="100%" fig-align="center" }
 :::
 ::: {.g-col-10}
 UP3DCYCLING is coordinated by MCF Fabio A. Cruz Sanchez  
 (\orcidlink{0000-0001-8529-5327} [https://orcid.org/0000-0001-8529-5327](https://orcid.org/0000-0001-8529-5327)). 
 He is an Assistant Professor (MCF) in Mechanical Engineering at Université de Lorraine / ERPI (EA 3767). 
 :::
-::: {.g-col-2 }
-![](../images/people/fabio-cruz.jpg){width="100%" fig-align="center"}
+::: {.g-col-2 .people}
+![](../images/people/fabio-cruz.jpg){width="100%" fig-align="center" .people}
 :::
 
 ::: {.g-col-10}
 Mauricio Camargo
 :::
 
-::: {.g-col-2 }
-![](../images/people/Mauricio-Camargo.png){width="100%" fig-align="center"}
+::: {.g-col-2 .people}
+![](../images/people/Mauricio-Camargo.png){width="100%" fig-align="center" .people}
 :::
 
 ::: {.g-col-10}
@@ -47,7 +47,7 @@ Hakim Boudaoud
 
 
 ::: {.g-col-4}
-![](../images/logos/ERPI.svg){width="85%" fig-align="center"}
+![](../images/logos/ERPI.svg){width="85%" fig-align="center" .people}
 :::
 
 :::
@@ -58,9 +58,9 @@ Hakim Boudaoud
 ::: {.grid .align-items-center }
 
 ::: {.g-col-8 }
-:::{.grid .align-items-center }
+:::{.grid .align-items-center .people}
 ::: {.g-col-2 }
-![](../images/people/Cecile-Nouvel.jpg){width="100%" fig-align="center"}
+![](../images/people/Cecile-Nouvel.jpg){width="100%" fig-align="center" }
 :::
 
 ::: {.g-col-10}
@@ -68,8 +68,8 @@ Cecile Nouvel
 :::
 
 
-::: {.g-col-2 }
-![](../images/people/Sandrine-Hoppe.jpeg){width="100%" fig-align="center"}
+::: {.g-col-2 .people}
+![](../images/people/Sandrine-Hoppe.jpeg){width="100%" fig-align="center" .people}
 :::
 
 ::: {.g-col-10}
@@ -92,9 +92,9 @@ Sandrine Hoppe
 ::: {.grid .align-items-center }
 
 ::: {.g-col-8 }
-:::{.grid .align-items-center }
+:::{.grid .align-items-center .people}
 ::: {.g-col-2 }
-![](../images/people/Joshua-Pearce.png){width="250px" fig-align="center"}
+![](../images/people/Joshua-Pearce.png){width="250px" fig-align="center" .people}
 :::
 
 ::: {.g-col-10}
@@ -104,8 +104,8 @@ the John M. Thompson Chair in Information Technology and Innovation at the Thomp
 :::
 
 
-::: {.g-col-2 }
-![](../images/people/Alessia-Romani.jpg){width="250px" fig-align="center"}
+::: {.g-col-2  .people}
+![](../images/people/Alessia-Romani.jpg){width="250px" fig-align="center" }
 :::
 
 ::: {.g-col-10}
