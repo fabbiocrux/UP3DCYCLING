@@ -2,13 +2,15 @@
   {
     "listing": "/news/index.html",
     "items": [
-      "/news/2026/11/03/index.html"
+      "/news/2026/11/03/index.html",
+      "/news/2026/11/10/index.html"
     ]
   },
   {
     "listing": "/index.html",
     "items": [
-      "/news/2026/11/03/index.html"
+      "/news/2026/11/03/index.html",
+      "/news/2026/11/10/index.html"
     ]
   }
 ]

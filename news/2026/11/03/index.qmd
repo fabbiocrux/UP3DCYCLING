@@ -1,36 +1,53 @@
 ---
 lang: en
 title: "Ethnographic Analysis of Urban Manufacturing Ecosystems"
-subtitle: "Internship proposition at the ERPI Laboratory"
+subtitle: "Internship proposition at the ERPI Laboratory 2026 - 2027"
 date: last-modified
 date-format: "[Updated on] MMMM D, YYYY"
-metadata-files:
-  - ../../../metadata-pdf.yml
+# metadata-files:
+#   - ../../../metadata-pdf.yml
 
-# format:
-#  html: default
-  # pdf:
-  #   documentclass: article
-  #   geometry:
-  #    - top=25mm
-  #    - left=20mm
-  #    - bottom=25mm
-  #    - right=20mm     
-  #   number-sections: true
-  #   fontsize: 11pt
-  #   colorlinks: true
-  #   citecolor: blue
-  #   linestretch: 1.1    
-  #   linkcolor: blue
-  #   urlcolor: blue
-  #   link-citations: true
-  #   template-partials: 
-  #    - ../../../../assets/before-body.tex
-    # include-in-header:    
-    #   - file:     
+format:
+  html: default
+  pdf:
+    documentclass: article
+    geometry:
+     - top=25mm
+     - left=20mm
+     - bottom=25mm
+     - right=20mm     
+    number-sections: true
+    fontsize: 11pt
+    colorlinks: true
+    citecolor: blue
+    linestretch: 1.1    
+    linkcolor: blue
+    urlcolor: blue
+    link-citations: true
+    template-partials: 
+     - ../../../../assets/before-body.tex
+    include-in-header:    
+      - text: |
+          \usepackage{tikz}
+          \usepackage{tabularx}
+          \usepackage{datetime2}
+          \usepackage{fancyhdr}
+          \pagestyle{fancy}
+          \fancyhf{}
+          \fancyhead[C]{Stage proposition}
+          \fancyhead[R]{\includegraphics[width=2cm]{../../../../images/logos/ERPI.png}}
+          \fancyhead[L]{\includegraphics[width=2cm]{../../../../images/logos/UL.png}}
+          \fancyfoot[L]{ERPI - 2026/2027}
+          \fancyfoot[C]{Version: \today}
+          \fancyfoot[R]{\thepage}
+          \usepackage{pgfgantt}
+          \renewcommand{\footrulewidth}{0.3pt}      
+
 categories:
-  - internships
+  - Internships
 image: ERPI.png
+execute:
+  cache: true
 ---
 
 
@@ -50,9 +67,7 @@ library(readxl)
 #| tbl-pos: H
 
 
-table <- 
-tribble(
-~`Project`, ~`UP3DCYCLING`, 
+table <- tribble(~`Project`, ~`UP3DCYCLING`, 
 
 "Profile",
 "Student Master M2 on Social Sciences (Sociology) with focus on Innovation.",

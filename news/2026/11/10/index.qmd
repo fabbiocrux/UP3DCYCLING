@@ -7,8 +7,8 @@ subtitle: "Internship proposition at the ERPI Laboratory"
 date: last-modified
 date-format: "[Updated on] MMMM D, YYYY"
 
-format:
-  html: default
+# format:
+#   html: default
 #   pdf:
 #     documentclass: article
 #     block-headings: false
