@@ -49,9 +49,7 @@ format:
 categories:
   - internships
 image: ERPI.png
-
 draft: true
-draft-mode: gone
 ---
 
 
