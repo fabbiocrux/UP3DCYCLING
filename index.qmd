@@ -141,7 +141,7 @@ Give a new purpose to post-consumer plastics.
 
 ::: {.g-col-12 .g-col-md-3 .process-card}
 
-![](images/plastic-waste.jpg){alt="Mixed plastic waste"}
+![](images/Octroi.jpg){alt="Mixed plastic waste"}
 [04]{.step-number}
 
 ### Socio-technical
