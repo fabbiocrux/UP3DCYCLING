@@ -9,18 +9,24 @@ subtitle: ""
 
 ## Équipe de Recherche sur le Processus Innovatifs (ERPI) - Université de Lorraine
 
-::: {.grid .align-items-center }
+::: {.column-margin}
+[![](../images/logos/UL.png){width="80%"}](https://erpi.univ-lorraine.fr/)
 
-::: {.g-col-8 }
+[![](../images/logos/ERPI.svg){width="80%"}](https://erpi.univ-lorraine.fr/){target="_blank"}
+:::
+
 
 :::{.grid .align-items-center }
+
 ::: {.g-col-2 .people}
 ![](../images/people/fabio-cruz.jpg){width="100%" fig-align="center" }
 :::
+
 ::: {.g-col-10}
 UP3DCYCLING is coordinated by Associate Professor (Maître de conférences) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-8529-5327) Fabio A. Cruz Sanchez. 
 He works at the École Nationale Supérieure en Génie des Systèmes et de l’Innovation (ENSGSI) and a researcher at the ERPI Laboratory (Équipe de Recherche sur les Processus Innovatifs), Université de Lorraine, Nancy, France. His research focuses on distributed recycling through additive manufacturing (DRAM), open-source manufacturing technologies and the development of sustainable production systems based on circular economy principles. His main research interests include plastic and polymer recycling, 3D printing and additive manufacturing, open-source hardware, distributed manufacturing networks, and the technical, logistical and environmental assessment of recycling processes. He also investigates the role of FabLabs and collaborative innovation spaces in enabling local recycling initiatives, closing material loops and promoting socio-technical transitions towards more sustainable and decentralized manufacturing systems.
 :::
+
 ::: {.g-col-2 .people}
 ![](../images/people/Mauricio-Camargo.png){width="100%" fig-align="center" .people}
 :::
@@ -49,22 +55,19 @@ His main research interests include Living Labs and Fab Living Labs, open innova
 
 
 :::
-:::
 
-
-::: {.g-col-4}
-![](../images/logos/ERPI.svg){width="85%" fig-align="center" .people}
-:::
-
-:::
 
 ---
 
 ## Laboratoire Réactions et Génie des Procédés -- Université de Lorraine
 
-::: {.grid .align-items-center }
 
-::: {.g-col-8 }
+::: {.column-margin}
+[![](../images/logos/LGRP.png){width="80%"}](https://lrgp-nancy.cnrs.fr/){target="_blank"}
+:::
+
+
+
 
 :::{.grid .align-items-center .people}
 
@@ -87,21 +90,21 @@ Sandrine Hoppe is a CNRS researcher at the Laboratoire Réactions et Génie des 
 
 
 :::
-:::
 
-::: {.g-col-4 }
-![](../images/logos/LGRP.png){width="85%" fig-align="center"}
-:::
-:::
+
+
 
 
 ---
 
 ## Free Appropriate Sustainable Technology (FAST) -- Western University
 
-::: {.grid .align-items-center }
+::: {.column-margin}
+[![](../images/logos/FAST.png){width="250px" fig-align="center"}](https://www.appropedia.org/FAST){target="_blank"}
+:::
 
-::: {.g-col-8 }
+
+
 :::{.grid .align-items-center .people}
 ::: {.g-col-2 }
 ![](../images/people/Joshua-Pearce.png){width="250px" fig-align="center" .people}
@@ -123,12 +126,11 @@ Alessia Romani is  a Western Postdoctoral Fellowship Awardee and Postdoctoral As
 
 
 :::
-:::
 
-::: {.g-col-4 }
-![](../images/logos/FAST.png){width="250px" fig-align="center"}
-:::
-:::
+
+
+
+
 
 
 
@@ -137,10 +139,14 @@ Alessia Romani is  a Western Postdoctoral Fellowship Awardee and Postdoctoral As
 
 ## Laboratoire Interdisciplinaire Sciences Innovations Sociétés
 
-::: {.grid .align-items-center }
+::: {.column-margin}
+[![](../images/logos/LISIS.jpg){width="250px" fig-align="center"}](https://umr-lisis.fr/membre/baptiste-monsaingeon/){target="_blank"}
+:::
 
-::: {.g-col-8 }
+
+
 :::{.grid .align-items-center .people}
+
 ::: {.g-col-2 }
 ![](../images/people/Baptiste-MONSAINGEON.jpeg){width="250px" fig-align="center" .people}
 :::
@@ -151,12 +157,35 @@ Baptiste Monsaingeon is a sociologist specializing in science, technology, and t
 
 
 :::
+
+
+
+---
+
+## Universidad Santiago de Chile
+
+::: {.column-margin}
+[![](../images/logos/CL-USACH.png){width="250px" fig-align="center"}](){target="_blank"}
 :::
 
-::: {.g-col-4 }
-![](../images/logos/LISIS.jpg){width="250px" fig-align="center"}
+
+
+:::{.grid .align-items-center .people}
+
+::: {.g-col-2 }
+![](../images/people/Andrea-Perez.png){width="250px" fig-align="center" .people}
 :::
+
+::: {.g-col-10}
+Prof. Andrea Espinoza Pérez is an associate professor in the Industrial Engineering Department at Universidad de Santiago de Chile. 
+She belongs to the Program for the Development of Sustainable Production Systems (PDSPS) and the Master in Engineering Sciences, mention in Industrial Engineering (MCII) at the University of Santiago de Chile.
+Her research interests lie in sustainability, supply chain design and management, innovation, metaheuristics, and single/multi-objective optimizations.
 :::
+
+
+:::
+
+
 
 
 
