@@ -17,17 +17,20 @@ meta:
 
 color:
   palette:
+    ivory: "#F7F5EB"
+    rojo: "#eb5d50"
+    azul: "#30519f"
     white: "#FFFFFF"
+    negro: "#121024"
     black: "#151515"
-    blue: "#447099"
+    blue: "#30519f"
     orange: "#EE6331"
     green: "#72994E"
     teal: "#419599"
     burgundy: "#9A4665"
-    dark-grey: "#222222"
-    ivory: "#F7F5EB"
+    dark-grey: "#222222"    
   background: ivory
-  foreground: dark-grey
+  foreground: negro
   primary: black
 
 typography:
@@ -46,7 +49,7 @@ typography:
 defaults:
   bootstrap:
     defaults:
-      navbar-bg: $brand-green
+      navbar-bg: $brand-azul
       navbar-fg: white
       navbar-hl: black    # Optional active/highlight color for links:
     #navbar-hl: $brand-white  

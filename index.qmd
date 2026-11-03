@@ -12,6 +12,59 @@ format:
     number-sections: false
     template-partials:
       - assets/html/title-block.html
+
+listing: 
+- id: news
+  contents: 
+    - "news/*/*/*/index.qmd"
+  sort: date desc
+  type: grid
+  grid-columns: 1
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, image]
+  max-items: 1
+  image-height: "200"
+# - id: talk
+#   contents: 
+#     - "../talk/*/index.qmd"
+#     - "../talk/*/index.markdown"
+#   sort: date desc
+#   type: grid
+#   grid-columns: 1
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, subtitle, image]
+#   max-items: 1
+#   image-height: "200"
+# - id: publication
+#   contents: 
+#     - "../resources/publications/*/*/index.qmd"
+#   sort: date desc
+#   type: grid
+#   grid-columns: 1
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, image]
+#   max-items: 1
+#   image-height: "200"
+#   image-placeholder: ../publication/featured.jpg
+# - id: project
+#   contents: 
+#     - "../project/*/index.qmd"
+#     - "../project/*/index.markdown"
+#   sort: date desc
+#   type: grid
+#   grid-columns: 1
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, subtitle, image]
+#   max-items: 1
+#   image-height: "200"
 ---
 
 
@@ -52,11 +105,11 @@ Our overall research aims is to study, implement, and evaluate the ***upcycling 
 
 
 
-::: {.grid .align-items-center .process-section}
+::: {.grid .process-section}
 
 ::: {.g-col-12 .g-col-md-3 .process-card}
 
-![](images/plastic-waste.jpg){alt="Mixed plastic waste"}
+![](images/Plastic-00.jpg){alt="Mixed plastic waste"}
 [01]{.step-number}
 
 ### Mixed plastic waste
@@ -66,7 +119,7 @@ Give a new purpose to post-consumer plastics.
 
 ::: {.g-col-12 .g-col-md-3 .process-card}
 
-![](images/plastic-waste.jpg){alt="Mixed plastic waste"}
+![](images/Plastic-01.jpg){alt="Mixed plastic waste"}
 [02]{.step-number}
 
 ### Reactive compatibilization
@@ -113,73 +166,105 @@ Give a new purpose to post-consumer plastics.
 
 Our overall research aims is to study, implement, and evaluate the ***upcycling potential*** of mixed plastic waste via in-situ reactive compatibilization using **open-source additive manufacturing**.
 
+UP3DCYCLING project is supported by multidisciplinary expertise spanning three domains: 1) polymer science, 2) additive manufacturing processes, and 3) socio-technical systems.
+The interaction across these three levels is supported by experimental, modeling, and scenario approaches, which constitute a key added value of the project, enabling a holistic understanding of both technical and social dynamics.
+
+
 :::
 
 ::: {.g-col-12 .g-col-md-4 }
 
 
-![Logo of UP3Dcycling](https://blocks.astratic.com/img/general-img-landscape.png){width="85%" fig-align="center"}
+![](images/Multilevel-00.png){width="85%" fig-align="center"}
 
 :::
 
 :::
 
----
-
-::: {.grid .align-items-center }
-
-::: {.g-col-12 .g-col-md-4 .order-last .order-md-first}
 
 
-![Logo of UP3Dcycling](https://blocks.astratic.com/img/general-img-landscape.png){width="85%"}
+
+
+## Latest project [News]{fg="green"}
+
+
+:::: {.grid}
+
+::: {.g-col-4}
+
+#### News
+
+::: {#news}
+
+:::
+[More details &rarr;](news/){.btn-primary}
+:::
+
+
+::: {.g-col-4}
+
+<!-- #### Dissemination Activities -->
+
+<!-- ::: {#project}
+
+::: -->
+
 
 :::
 
-::: {.g-col-12 .g-col-md-8 .order-first .order-md-last}
 
-# Mission
 
-Our overall research aims is to study, implement, and evaluate the ***upcycling potential*** of mixed plastic waste via in-situ reactive compatibilization using **open-source additive manufacturing**.
+::: {.g-col-4}
+
+<!-- #### Publications
+::: {#publication}
+
+::: -->
 
 
 :::
-
-::: 
-
+::::
 
 
-# Latest project [News]{fg="green"}
-
-:::{.column-screen-inset}
-![News](https://placehold.co/1500x200){width="100%"}
-:::
 
 
 
 # Our Academical Allies {style="text-align: center"}
 
-::: {.grid .align-items-center }
+::: {.grid .align-items-center .column-screen-inset}
 
-::: {.g-col-3}
-![LRGP](images/logos/LGRP.png){width="85%" fig-align="center"}
+::: {.g-col-1}
+
 :::
 
-::: {.g-col-3}
-![Western University](images/logos/Western.svg){width="85%" fig-align="center"}
+::: {.g-col-2}
+![](images/logos/ERPI.svg){width="85%" fig-align="center"}
 :::
 
-::: {.g-col-3}
-![](images/logos/LISIS.jpg){width="85%" fig-align="center"}
+
+::: {.g-col-2}
+![](images/logos/LGRP.png){width="85%" fig-align="center"}
 :::
 
-::: {.g-col-3}
+::: {.g-col-2}
 ![](images/logos/Western.svg){width="85%" fig-align="center"}
+:::
+
+::: {.g-col-2}
+![](images/logos/LISIS.jpg){width="75%" fig-align="center"}
+:::
+
+::: {.g-col-2}
+![](images/logos/CL-USACH.png){width="100%" fig-align="center"}
 :::
 
 ::: 
 
-# Our Societal Allies {.title-block style="text-align: center"}
 
+
+
+
+# Our Societal Allies {.title-block style="text-align: center"}
 
 ::: {.grid .align-items-center }
 

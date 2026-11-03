@@ -2,7 +2,13 @@
   {
     "listing": "/news/index.html",
     "items": [
-      "/news/internships/2027/index.html"
+      "/news/2026/11/03/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/news/2026/11/03/index.html"
     ]
   }
 ]

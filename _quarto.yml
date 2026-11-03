@@ -4,16 +4,19 @@ project:
   preview: 
     port: 4040
   resources:
-    - "images/*"  
+    - "images/*"
+    - "assets/*"
 
 
 website:
   title: "UP3DCYCLING"
   site-url: ""
   repo-url: https://github.com/fabbiocrux/UP3DCYCLING  
-#  bread-crumbs: true
+  bread-crumbs: true
   search:
     type: overlay  
+
+
   page-footer:
     left: |
       Funded by 
@@ -45,7 +48,7 @@ website:
     logo-alt: "Quarto logo."
 #    title: true
     collapse-below: lg
-    left:
+    right:
       - text: "Research"
         file: research/index.qmd    
       - text: "People"
@@ -102,6 +105,25 @@ format:
     number-sections: false
     grid: 
       body-width: 1200px
+
+  # pdf:
+  #   documentclass: article
+  #   geometry:
+  #    - top=25mm
+  #    - left=20mm
+  #    - bottom=25mm
+  #    - right=20mm     
+  #   number-sections: true
+  #   fontsize: 11pt
+  #   colorlinks: true
+  #   citecolor: blue
+  #   linestretch: 1.1    
+  #   linkcolor: blue
+  #   urlcolor: blue
+  #   link-citations: true
+  #   template-partials: 
+  #    - assets/before-body.tex
+
 
 filters:
   - arrows
