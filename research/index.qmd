@@ -73,13 +73,9 @@ have openend new explorative paths that aims to see the *upcycling* [@riondet202
 ::: {.g-col-8}
 
 The incompatibility between different plastic types—due to variations in chemical and molecular structures—remains a major limitation, leading to poor interfacial adhesion and low material performance [@kassab2023]. 
+The aim in *UP3DCYCLING* is to fully develop an upcycling strategy targeting plastics that are sorted but not recycled due to the lack of viable value chains.
 
-
-Our aim in *UP3DCYCLING* is to fully develop an upcycling strategy targeting plastics that are sorted but not recycled due to the lack of viable value chains.
-
- In this sense our mission is to investigate the mechanical upcycling of mixed plastic waste through the incorporation of compatibilizers during the melting process.  
- 
- design catalysts but always considering their scalability.
+In this sense our mission is to investigate the mechanical upcycling of mixed plastic waste through the incorporation of compatibilizers during the melting process.  
 Our main outcome of is a comprehensive benchmarking of compatibilization strategies applied to the six primary single-use plastics: 
 polyethylene terephthalate (PET), high density polyethylene (HDPE), polypropylene (PP),  low density polyethylene (LDPE), polystyrene (PS) and polylactic acid (PLA).
 
@@ -91,7 +87,7 @@ The ambition is to establish a systematic framework defining minimum quality sta
 
 ::: {.g-col-4}
 
-![Logo of UP3Dcycling](https://blocks.astratic.com/img/general-img-landscape.png){width="85%"}
+![](plastic-waste.jpg){width="85%"}
 
 :::
 
@@ -107,12 +103,23 @@ The ambition is to establish a systematic framework defining minimum quality sta
 
 ## Open source Fused Granular Fabrication as a promising technology for distributed upcycling
 
+
+::: {.grid .align-items-center }
+
+::: {.g-col-8}
+
 The use of open source additive manufacturing (*aka 3D Printing*) is revolutionizing the manner that plastics could be processed and transformed.
 In spite of the great promise of additive manufacturing as an advanced form of future manufacturing, there are still fundamental challenges with respect to sustainability that need to be addressed. 
 
-Some of the material needs for additive manufacturing include sustainable sources of printing inks, resins, and filaments, as well as pathways for polymer recycling, upcycling, and chemical circularity.
+Our goal in UP3DCYCLING is  on the instrumentation, adaptation and benchmarking of an open-source Fused Granular Fabrication system [@gonzalez2025] capable of processing heterogeneous waste blends. 
+The mission is to optimize the FGF process for multi-material blends, integrating real-time monitoring and closed-loop control to enhance print quality and reliability
+:::
 
-![Logo of UP3Dcycling](https://blocks.astratic.com/img/general-img-landscape.png){width="85%"}
+::: {.g-col-4}
+![](FGF-00.jpg){width="85%"}
+:::
+:::
+
 
 ---
 
@@ -127,7 +134,7 @@ Some of the material needs for additive manufacturing include sustainable source
 ::: {.grid .align-items-center }
 
 ::: {.g-col-4}
-![Urban Manufacturing](https://blocks.astratic.com/img/general-img-landscape.png){width="85%"}
+![Urban Manufacturing at Octroi Nancy. Source Octroi IG](Octroi.jpg){width="85%"}
 :::
 ::: {.g-col-8}
 
@@ -142,6 +149,3 @@ Within this framework, we will design and deploy an integrated workflow to colle
 :::
 
 
-:::{.column-screen}
-![Banner de la Sexitude](https://placehold.co/1500x100){width="100%"}
-:::
