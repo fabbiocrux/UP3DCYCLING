@@ -111,7 +111,7 @@ The ambition is to establish a systematic framework defining minimum quality sta
 The use of open source additive manufacturing (*aka 3D Printing*) is revolutionizing the manner that plastics could be processed and transformed.
 In spite of the great promise of additive manufacturing as an advanced form of future manufacturing, there are still fundamental challenges with respect to sustainability that need to be addressed. 
 
-Our goal in UP3DCYCLING is  on the instrumentation, adaptation and benchmarking of an open-source Fused Granular Fabrication system [@gonzalez2025] capable of processing heterogeneous waste blends. 
+Our goal is  on the instrumentation, adaptation and benchmarking of an open-source Fused Granular Fabrication system [@gonzalez2025] capable of processing heterogeneous waste blends. 
 The mission is to optimize the FGF process for multi-material blends, integrating real-time monitoring and closed-loop control to enhance print quality and reliability
 :::
 
@@ -140,10 +140,9 @@ The mission is to optimize the FGF process for multi-material blends, integratin
 
 **UP3DCYCLING** aims to explore distributed upcycling from a Design for Sustainability (DfS) perspective [@ceschin2019], focusing on its socio-technical implications.
 The project will adopt a mixed qualitative and quantitative approach to analyze urban upcycling systems. 
+The broader implications of distributed upcycling as a sustainability transition remain insufficiently understood [@eising-mertsch2024].
 
-Previous research studies have explored distributed recycling through life-cycle assessment [@kerdlap2020; @kerdlap2022], the broader implications of distributed upcycling as a sustainability transition remain insufficiently understood [@eising-mertsch2024].
-
-Finally, a participatory action research approach will be implemented through a real-world case study at the 'Green Fablab' in Nancy [https://erpi.univ-lorraine.fr/projet/green-fablab/](https://erpi.univ-lorraine.fr/projet/green-fablab/), developed since 2017 in close collaboration with local stakeholders, notably within the associative third place Octroi Nancy [https://www.octroi-nancy.fr/](https://www.octroi-nancy.fr/).
+A participatory action research approach will be implemented through a real-world case study at the 'Green Fablab' in Nancy [https://erpi.univ-lorraine.fr/projet/green-fablab/](https://erpi.univ-lorraine.fr/projet/green-fablab/), developed since 2017 in close collaboration with local stakeholders, notably within the associative third place Octroi Nancy [https://www.octroi-nancy.fr/](https://www.octroi-nancy.fr/).
 Within this framework, we will design and deploy an integrated workflow to collect, clean, sort, shred, and transform post-consumer plastic waste into new products via additive manufacturing, enabling the local valorization of materials currently excluded from conventional recycling systems [@cruzsanchez2020; @santander2020; @caceres-mendoza2023].
 :::
 :::
