@@ -1,13 +1,101 @@
 ---
 title: "People on the UP3DCYCLING"
 subtitle: ""
+
+
+listing: 
+- id: erpi
+  contents: 
+    - "team/fabio.qmd"    
+    - "team/catalina.qmd"
+    - "team/mauricio.qmd"
+    - "team/hakim.qmd"
+    - "team/laurent.qmd"
+  sort: false
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, description, categories, image]
+  image-placeholder: Blog-sidebar.jpg
+  image-align: right
+  image-height: 250px
+  page-size: 5
+  grid-columns: 3
+  max-description-length: 200
+
+- id: lrgp
+  contents: 
+    - "team/cecile.qmd"    
+    - "team/sandrine.qmd"
+  sort: false
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, description, categories, image]
+  image-placeholder: Blog-sidebar.jpg
+  image-align: right
+  image-height: 250px
+  page-size: 5
+  grid-columns: 3
+  max-description-length: 200
+
+- id: fast
+  contents: 
+    - "team/joshua.qmd"    
+    - "team/alessia.qmd"
+  sort: false
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, description, categories, image]
+  image-placeholder: Blog-sidebar.jpg
+  image-align: right
+  image-height: 250px
+  page-size: 5
+  grid-columns: 3
+  max-description-length: 200
+
+- id: lisis
+  contents: 
+    - "team/baptiste.qmd"    
+  sort: false
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, description, categories, image]
+  image-placeholder: Blog-sidebar.jpg
+  image-align: right
+  image-height: 250px
+  page-size: 5
+  grid-columns: 3
+  max-description-length: 200
+
+- id: usach
+  contents: 
+    - "team/andrea.qmd"    
+  sort: false
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, description, categories, image]
+  image-placeholder: Blog-sidebar.jpg
+  image-align: right
+  image-height: 250px
+  page-size: 5
+  grid-columns: 3
+  max-description-length: 200  
+toc: false
 ---
 
 
+# Équipe de Recherche sur le Processus Innovatifs (ERPI) - Université de Lorraine
 
-
-
-## Équipe de Recherche sur le Processus Innovatifs (ERPI) - Université de Lorraine
+## Researchers Team
 
 ::: {.column-margin}
 [![](../images/logos/UL.png){width="80%"}](https://erpi.univ-lorraine.fr/)
@@ -15,178 +103,61 @@ subtitle: ""
 [![](../images/logos/ERPI.svg){width="80%"}](https://erpi.univ-lorraine.fr/){target="_blank"}
 :::
 
-
-:::{.grid .align-items-center }
-
-::: {.g-col-2 .people}
-![](../images/people/fabio-cruz.jpg){width="100%" fig-align="center" }
-:::
-
-::: {.g-col-10}
-UP3DCYCLING is coordinated by Associate Professor (Maître de conférences) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-8529-5327) Fabio A. Cruz Sanchez. 
-He works at the École Nationale Supérieure en Génie des Systèmes et de l’Innovation (ENSGSI) and a researcher at the ERPI Laboratory (Équipe de Recherche sur les Processus Innovatifs), Université de Lorraine, Nancy, France. His research focuses on distributed recycling through additive manufacturing (DRAM), open-source manufacturing technologies and the development of sustainable production systems based on circular economy principles. His main research interests include plastic and polymer recycling, 3D printing and additive manufacturing, open-source hardware, distributed manufacturing networks, and the technical, logistical and environmental assessment of recycling processes. He also investigates the role of FabLabs and collaborative innovation spaces in enabling local recycling initiatives, closing material loops and promoting socio-technical transitions towards more sustainable and decentralized manufacturing systems.
-:::
-
-::: {.g-col-2 .people}
-![](../images/people/Mauricio-Camargo.png){width="100%" fig-align="center" .people}
-:::
-
-::: {.g-col-10}
-Mauricio Camargo is a Professor of Technology and Innovation Management at the École Nationale Supérieure en Génie des Systèmes et de l’Innovation (ENSGSI), Université de Lorraine, in Nancy, France, and Director of the ERPI Laboratory (Research Team on Innovative Processes). His research focuses on innovation engineering and the management, design and evaluation of innovation processes. His main research interests include new product development, decision-making in product and process design, technology and innovation management, and multi-criteria and multi-objective decision-support methods. He also investigates collaborative and interdisciplinary approaches to innovation, including Open Innovation and Living Labs, as well as the development of methodologies and tools to support innovation strategies and the sustainable transformation of industrial and organizational systems
-:::
-
-::: {.g-col-2 .people}
-![](../images/people/Hakim-Boudaoud.png){width="100%" fig-align="center" .people}
-:::
-
-::: {.g-col-10}
-Hakim Boudaoud is a Professor at the École Nationale Supérieure en Génie des Systèmes et de l’Innovation (ENSGSI) and a researcher at the ERPI Laboratory (Équipe de Recherche sur les Processus Innovatifs) at Université de Lorraine, Nancy, France. His research focuses on mechanical engineering, additive manufacturing and the development of innovative and sustainable materials and production processes. His main research interests include polymer recycling and circular economy, open-source and distributed additive manufacturing, mechanical characterization and modelling of materials, and the optimization of 3D-printing processes. He also investigates the potential of open-source hardware and decentralized manufacturing technologies to support local recycling initiatives, reduce environmental impacts and promote more sustainable production systems.
-:::
-
-::: {.g-col-2 .people}
-![](../images/people/Laurent-Dupont.png){width="100%" fig-align="center" .people}
-:::
-
-::: {.g-col-10}
-Laurent Dupont is a Research Engineer (HDR – Accreditation to Supervise Research) at the Université de Lorraine and a researcher at the ERPI Laboratory (Équipe de Recherche sur les Processus Innovatifs). 
-His research focuses on innovation engineering, collaborative design and user-driven innovation, particularly in the context of smart and sustainable cities and territories. 
-His main research interests include Living Labs and Fab Living Labs, open innovation spaces, collaborative innovation processes, user participation in the design and evaluation of new products and services, and immersive collaborative environments. He is also interested in the role of digital technologies, data-driven approaches and multi-stakeholder partnerships in supporting urban transformation and sustainable territorial development. He is co-founder and scientific manager of the Lorraine Fab Living Lab and co-creator of the Lorraine Smart Cities Living Lab, where he develops and experiments with methodologies for collaborative innovation involving citizens, businesses, researchers and public authorities.
-:::
+:::{#erpi}
 
 
 :::
 
 
----
-
-## Laboratoire Réactions et Génie des Procédés -- Université de Lorraine
-
+# Laboratoire Réactions et Génie des Procédés -- Université de Lorraine
 
 ::: {.column-margin}
+[![](../images/logos/UL.png){width="80%"}](https://erpi.univ-lorraine.fr/)
+
 [![](../images/logos/LGRP.png){width="80%"}](https://lrgp-nancy.cnrs.fr/){target="_blank"}
 :::
 
-
-
-
-:::{.grid .align-items-center .people}
-
-::: {.g-col-2 }
-![](../images/people/Cecile-Nouvel.jpg){width="100%" fig-align="center" }
-:::
-
-::: {.g-col-10}
-Cécile Nouvel is a Professor at the École Nationale Supérieure des Industries Chimiques (ENSIC) and a researcher at the Laboratoire Réactions et Génie des Procédés (LRGP). Her research focuses on polymer product engineering, particularly the design, formulation, processing and characterization of functional polymeric materials. Her main research interests include the synthesis and development of functional (co)polymers, polymer emulsifiers and nanoemulsions, polymer processing by extrusion and 3D printing, and the development of advanced materials for biomedical applications and drug delivery. More recently, her research also addresses sustainable polymer materials, including recycling and innovative processing strategies to improve material performance and recyclability.
-:::
-
-
-::: {.g-col-2 .people}
-![](../images/people/Sandrine-Hoppe.jpg){width="100%" fig-align="center" .people}
-:::
-
-::: {.g-col-10}
-Sandrine Hoppe is a CNRS researcher at the Laboratoire Réactions et Génie des Procédés (LRGP) in Nancy, France. Her research focuses on the development, processing and characterization of polymeric materials with controlled properties and structures. Her main research interests include polymer processing and reactive extrusion, micro- and nanostructured polymer composites, bio-based and sustainable materials, and the valorization and recycling of plastics. She also works on process modelling, simulation and optimization, with the aim of developing innovative and more sustainable materials and manufacturing processes
-:::
+:::{#lrgp}
 
 
 :::
-
-
-
-
 
 ---
 
-## Free Appropriate Sustainable Technology (FAST) -- Western University
+# Free Appropriate Sustainable Technology (FAST) -- Western University
 
 ::: {.column-margin}
 [![](../images/logos/FAST.png){width="250px" fig-align="center"}](https://www.appropedia.org/FAST){target="_blank"}
 :::
 
 
-
-:::{.grid .align-items-center .people}
-::: {.g-col-2 }
-![](../images/people/Joshua-Pearce.png){width="250px" fig-align="center" .people}
+::: {#fast}
 :::
-
-::: {.g-col-10}
-Joshua Pearce is the director of the [Free Appropriate Sustainability Technology research group -- https://www.appropedia.org/FAST](https://www.appropedia.org/FAST) at the Western University, which is recognized as one of world’s top 20 universities in new global sustainability rankings top 20 ranked universities for sustainability.
-Prof. Joshua Pearce' research is on the use of open source appropriate technology (OSAT) to find collaborative solutions to problems in sustainability and to reduce poverty. His research spans areas of engineering of solar photovoltaic technology, open hardware, and distributed recycling and additive manufacturing (DRAM) using RepRap 3-D printing, but also includes policy and economics.
-:::
-
-
-::: {.g-col-2  .people}
-![](../images/people/Alessia-Romani.jpg){width="250px" fig-align="center" }
-:::
-
-::: {.g-col-10}
-Alessia Romani is  a Western Postdoctoral Fellowship Awardee and Postdoctoral Associate at FAST Lab, Western University (Canada). Her work lies at the intersection of product and engineering design, materials, digital fabrication, and sustainability, with a focus on circular practices and open design. Her research experience and background merge materials engineering with product and engineering design, developing and characterising sustainable materials for design and 3D printing, and keeping a hands-on and application-driven approach.
-:::
-
-
-:::
-
-
-
-
-
-
-
 
 
 ---
 
-## Laboratoire Interdisciplinaire Sciences Innovations Sociétés
+# Laboratoire Interdisciplinaire Sciences Innovations Sociétés
 
 ::: {.column-margin}
 [![](../images/logos/LISIS.jpg){width="250px" fig-align="center"}](https://umr-lisis.fr/membre/baptiste-monsaingeon/){target="_blank"}
 :::
 
 
-
-:::{.grid .align-items-center .people}
-
-::: {.g-col-2 }
-![](../images/people/Baptiste-MONSAINGEON.jpeg){width="250px" fig-align="center" .people}
-:::
-
-::: {.g-col-10}
-Baptiste Monsaingeon is a sociologist specializing in science, technology, and the environment. A lecturer at the University of Reims Champagne-Ardenne, he is currently on secondment as a research fellow at the CNRS, within the LISIS. His research focuses on analyzing the relationships between contemporary societies and their waste. Since 2016, he has been particularly interested in plastics, seeking to reconstruct their socio-technical trajectories—both in terms of the history of their production and uses, as well as their impacts and regulation. Between 2022 and 2025, he served as scientific co-leader in charge of the social and human sciences (SHS) for the INRAE and CNRS Collective Scientific Expertise on plastics used in agriculture and food (ESCo Plastiques). In 2024, he received the CNRS Bronze Medal.
-:::
-
-
+::: {#lisis}
 :::
 
 
 
 ---
 
-## Universidad Santiago de Chile
+# Universidad Santiago de Chile -- USACH
 
 ::: {.column-margin}
 [![](../images/logos/CL-USACH.png){width="250px" fig-align="center"}](){target="_blank"}
 :::
 
 
-
-:::{.grid .align-items-center .people}
-
-::: {.g-col-2 }
-![](../images/people/Andrea-Perez.png){width="250px" fig-align="center" .people}
+::: {#usach}
 :::
-
-::: {.g-col-10}
-Prof. Andrea Espinoza Pérez is an associate professor in the Industrial Engineering Department at Universidad de Santiago de Chile. 
-She belongs to the Program for the Development of Sustainable Production Systems (PDSPS) and the Master in Engineering Sciences, mention in Industrial Engineering (MCII) at the University of Santiago de Chile.
-Her research interests lie in sustainability, supply chain design and management, innovation, metaheuristics, and single/multi-objective optimizations.
-:::
-
-
-:::
-
-
-
-
-
 

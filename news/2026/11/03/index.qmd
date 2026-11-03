@@ -5,7 +5,7 @@ subtitle: "Internship proposition at the ERPI Laboratory 2026 - 2027"
 date: last-modified
 date-format: "[Updated on] MMMM D, YYYY"
 format:
-  # html: default
+  html: default
   pdf:
     documentclass: article
     geometry:

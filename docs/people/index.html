@@ -36,6 +36,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -78,7 +80,177 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-erpi .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-description','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-erpi'] = new List('listing-erpi', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-lrgp .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-description','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-lrgp'] = new List('listing-lrgp', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-fast .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-description','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-fast'] = new List('listing-fast', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-lisis .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-description','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-lisis'] = new List('listing-lisis', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-usach .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-description','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-usach'] = new List('listing-usach', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -127,18 +299,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#équipe-de-recherche-sur-le-processus-innovatifs-erpi---université-de-lorraine" id="toc-équipe-de-recherche-sur-le-processus-innovatifs-erpi---université-de-lorraine" class="nav-link active" data-scroll-target="#équipe-de-recherche-sur-le-processus-innovatifs-erpi---université-de-lorraine">Équipe de Recherche sur le Processus Innovatifs (ERPI) - Université de Lorraine</a></li>
-  <li><a href="#laboratoire-réactions-et-génie-des-procédés-université-de-lorraine" id="toc-laboratoire-réactions-et-génie-des-procédés-université-de-lorraine" class="nav-link" data-scroll-target="#laboratoire-réactions-et-génie-des-procédés-université-de-lorraine">Laboratoire Réactions et Génie des Procédés – Université de Lorraine</a></li>
-  <li><a href="#free-appropriate-sustainable-technology-fast-western-university" id="toc-free-appropriate-sustainable-technology-fast-western-university" class="nav-link" data-scroll-target="#free-appropriate-sustainable-technology-fast-western-university">Free Appropriate Sustainable Technology (FAST) – Western University</a></li>
-  <li><a href="#laboratoire-interdisciplinaire-sciences-innovations-sociétés" id="toc-laboratoire-interdisciplinaire-sciences-innovations-sociétés" class="nav-link" data-scroll-target="#laboratoire-interdisciplinaire-sciences-innovations-sociétés">Laboratoire Interdisciplinaire Sciences Innovations Sociétés</a></li>
-  <li><a href="#universidad-santiago-de-chile" id="toc-universidad-santiago-de-chile" class="nav-link" data-scroll-target="#universidad-santiago-de-chile">Universidad Santiago de Chile</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content page-columns page-full" id="quarto-document-content">
@@ -162,87 +323,176 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="équipe-de-recherche-sur-le-processus-innovatifs-erpi---université-de-lorraine" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="équipe-de-recherche-sur-le-processus-innovatifs-erpi---université-de-lorraine">Équipe de Recherche sur le Processus Innovatifs (ERPI) - Université de Lorraine</h2>
+<section id="équipe-de-recherche-sur-le-processus-innovatifs-erpi---université-de-lorraine" class="level1 page-columns page-full">
+<h1>Équipe de Recherche sur le Processus Innovatifs (ERPI) - Université de Lorraine</h1>
+<section id="researchers-team" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="researchers-team">Researchers Team</h2>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <p><a href="https://erpi.univ-lorraine.fr/"><img src="../images/logos/UL.png" class="img-fluid" style="width:80.0%"></a></p>
 <p><a href="https://erpi.univ-lorraine.fr/" target="_blank"><img src="../images/logos/ERPI.svg" class="img-fluid" style="width:80.0%"></a></p>
-</div></div><div class="grid align-items-center">
-<div class="g-col-2 people">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/people/fabio-cruz.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
-</figure>
+</div></div><div id="listing-erpi" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="M0QlMjBQcmludGluZyUyQ1VQQ1lDTElORw==" data-listing-date-sort="1793721729000" data-listing-file-modified-sort="1793721729123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="92">
+<a href="../people/team/fabio.html" class="quarto-grid-link">
+</a><div class="quarto-grid-item card h-100 card-left"><a href="../people/team/fabio.html" class="quarto-grid-link">
+<p class="card-img-top">
+<img loading="lazy" src="../images/people/fabio-cruz.jpg" class="thumbnail-image card-img" style="height: 250px;" alt="Fabio A. Cruz Sanchez">
+</p>
+</a><div class="card-body post-contents"><a href="../people/team/fabio.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+Fabio A. Cruz Sanchez
+</h5>
+<div class="card-subtitle listing-subtitle">
+Assistant Professor on Distributed Recycling
+</div>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('M0QlMjBQcmludGluZw=='); return false;">3D Printing</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('VVBDWUNMSU5H'); return false;">UPCYCLING</div>
+
+</div>
+</a><div class="card-text listing-description delink"><a href="../people/team/fabio.html" class="quarto-grid-link">
+</a><p><a href="../people/team/fabio.html" class="quarto-grid-link">UP3DCYCLING is coordinated by Associate Professor (Maître de conférences) </a><a href="https://orcid.org/0000-0001-8529-5327"><i class="fa-brands fa-orcid" aria-label="orcid"></i></a> Fabio A. Cruz Sanchez. He works at the École Nationale…</p>
 </div>
 </div>
-<div class="g-col-10">
-<p>UP3DCYCLING is coordinated by Associate Professor (Maître de conférences) <a href="https://orcid.org/0000-0001-8529-5327"><i class="fa-brands fa-orcid" aria-label="orcid"></i></a> Fabio A. Cruz Sanchez. He works at the École Nationale Supérieure en Génie des Systèmes et de l’Innovation (ENSGSI) and a researcher at the ERPI Laboratory (Équipe de Recherche sur les Processus Innovatifs), Université de Lorraine, Nancy, France. His research focuses on distributed recycling through additive manufacturing (DRAM), open-source manufacturing technologies and the development of sustainable production systems based on circular economy principles. His main research interests include plastic and polymer recycling, 3D printing and additive manufacturing, open-source hardware, distributed manufacturing networks, and the technical, logistical and environmental assessment of recycling processes. He also investigates the role of FabLabs and collaborative innovation spaces in enabling local recycling initiatives, closing material loops and promoting socio-technical transitions towards more sustainable and decentralized manufacturing systems.</p>
-</div>
-<div class="g-col-2 people">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/people/Mauricio-Camargo.png" class="people img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
-</figure>
 </div>
 </div>
-<div class="g-col-10">
-<p>Mauricio Camargo is a Professor of Technology and Innovation Management at the École Nationale Supérieure en Génie des Systèmes et de l’Innovation (ENSGSI), Université de Lorraine, in Nancy, France, and Director of the ERPI Laboratory (Research Team on Innovative Processes). His research focuses on innovation engineering and the management, design and evaluation of innovation processes. His main research interests include new product development, decision-making in product and process design, technology and innovation management, and multi-criteria and multi-objective decision-support methods. He also investigates collaborative and interdisciplinary approaches to innovation, including Open Innovation and Living Labs, as well as the development of methodologies and tools to support innovation strategies and the sustainable transformation of industrial and organizational systems</p>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1773183600000" data-listing-file-modified-sort="1793723236213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="92">
+<a href="../people/team/catalina.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/people/Catalina-Suescun.jpg" class="thumbnail-image card-img" style="height: 250px;" alt="Catalina Suescun">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Catalina Suescun
+</h5>
+<div class="card-subtitle listing-subtitle">
+Post Doc on UP3DCYCLING
 </div>
-<div class="g-col-2 people">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/people/Hakim-Boudaoud.png" class="people img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-<div class="g-col-10">
-<p>Hakim Boudaoud is a Professor at the École Nationale Supérieure en Génie des Systèmes et de l’Innovation (ENSGSI) and a researcher at the ERPI Laboratory (Équipe de Recherche sur les Processus Innovatifs) at Université de Lorraine, Nancy, France. His research focuses on mechanical engineering, additive manufacturing and the development of innovative and sustainable materials and production processes. His main research interests include polymer recycling and circular economy, open-source and distributed additive manufacturing, mechanical characterization and modelling of materials, and the optimization of 3D-printing processes. He also investigates the potential of open-source hardware and decentralized manufacturing technologies to support local recycling initiatives, reduce environmental impacts and promote more sustainable production systems.</p>
-</div>
-<div class="g-col-2 people">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/people/Laurent-Dupont.png" class="people img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
-</figure>
+<div class="card-text listing-description delink">
+<p>Catalina advances her PostDoc academic journey working at the Université de Lorraine ERPI and LRGP laboratories, collaborating closely with Dr.J.M.Pearce at Western University’s FAST laboratory.…</p>
 </div>
 </div>
-<div class="g-col-10">
-<p>Laurent Dupont is a Research Engineer (HDR – Accreditation to Supervise Research) at the Université de Lorraine and a researcher at the ERPI Laboratory (Équipe de Recherche sur les Processus Innovatifs). His research focuses on innovation engineering, collaborative design and user-driven innovation, particularly in the context of smart and sustainable cities and territories. His main research interests include Living Labs and Fab Living Labs, open innovation spaces, collaborative innovation processes, user participation in the design and evaluation of new products and services, and immersive collaborative environments. He is also interested in the role of digital technologies, data-driven approaches and multi-stakeholder partnerships in supporting urban transformation and sustainable territorial development. He is co-founder and scientific manager of the Lorraine Fab Living Lab and co-creator of the Lorraine Smart Cities Living Lab, where he develops and experiments with methodologies for collaborative innovation involving citizens, businesses, researchers and public authorities.</p>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="1773183600000" data-listing-file-modified-sort="1793722636377" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../people/team/mauricio.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/people/Mauricio-Camargo.png" class="thumbnail-image card-img" style="height: 250px;" alt="Mauricio Camargo">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Mauricio Camargo
+</h5>
+<div class="card-subtitle listing-subtitle">
+Professor at Université de Lorraine
+</div>
+<div class="card-text listing-description delink">
+<p>Mauricio Camargo is a Professor of Technology and Innovation Management at the École Nationale Supérieure en Génie des Systèmes et de l’Innovation (ENSGSI), Université de Lorraine, in Nancy, France…</p>
 </div>
 </div>
-<hr>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-date-sort="1773183600000" data-listing-file-modified-sort="1793722937253" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../people/team/hakim.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/people/Hakim-Boudaoud.png" class="thumbnail-image card-img" style="height: 250px;" alt="Hakim Boudaoud">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Hakim Boudaoud
+</h5>
+<div class="card-subtitle listing-subtitle">
+Professor at Université de Lorraine
+</div>
+<div class="card-text listing-description delink">
+<p>Professor at the École Nationale Supérieure en Génie des Systèmes et de l’Innovation (ENSGSI) and a researcher at the ERPI Laboratory (Équipe de Recherche sur les Processus Innovatifs) at Université…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-date-sort="1773183600000" data-listing-file-modified-sort="1793722880497" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../people/team/laurent.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/people/Laurent-Dupont.png" class="thumbnail-image card-img" style="height: 250px;" alt="Laurent Dupont">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Laurent Dupont
+</h5>
+<div class="card-subtitle listing-subtitle">
+Research Engineer (HDR)
+</div>
+<div class="card-text listing-description delink">
+<p>Laurent Dupont is a Research Engineer (HDR – Accreditation to Supervise Research) at the Université de Lorraine and a researcher at the ERPI Laboratory (Équipe de Recherche sur les Processus…</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 </section>
-<section id="laboratoire-réactions-et-génie-des-procédés-université-de-lorraine" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="laboratoire-réactions-et-génie-des-procédés-université-de-lorraine">Laboratoire Réactions et Génie des Procédés – Université de Lorraine</h2>
+</section>
+<section id="laboratoire-réactions-et-génie-des-procédés-université-de-lorraine" class="level1 page-columns page-full">
+<h1>Laboratoire Réactions et Génie des Procédés – Université de Lorraine</h1>
 
 <div class="no-row-height column-margin column-container"><div class="">
+<p><a href="https://erpi.univ-lorraine.fr/"><img src="../images/logos/UL.png" class="img-fluid" style="width:80.0%"></a></p>
 <p><a href="https://lrgp-nancy.cnrs.fr/" target="_blank"><img src="../images/logos/LGRP.png" class="img-fluid" style="width:80.0%"></a></p>
-</div></div><div class="grid align-items-center people">
-<div class="g-col-2">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/people/Cecile-Nouvel.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
-</figure>
+</div></div><div id="listing-lrgp" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1773183600000" data-listing-file-modified-sort="1793723313690" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../people/team/cecile.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/people/Cecile-Nouvel.jpg" class="thumbnail-image card-img" style="height: 250px;" alt="Cecile Nouvel">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="laboratoire-réactions-et-génie-des-procédés-université-de-lorraine">
+Cecile Nouvel
+</h5>
+<div class="card-subtitle listing-subtitle">
+Professor
+</div>
+<div class="card-text listing-description delink">
+<p>Cécile Nouvel is a Professor at the École Nationale Supérieure des Industries Chimiques (ENSIC) and a researcher at the Laboratoire Réactions et Génie des Procédés (LRGP). Her research focuses on…</p>
 </div>
 </div>
-<div class="g-col-10">
-<p>Cécile Nouvel is a Professor at the École Nationale Supérieure des Industries Chimiques (ENSIC) and a researcher at the Laboratoire Réactions et Génie des Procédés (LRGP). Her research focuses on polymer product engineering, particularly the design, formulation, processing and characterization of functional polymeric materials. Her main research interests include the synthesis and development of functional (co)polymers, polymer emulsifiers and nanoemulsions, polymer processing by extrusion and 3D printing, and the development of advanced materials for biomedical applications and drug delivery. More recently, her research also addresses sustainable polymer materials, including recycling and innovative processing strategies to improve material performance and recyclability.</p>
+</div></a>
 </div>
-<div class="g-col-2 people">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/people/Sandrine-Hoppe.jpg" class="people img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
-</figure>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1773183600000" data-listing-file-modified-sort="1793724057453" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../people/team/sandrine.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/people/Sandrine-Hoppe.jpg" class="thumbnail-image card-img" style="height: 250px;" alt="Sandrine Hoppe">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Sandrine Hoppe
+</h5>
+<div class="card-subtitle listing-subtitle">
+Research Engineerv (CNRS)
+</div>
+<div class="card-text listing-description delink">
+<p>Sandrine Hoppe is a CNRS researcher at the Laboratoire Réactions et Génie des Procédés (LRGP) in Nancy, France. Her research focuses on the development, processing and characterization of polymeric…</p>
 </div>
 </div>
-<div class="g-col-10">
-<p>Sandrine Hoppe is a CNRS researcher at the Laboratoire Réactions et Génie des Procédés (LRGP) in Nancy, France. Her research focuses on the development, processing and characterization of polymeric materials with controlled properties and structures. Her main research interests include polymer processing and reactive extrusion, micro- and nanostructured polymer composites, bio-based and sustainable materials, and the valorization and recycling of plastics. She also works on process modelling, simulation and optimization, with the aim of developing innovative and more sustainable materials and manufacturing processes</p>
+</div></a>
 </div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 <hr>
 </section>
-<section id="free-appropriate-sustainable-technology-fast-western-university" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="free-appropriate-sustainable-technology-fast-western-university">Free Appropriate Sustainable Technology (FAST) – Western University</h2>
+<section id="free-appropriate-sustainable-technology-fast-western-university" class="level1 page-columns page-full">
+<h1>Free Appropriate Sustainable Technology (FAST) – Western University</h1>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
@@ -250,32 +500,53 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://www.appropedia.org/FAST" target="_blank"><img src="../images/logos/FAST.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="250"></a></p>
 </figure>
 </div>
-</div></div><div class="grid align-items-center people">
-<div class="g-col-2">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/people/Joshua-Pearce.png" class="people img-fluid quarto-figure quarto-figure-center figure-img" width="250"></p>
-</figure>
+</div></div><div id="listing-fast" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1773183600000" data-listing-file-modified-sort="1793723569455" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../people/team/joshua.html" class="quarto-grid-link">
+</a><div class="quarto-grid-item card h-100 card-left"><a href="../people/team/joshua.html" class="quarto-grid-link">
+<p class="card-img-top">
+<img loading="lazy" src="../images/people/Joshua-Pearce.png" class="thumbnail-image card-img" style="height: 250px;" alt="Joshua Pearce">
+</p>
+</a><div class="card-body post-contents"><a href="../people/team/joshua.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="free-appropriate-sustainable-technology-fast-western-university">
+Joshua Pearce
+</h5>
+<div class="card-subtitle listing-subtitle">
+Professor
+</div>
+</a><div class="card-text listing-description delink"><a href="../people/team/joshua.html" class="quarto-grid-link">
+</a><p><a href="../people/team/joshua.html" class="quarto-grid-link">Joshua Pearce is the director of the </a><a href="https://www.appropedia.org/FAST">Free Appropriate Sustainability Technology research group – https://www.appropedia.org/FAST</a> at the Western University, which…</p>
 </div>
 </div>
-<div class="g-col-10">
-<p>Joshua Pearce is the director of the <a href="https://www.appropedia.org/FAST">Free Appropriate Sustainability Technology research group – https://www.appropedia.org/FAST</a> at the Western University, which is recognized as one of world’s top 20 universities in new global sustainability rankings top 20 ranked universities for sustainability. Prof.&nbsp;Joshua Pearce’ research is on the use of open source appropriate technology (OSAT) to find collaborative solutions to problems in sustainability and to reduce poverty. His research spans areas of engineering of solar photovoltaic technology, open hardware, and distributed recycling and additive manufacturing (DRAM) using RepRap 3-D printing, but also includes policy and economics.</p>
-</div>
-<div class="g-col-2 people">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/people/Alessia-Romani.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="250"></p>
-</figure>
 </div>
 </div>
-<div class="g-col-10">
-<p>Alessia Romani is a Western Postdoctoral Fellowship Awardee and Postdoctoral Associate at FAST Lab, Western University (Canada). Her work lies at the intersection of product and engineering design, materials, digital fabrication, and sustainability, with a focus on circular practices and open design. Her research experience and background merge materials engineering with product and engineering design, developing and characterising sustainable materials for design and 3D printing, and keeping a hands-on and application-driven approach.</p>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1773183600000" data-listing-file-modified-sort="1793723637262" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../people/team/alessia.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/people/Alessia-Romani.jpg" class="thumbnail-image card-img" style="height: 250px;" alt="Alessia Romani">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Alessia Romani
+</h5>
+<div class="card-subtitle listing-subtitle">
+Post Doc
 </div>
+<div class="card-text listing-description delink">
+<p>Alessia Romani is a Western Postdoctoral Fellowship Awardee and Postdoctoral Associate at FAST Lab, Western University (Canada). Her work lies at the intersection of product and engineering design…</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 <hr>
 </section>
-<section id="laboratoire-interdisciplinaire-sciences-innovations-sociétés" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="laboratoire-interdisciplinaire-sciences-innovations-sociétés">Laboratoire Interdisciplinaire Sciences Innovations Sociétés</h2>
+<section id="laboratoire-interdisciplinaire-sciences-innovations-sociétés" class="level1 page-columns page-full">
+<h1>Laboratoire Interdisciplinaire Sciences Innovations Sociétés</h1>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
@@ -283,22 +554,34 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://umr-lisis.fr/membre/baptiste-monsaingeon/" target="_blank"><img src="../images/logos/LISIS.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" width="250"></a></p>
 </figure>
 </div>
-</div></div><div class="grid align-items-center people">
-<div class="g-col-2">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/people/Baptiste-MONSAINGEON.jpeg" class="people img-fluid quarto-figure quarto-figure-center figure-img" width="250"></p>
-</figure>
+</div></div><div id="listing-lisis" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1773183600000" data-listing-file-modified-sort="1793724030878" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../people/team/baptiste.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/people/Baptiste-MONSAINGEON.jpeg" class="thumbnail-image card-img" style="height: 250px;" alt="Baptiste Monsaingeon">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="laboratoire-interdisciplinaire-sciences-innovations-sociétés">
+Baptiste Monsaingeon
+</h5>
+<div class="card-subtitle listing-subtitle">
+Associate Professor
+</div>
+<div class="card-text listing-description delink">
+<p>Baptiste Monsaingeon is a sociologist specializing in science, technology, and the environment. A lecturer at the University of Reims Champagne-Ardenne, he is currently on secondment as a research…</p>
 </div>
 </div>
-<div class="g-col-10">
-<p>Baptiste Monsaingeon is a sociologist specializing in science, technology, and the environment. A lecturer at the University of Reims Champagne-Ardenne, he is currently on secondment as a research fellow at the CNRS, within the LISIS. His research focuses on analyzing the relationships between contemporary societies and their waste. Since 2016, he has been particularly interested in plastics, seeking to reconstruct their socio-technical trajectories—both in terms of the history of their production and uses, as well as their impacts and regulation. Between 2022 and 2025, he served as scientific co-leader in charge of the social and human sciences (SHS) for the INRAE and CNRS Collective Scientific Expertise on plastics used in agriculture and food (ESCo Plastiques). In 2024, he received the CNRS Bronze Medal.</p>
+</div></a>
 </div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 <hr>
 </section>
-<section id="universidad-santiago-de-chile" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="universidad-santiago-de-chile">Universidad Santiago de Chile</h2>
+<section id="universidad-santiago-de-chile-usach" class="level1 page-columns page-full">
+<h1>Universidad Santiago de Chile – USACH</h1>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
@@ -306,18 +589,31 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="" target="_blank"><img src="../images/logos/CL-USACH.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="250"></a></p>
 </figure>
 </div>
-</div></div><div class="grid align-items-center people">
-<div class="g-col-2">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="../images/people/Andrea-Perez.png" class="people img-fluid quarto-figure quarto-figure-center figure-img" width="250"></p>
-</figure>
+</div></div><div id="listing-usach" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1773183600000" data-listing-file-modified-sort="1793724018989" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../people/team/andrea.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/people/Andrea-Perez.png" class="thumbnail-image card-img" style="height: 250px;" alt="Andrea-Perez.png">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="universidad-santiago-de-chile-usach">
+Andrea-Perez.png
+</h5>
+<div class="card-subtitle listing-subtitle">
+Professor
+</div>
+<div class="card-text listing-description delink">
+<p>Prof.&nbsp;Andrea Espinoza Pérez is an associate professor in the Industrial Engineering Department at Universidad de Santiago de Chile. She belongs to the Program for the Development of Sustainable…</p>
 </div>
 </div>
-<div class="g-col-10">
-<p>Prof.&nbsp;Andrea Espinoza Pérez is an associate professor in the Industrial Engineering Department at Universidad de Santiago de Chile. She belongs to the Program for the Development of Sustainable Production Systems (PDSPS) and the Master in Engineering Sciences, mention in Industrial Engineering (MCII) at the University of Santiago de Chile. Her research interests lie in sustainability, supply chain design and management, innovation, metaheuristics, and single/multi-objective optimizations.</p>
+</div></a>
 </div>
 </div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
 
 
 </section>

@@ -1,0 +1,31 @@
+---
+title: "Andrea-Perez.png"
+pagetitle: "Andrea-Perez.png"
+subtitle: "Professor"
+image: "../../images/people/Andrea-Perez.png"
+image-alt: "Andrea-Perez.png"
+
+description: "Prof. Andrea Espinoza Pérez is an associate professor in the Industrial Engineering Department at Universidad de Santiago de Chile. She belongs to the Program for the Development of Sustainable Production Systems (PDSPS) and the Master in Engineering Sciences, mention in Industrial Engineering (MCII) at the University of Santiago de Chile. Her research interests lie in sustainability, supply chain design and management, innovation, metaheuristics, and single/multi-objective optimizations."
+date: 03/11/2026
+
+about:
+  template: solana
+  image-width: 20em
+  id: hero-heading
+  # links:
+  #   - icon: github
+  #     aria-label: GitHub
+  #     href: https://github.com/fabbiocrux
+  #   - icon: linkedin
+  #     aria-label: "LinkedIn"
+  #     href: https://linkedin.com/in/fabbiocrux
+  #   - text: "{{< ai orcid >}}"
+  #     href: https://orcid.org/0000-0001-8529-5327
+  #   - text: "{{< ai google-scholar >}}"
+  #     aria-label: "Google Scholar"
+  #     href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+

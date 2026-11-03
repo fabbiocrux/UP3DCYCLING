@@ -2,13 +2,29 @@
   {
     "listing": "/index.html",
     "items": [
-      "/news/2026/11/03/index.pdf"
+      "/news/2026/11/03/index.html"
     ]
   },
   {
     "listing": "/news/index.html",
     "items": [
-      "/news/2026/11/03/index.pdf"
+      "/news/2026/11/03/index.html"
+    ]
+  },
+  {
+    "listing": "/people/index.html",
+    "items": [
+      "/people/team/fabio.html",
+      "/people/team/catalina.html",
+      "/people/team/mauricio.html",
+      "/people/team/hakim.html",
+      "/people/team/laurent.html",
+      "/people/team/cecile.html",
+      "/people/team/sandrine.html",
+      "/people/team/joshua.html",
+      "/people/team/alessia.html",
+      "/people/team/baptiste.html",
+      "/people/team/andrea.html"
     ]
   }
 ]
