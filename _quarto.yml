@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   preview: 
-    port: 4040
+    port: 4040  
   resources:
     - "images/*"
     - "assets/*"
@@ -13,6 +13,7 @@ website:
   site-url: ""
   repo-url: https://github.com/fabbiocrux/UP3DCYCLING  
   bread-crumbs: true
+  draft-mode: gone
   search:
     type: overlay  
 

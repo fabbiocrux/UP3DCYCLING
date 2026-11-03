@@ -4,9 +4,6 @@ title: "Ethnographic Analysis of Urban Manufacturing Ecosystems"
 subtitle: "Internship proposition at the ERPI Laboratory 2026 - 2027"
 date: last-modified
 date-format: "[Updated on] MMMM D, YYYY"
-# metadata-files:
-#   - ../../../metadata-pdf.yml
-
 format:
   html: default
   pdf:
@@ -46,8 +43,6 @@ format:
 categories:
   - Internships
 image: ERPI.png
-execute:
-  cache: true
 ---
 
 
@@ -70,7 +65,10 @@ library(readxl)
 table <- tribble(~`Project`, ~`UP3DCYCLING`, 
 
 "Profile",
-"Student Master M2 on Social Sciences (Sociology) with focus on Innovation.",
+"Master's student (M2) in Sociology, Geography, Urban Studies, or Social Sciences, with a specialization or strong interest in the sociology of innovation, environmental sociology, or the sociology of public action. The candidate should demonstrate an interest in circular economy, citizen-led initiatives, Fablabs / third places, and alternative models of production and consumption.",
+
+"Key commpetences",
+"Qualitative research, literature reviews, documentary analysis, semi-structured interviews, stakeholder mapping and exploratory fieldwork.",
 
 "Languages",
 "French and English",
@@ -81,7 +79,7 @@ table <- tribble(~`Project`, ~`UP3DCYCLING`,
 "Tutors",
 "MCF Fabio A. Cruz Sanchez (ERPI)",
 "",
-"MCF Baptiste Monsaignon (LISIS)",
+"Support from UP3DCYCLING Team",
 
 "Place",
 "Laboratoire ERPI (Equipe de Recherche sur les Processus Innovatifs) – 8 rue Bastien Lepage, 54000 Nancy, France",
