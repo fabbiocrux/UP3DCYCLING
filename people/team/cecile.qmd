@@ -6,7 +6,10 @@ image: "../../images/people/Cecile-Nouvel.jpg"
 image-alt: "Cecile Nouvel"
 
 description: "Cécile Nouvel is a Professor at the École Nationale Supérieure des Industries Chimiques (ENSIC) and a researcher at the Laboratoire Réactions et Génie des Procédés (LRGP). Her research focuses on polymer product engineering, particularly the design, formulation, processing and characterization of functional polymeric materials. Her main research interests include the synthesis and development of functional (co)polymers, polymer emulsifiers and nanoemulsions, polymer processing by extrusion and 3D printing, and the development of advanced materials for biomedical applications and drug delivery. More recently, her research also addresses sustainable polymer materials, including recycling and innovative processing strategies to improve material performance and recyclability."
-date: 03/11/2026
+
+
+date: 11/04/2026
+date-modified: last-modified
 
 about:
   template: solana

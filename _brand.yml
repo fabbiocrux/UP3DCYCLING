@@ -31,7 +31,7 @@ color:
     dark-grey: "#222222"    
   background: ivory
   foreground: negro
-  primary: black
+  primary: azul
 
 typography:
   fonts:

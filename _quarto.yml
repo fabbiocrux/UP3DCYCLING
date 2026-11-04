@@ -136,3 +136,4 @@ execute:
   freeze: auto
 
 bibliography: assets/library.bib
+date-format: long

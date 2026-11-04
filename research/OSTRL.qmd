@@ -12,7 +12,7 @@ title: "Exploring the applicability of the Open Source Technology Readiness Leve
 #   link-citations: true
 #   reference-doc: ../assets/template.docx
 #   prefer-html: true
-
+draft: true
 ---
 
 

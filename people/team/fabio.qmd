@@ -10,7 +10,9 @@ image: "../../images/people/fabio-cruz.jpg"
 image-alt: "Fabio A. Cruz Sanchez"
 
 description: "UP3DCYCLING is coordinated by Associate Professor (Maître de conférences) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-8529-5327) Fabio A. Cruz Sanchez.  He works at the École Nationale Supérieure en Génie des Systèmes et de l’Innovation (ENSGSI) and a researcher at the ERPI Laboratory (Équipe de Recherche sur les Processus Innovatifs), Université de Lorraine, Nancy, France. His research focuses on distributed recycling through additive manufacturing (DRAM), open-source manufacturing technologies and the development of sustainable production systems based on circular economy principles. His main research interests include plastic and polymer recycling, 3D printing and additive manufacturing, open-source hardware, distributed manufacturing networks, and the technical, logistical and environmental assessment of recycling processes. He also investigates the role of FabLabs and collaborative innovation spaces in enabling local recycling initiatives, closing material loops and promoting socio-technical transitions towards more sustainable and decentralized manufacturing systems."
-date: last-modified
+
+date: 11/04/2026
+date-modified: last-modified
 
 about:
   template: solana

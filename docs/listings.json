@@ -1,17 +1,5 @@
 [
   {
-    "listing": "/index.html",
-    "items": [
-      "/news/2026/11/03/index.html"
-    ]
-  },
-  {
-    "listing": "/news/index.html",
-    "items": [
-      "/news/2026/11/03/index.html"
-    ]
-  },
-  {
     "listing": "/people/index.html",
     "items": [
       "/people/team/fabio.html",
@@ -25,6 +13,18 @@
       "/people/team/alessia.html",
       "/people/team/baptiste.html",
       "/people/team/andrea.html"
+    ]
+  },
+  {
+    "listing": "/news/index.html",
+    "items": [
+      "/news/2026/11/03/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/news/2026/11/03/index.html"
     ]
   }
 ]

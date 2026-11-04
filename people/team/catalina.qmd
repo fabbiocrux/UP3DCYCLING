@@ -6,7 +6,10 @@ image: "../../images/people/Catalina-Suescun.jpg"
 image-alt: "Catalina Suescun"
 
 description: "Catalina advances her PostDoc academic journey working at the  Université de Lorraine  ERPI and LRGP laboratories, collaborating closely with Dr.J.M.Pearce at Western University's FAST laboratory. Her project aims to transform multi-material plastic waste into feedstock for large-scale 3D printing while enhancing material properties and compatibility through the addition of compatibilizers. Catalina believes in the power of innovation to shape a more sustainable and inclusive future by creating open-source technological solutions that benefit society and the environment."
-date: 03/11/2026
+
+
+date: 11/04/2026
+date-modified: last-modified
 
 about:
   template: solana

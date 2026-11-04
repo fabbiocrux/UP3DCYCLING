@@ -6,7 +6,10 @@ image: "../../images/people/Joshua-Pearce.png"
 image-alt: "Joshua Pearce"
 
 description: "Joshua Pearce is the director of the [Free Appropriate Sustainability Technology research group -- https://www.appropedia.org/FAST](https://www.appropedia.org/FAST) at the Western University, which is recognized as one of world’s top 20 universities in new global sustainability rankings top 20 ranked universities for sustainability. Prof. Joshua Pearce' research is on the use of open source appropriate technology (OSAT) to find collaborative solutions to problems in sustainability and to reduce poverty. His research spans areas of engineering of solar photovoltaic technology, open hardware, and distributed recycling and additive manufacturing (DRAM) using RepRap 3-D printing, but also includes policy and economics."
-date: 03/11/2026
+
+date: 11/04/2026
+date-modified: last-modified
+
 
 about:
   template: solana

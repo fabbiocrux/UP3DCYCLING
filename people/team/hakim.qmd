@@ -6,7 +6,10 @@ image: "../../images/people/Hakim-Boudaoud.png"
 image-alt: "Hakim Boudaoud"
 
 description: "Professor at the École Nationale Supérieure en Génie des Systèmes et de l’Innovation (ENSGSI) and a researcher at the ERPI Laboratory (Équipe de Recherche sur les Processus Innovatifs) at Université de Lorraine, Nancy, France. His research focuses on mechanical engineering, additive manufacturing and the development of innovative and sustainable materials and production processes. His main research interests include polymer recycling and circular economy, open-source and distributed additive manufacturing, mechanical characterization and modelling of materials, and the optimization of 3D-printing processes. He also investigates the potential of open-source hardware and decentralized manufacturing technologies to support local recycling initiatives, reduce environmental impacts and promote more sustainable production systems."
-date: 03/11/2026
+
+date: 11/04/2026
+date-modified: last-modified
+
 
 about:
   template: solana
