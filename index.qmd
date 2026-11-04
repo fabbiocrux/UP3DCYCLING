@@ -233,29 +233,29 @@ The interaction across these three levels is supported by experimental, modeling
 
 ::: {.grid .align-items-center .column-screen-inset}
 
-::: {.g-col-1}
-
+::: {.g-col-2}
+![](images/logos/ERPI.svg){width="100%" fig-align="center"}
 :::
 
 ::: {.g-col-2}
-![](images/logos/ERPI.svg){width="85%" fig-align="center"}
+![](images/logos/ENSGSI.png){width="100px" fig-align="center"}
 :::
 
 
 ::: {.g-col-2}
-![](images/logos/LGRP.png){width="85%" fig-align="center"}
+![](images/logos/LGRP.png){width="120px" fig-align="center"}
 :::
 
 ::: {.g-col-2}
-![](images/logos/Western.svg){width="85%" fig-align="center"}
+![](images/logos/Western.svg){width="200px" fig-align="center"}
 :::
 
 ::: {.g-col-2}
-![](images/logos/LISIS.jpg){width="75%" fig-align="center"}
+![](images/logos/LISIS.jpg){width="120px" fig-align="center"}
 :::
 
 ::: {.g-col-2}
-![](images/logos/CL-USACH.png){width="100%" fig-align="center"}
+![](images/logos/CL-USACH.png){width="240px" fig-align="center"}
 :::
 
 ::: 
