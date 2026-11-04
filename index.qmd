@@ -232,10 +232,10 @@ The interaction across these three levels is supported by experimental, modeling
 
 # Our Academical Allies {style="text-align: center"}
 
-::: {.grid .align-items-center .column-screen-inset}
+::: {.grid .align-items-center .column-page-inset}
 
 ::: {.g-col-2}
-![](images/logos/ERPI.svg){width="100%" fig-align="center"}
+![](images/logos/ERPI.svg){width="150px" fig-align="center"}
 :::
 
 ::: {.g-col-2}
