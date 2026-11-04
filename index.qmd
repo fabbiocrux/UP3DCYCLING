@@ -270,7 +270,7 @@ The interaction across these three levels is supported by experimental, modeling
 ::: {.grid .align-items-center }
 
 ::: {.g-col-3 .g-start-2}
-![Réseau Français des Fablab](images/logos/RFF.svg){width="85%" fig-align="center"}
+<!-- ![Réseau Français des Fablab](images/logos/RFF.svg){width="85%" fig-align="center"} -->
 :::
 
 ::: {.g-col-3 .g-start-5}
