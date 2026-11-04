@@ -113,7 +113,7 @@ Our overall research aims is to study, implement, and evaluate the ***upcycling 
 [01]{.step-number}
 
 ### Mixed plastic waste
-Give a new purpose to post-consumer plastics.
+Sorting and cleaning process make difficult to treat post-consumer plastics.
 
 :::
 
@@ -145,7 +145,8 @@ Give a new purpose to post-consumer plastics.
 [04]{.step-number}
 
 ### Socio-technical
-Give a new purpose to post-consumer plastics.
+
+Better understant the appropriate use of plastic waste by a urban manufacturing community.
 
 :::
 
