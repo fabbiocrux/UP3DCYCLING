@@ -21,6 +21,7 @@ website:
     position: above-navbar
     icon: Duffle
     type: success
+    dismissable: true
 
   page-footer:
     left: |
