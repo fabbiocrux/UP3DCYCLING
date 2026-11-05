@@ -16,7 +16,11 @@ website:
   draft-mode: gone
   search:
     type: overlay  
-
+  announcement: 
+    content: "**New** - 📣 Intership Offer for Master student !. [More details](news/2026/11/03/)" 
+    position: above-navbar
+    icon: Duffle
+    type: success
 
   page-footer:
     left: |
