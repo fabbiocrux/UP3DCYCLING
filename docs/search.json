@@ -39,7 +39,7 @@
     "href": "news/index.html",
     "title": "News and Advances of UP3DCYCLING",
     "section": "",
-    "text": "Ethnographic Analysis of Urban Manufacturing Ecosystems\n\n\nInternship proposition at the ERPI Laboratory 2026 - 2027\n\n\n\nInternships\n\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Polymer characterization of blends for 3D printing\n\n\nInternship proposition at the ERPI Laboratory 2026 - 2027\n\n\n\nInternships\n\n\n\n\n\n\nNovember 6, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nEthnographic Analysis of Urban Manufacturing Ecosystems\n\n\nInternship proposition at the ERPI Laboratory 2026 - 2027\n\n\n\nInternships\n\n\n\n\n\n\nNovember 3, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -67,7 +67,7 @@
     "href": "index.html#latest-project-news",
     "title": "Turning plastic waste into tomorrow’s materials.",
     "section": "Latest project News",
-    "text": "Latest project News\n\n\nNews\n\n\n\n\n\n\n\n\n\n\nEthnographic Analysis of Urban Manufacturing Ecosystems\n\n\nInternship proposition at the ERPI Laboratory 2026 - 2027\n\n\n\n\n\nNo matching items\n\nMore details →"
+    "text": "Latest project News\n\n\nNews\n\n\n\n\n\n\n\n\n\n\nPolymer characterization of blends for 3D printing\n\n\nInternship proposition at the ERPI Laboratory 2026 - 2027\n\n\n\n\n\nNo matching items\n\nMore details →"
   },
   {
     "objectID": "research/index.html",
@@ -131,5 +131,26 @@
     "title": "Catalina Suescun",
     "section": "",
     "text": "I work at the Équipe de Recherche sur le Processus Innovatifs –ERPI– and teach at the École Nationale Supérieure en Génie des Systèmes et de l’Innovation –ENSGSI– at Nancy - France.\nMy research is developed at the Lorraine Fab Living Lab on projects related to the concept of Distributed Recycling via Additive Manufacturing (DRAM). for circular economy perspectives valuing the junction between open source tools, social innovation spaces, holistic indicators. I hope this research contributes to way to put in place sustainability approaches for a post-growth scenarios.\nLearn more about my research →"
+  },
+  {
+    "objectID": "news/2026/11/10/index.html",
+    "href": "news/2026/11/10/index.html",
+    "title": "Polymer characterization of blends for 3D printing",
+    "section": "",
+    "text": "Table 1: Overview of the internship at the ERPI Laboratory\n\n\n\n\n\n\nProject\nUP3DCYCLING\n\n\n\n\nProfile\nStudent Master M2 on Chemical engineering with focus on 3D printing.\n\n\nKey competences\nPolymer science, experimental characterization, data analysis\n\n\nLanguages\nFrench and English\n\n\nSalary\nGratification grid for internships at the Université de Lorraine\n\n\nTutors\nMCF Fabio A. Cruz Sanchez (ERPI)\n\n\n\nPhD. Catalina Suescun Gonzalez (ERPI)\n\n\nPlace\nLaboratoire ERPI (Equipe de Recherche sur les Processus Innovatifs) – 8 rue Bastien Lepage, 54000 Nancy, France\n\n\nPeriod\nFeb/March - August 2027 – 6 months\n\n\nMore Information\nfabio.cruz[at]univ-lorraine.fr -- suescung1[at]univ-lorraine.fr -- (https://up3dcycling.fr/)"
+  },
+  {
+    "objectID": "news/2026/11/10/index.html#objective-of-the-internship",
+    "href": "news/2026/11/10/index.html#objective-of-the-internship",
+    "title": "Polymer characterization of blends for 3D printing",
+    "section": "Objective of the Internship",
+    "text": "Objective of the Internship\nTThe internship aims to develop and experimentally assess recycled polymer blends for direct pellet-based 3D printing, building on the previous work.\nIts specific objectives are:\n\nReview the previous experimental work and relevant literature to select the polymer system, SEBS grade and initial formulation ranges.\nDevelop a design of experiments to assess the effects of the PET/polyolefin ratio and SEBS content on blend processing and printability.\nEvaluate whether direct processing in the Gigabot XL provides sufficient mixing and stable material deposition.\nInvestigate the relationships between formulation, printing conditions, blend morphology and printed-part properties.\nIdentify promising formulations and processing conditions for further development."
+  },
+  {
+    "objectID": "news/2026/11/10/index.html#deliverable",
+    "href": "news/2026/11/10/index.html#deliverable",
+    "title": "Polymer characterization of blends for 3D printing",
+    "section": "Deliverable",
+    "text": "Deliverable"
   }
 ]

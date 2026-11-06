@@ -144,5 +144,6 @@ execute:
 bibliography: 
   - assets/library.bib
   - assets/catalina.bib
-  
+
+date-format: long  
 
