@@ -73,7 +73,7 @@ tribble(
 ~`Project`, ~`UP3DCYCLING`, 
 
 "Profile",
-"Student Master M2 on Social Sciences (Sociology) with focus on Innovation.",
+"Student Master M2 on Chemical engineering with focus on 3D printing.",
 
 "Languages",
 "French and English",
@@ -84,7 +84,7 @@ tribble(
 "Tutors",
 "MCF Fabio A. Cruz Sanchez (ERPI)",
 "",
-"MCF Baptiste Monsaignon (LISIS)",
+" Dr. Catalina Suescun Gonzalez (ERPI)",
 
 "Place",
 "Laboratoire ERPI (Equipe de Recherche sur les Processus Innovatifs) – 8 rue Bastien Lepage, 54000 Nancy, France",
@@ -93,7 +93,7 @@ tribble(
 "Feb/March - August 2027 – 6 months",
 
 "More Information",
-"fabio.cruz[at]univ-lorraine.fr -- (https://up3dcycling.fr/) "
+"fabio.cruz[at]univ-lorraine.fr -- suescung1[at]univ-lorraine.fr -- (https://up3dcycling.fr/) "
 )
 
 table %>%
@@ -117,41 +117,52 @@ Particularly, one of its current areas of focus is on urban manufacturing approa
 
 # Main Issue
 
-Urban manufacturing [@herrmann2019] is increasingly seen as a pathway to re-localize production through  *Do-It-Yourself/Do-It-Together* practices [@dupont2021] making a cleaner production in some extent. 
-The urban manufacturing responds to major societal trends, including urbanization, resource scarcity, circularity, and demand for personalized production [@sajadieh2022].
-However, there is still limited research on the types of products and systems that are suitable for urban production environments.
-Integrating recycling and manufacturing within cities has the potential to reduce transportation emissions, support local economies, and foster citizen engagement in sustainability practices.
+Plastic packaging waste poses an environmental challenge but also represents a potential source of secondary raw materials for additive manufacturing within the framework of distributed recycling via additive manufacturing (DRAM)[@cruzsanchez2020, @kassab2023]. Approximately 12 % of the plastics deposited in recycling bins are rejected at sorting centres in the region of Paris. Of this rejected fraction, films account for roughly 43 %, while pots and trays represent arround 36 %. These packaging formats include polypropylene (PP) and multilayer structures combining polymers such as polyethylene terephthalate (PET) and low-density polyethylene (LDPE). An analysis of 1,190 packaging items using Fourier-transform infrared spectroscopy (FTIR) revealed that 17.4% were made of polypropylene (PP), while multilayer packaging accounted for 12.5% of the sample. Within the multilayer fraction, approximately 51% consisted of PET/LDPE structures and 4.5% of PP/LDPE structures.[@schmidt2022]. While highly predominant in the packaging the recycling of multilayer remains technically challenging.This as the constituent polymers are often immiscible, which can compromise the properties of the resulting materials [ref]. Consequently, these waste streams may be landfilled or incinerated.
 
-Therefore, the major question to answer is :
+Therefore, such packaging represents a relevant feedstock for exploring alternative recycling pathways, including additive manufacturing. Nevertheless, differences in the thermal behaviour, flow properties and interfacial compatibility of the constituent polymers can affect both processing stability and the quality of printed parts.
 
-- *What socio-technical reconfigurations does the implementation of distributed recycling/upcycling processes bring about within a given urban territory, and under which social, material and institutional conditions can these processes take hold?*
+This internship therefore focuses on recycled polyethylene terephthalate (rPET) blended with either recycled polypropylene (rPP) or recycled low-density polyethylene (rLDPE), sourced from plastic packaging. It investigates the use of styrene–ethylene–butylene–styrene (SEBS) as a blend modifier, examining how its concentration and the processing conditions influence blend morphology, printability and the properties of printed parts. A central feature of the project is the direct feeding of the blend components into a fused granular fabrication (FGF) 3D printer called Gigabot XL, without a separate melt-compounding step. This approach raises questions about the printer’s ability to melt, mix and deposit the materials consistently, particularly when processing polymers with different thermal and rheological characteristics. A design of experiments (DoE) approach will be used to systematically evaluate the effects of selected printing parameters and their interactions parting from previous work .
 
-Rather than treating social and environmental dimensions as side effects of a technical system, the project approaches them as constitutive of it: the collectives, skills, places and local policies through which plastic waste comes to be qualified as a resource are part of what makes distributed recycling possible, or not.
+The main research question is therefore:
 
+ *How do blend composition, SEBS content and printing conditions influence mixing quality, printability and the properties of recycled PET/PP and PET/LDPE blends processed directly in an FGF 3D printer?* 
+
+The project aims to support the valorisation of recycled plastic packaging by identifying formulations and processing conditions suitable for producing printed parts with reproducible properties.
 
 ## Objective of the Internship
 
-The internship takes place at an exploratory stage of the project, ahead of the in-depth ethnographic fieldwork in Nancy that will be carried out as part of a PhD (*starting end of 2027*). Its main goals are:
+TThe internship aims to develop and experimentally assess recycled polymer blends for direct pellet-based 3D printing, building on the previous work.
 
-- To map the actors, networks and public action frameworks shaping citizen-led plastic upcycling in urban manufacturing settings, from the Nancy area (local waste governance, metropolitan authority, waste collection, reuse and repair organizations, public support for third places) to regional and national networks.
-- To build an analytical framework and a first set of contrasts that will help situate the Nancy case (Green Fablab, Octroi Nancy third place) in the subsequent fieldwork.
+Its specific objectives are:
 
+  •	Review the previous experimental work and relevant literature to select the polymer system, SEBS grade and initial formulation ranges.
+  •	Develop a design of experiments to assess the effects of the PET/polyolefin ratio and SEBS content on blend processing and printability.
+  •	Evaluate whether direct processing in the Gigabot XL provides sufficient mixing and stable material deposition.
+  •	Investigate the relationships between formulation, printing conditions, blend morphology and printed-part properties.
+  •	Identify promising formulations and processing conditions for further development.
 
 # Methodology
 
-The methodology need to combine theoretical grounding and empirical in-field inquiry.
-The internship will combine a literature review in political sociology, the sociology of public action and the study of third places in France [@gauthier2025], with a mapping of the actors and institutions involved.
-The mapping will rely on document analysis (policy documents, local waste plans, network resources) and on exploratory interviews with regional and national networks (e.g., French Network of Fablabs RFFLabs [(https://www.rfflabs.fr/)](https://www.rfflabs.fr/), Tiers-Lieux Grand Est [(https://tierslieuxgrandest.org/)](https://tierslieuxgrandest.org/), the Precious Plastic France [(https://preciousplastic.fr/)](https://preciousplastic.fr/) network), as well as with local institutional actors in the Nancy area.
+TThe methodology will combine a review of previous work, material preparation, experimental design, direct printing trials and characterization.
+1. Review of Previous Work and Material Selection
 
-Initial contacts with the [Green Fablab (https://lf2l.fr/projects/green-fablab/)](https://lf2l.fr/projects/green-fablab/) and the Octroi Nancy [https://www.octroi-nancy.fr/](https://www.octroi-nancy.fr/) third place will prepare the in-depth fieldwork, without being the core of the internship. 
-These interviews are not intended to generalize, but to provide points of contrast that will highlight what is specific to the Nancy configuration.
-Support from the Laboratoire Interdisciplinaire Sciences Innovations Sociétés --LISIS-- [https://umr-lisis.fr/](https://umr-lisis.fr/) will be established to align the expertise on  waste sociology, particularly regarding citizen-led initiatives in France.
-Ethical considerations will be paramount, ensuring informed consent, confidentiality, and respectful engagement with all participants.
-Then, a mixed qualitative and quantitative approach to analyze urban upcycling systems, using as conceptual framework a Design for Sustainability (DfS) perspective [@ceschin2019], focusing on its socio-technical implications.
+The internship will begin with an analysis of previous work, focusing on the materials, formulations, processing conditions and limitations identified.
+A targeted literature review will complement this analysis to guide the selection of:
+•	The blend system: rLDPE/rPP or rPET/rLDPE.
+•	The polymer composition range.
+•	The SEBS grade and concentration range.
+•	The processing variables and characterization methods.
+The suitability of the selected SEBS grade for the chosen polymer pair will be assessed rather than assumed. If both blend systems are available, preliminary screening will help determine whether one should be prioritized for the main experimental campaign.
 
-::: {.callout-note title="Note on scope"}
-This programme should be read as a horizon rather than a fixed set of tasks; its actual scope will be adjusted with the intern according to their profile and the progress of the work.
-:::
+2. Material Preparation and Preliminary Trials
+
+The recycled feedstocks will be documented according to their origin, available composition information and physical form. Material preparation will include size control, removal of identifiable contaminants and appropriate drying.
+Preliminary trials will establish a feasible processing window for the Gigabot XL. Particular attention will be paid to feeding consistency and extrusion stability.
+The components will be shredded, clean, and dry before being introduced into the printer. 
+
+
+
+
 
 
 ## Deliverable 
@@ -168,6 +179,7 @@ This programme should be read as a horizon rather than a fixed set of tasks; its
 Send the CV and cover letter to:  
 
 - MCF Fabio A. Cruz Sanchez (fabio.cruz[at]univ-lorraine.fr)
+- Dr. Catalina Suescun Gonzalez (suescung1[at]univ-lorraine.fr)
 
 
 
