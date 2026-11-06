@@ -1,0 +1,34 @@
+---
+title: "Catalina Suescun"
+pagetitle: "Catalina Suescun"
+subtitle: "Post Doc on UP3DCYCLING"
+image: "../../images/people/Catalina-Suescun.jpg"
+image-alt: "Catalina Suescun"
+
+description: "Catalina advances her PostDoc academic journey working at the  Université de Lorraine  ERPI and LRGP laboratories, collaborating closely with Dr.J.M.Pearce at Western University's FAST laboratory. Her project aims to transform multi-material plastic waste into feedstock for large-scale 3D printing while enhancing material properties and compatibility through the addition of compatibilizers. Catalina believes in the power of innovation to shape a more sustainable and inclusive future by creating open-source technological solutions that benefit society and the environment."
+
+
+date: 11/04/2026
+date-modified: last-modified
+
+about:
+  template: solana
+  image-width: 20em
+  id: hero-heading
+  # links:
+  #   - icon: github
+  #     aria-label: GitHub
+  #     href: https://github.com/fabbiocrux
+  #   - icon: linkedin
+  #     aria-label: "LinkedIn"
+  #     href: https://linkedin.com/in/fabbiocrux
+  #   - text: "{{< ai orcid >}}"
+  #     href: https://orcid.org/0000-0001-8529-5327
+  #   - text: "{{< ai google-scholar >}}"
+  #     aria-label: "Google Scholar"
+  #     href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+

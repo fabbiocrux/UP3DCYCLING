@@ -1,4 +1,163 @@
 ---
-title: "People At the UP3DCYCLING"
+title: "People on the UP3DCYCLING"
 subtitle: ""
+
+
+listing: 
+- id: erpi
+  contents: 
+    - "team/fabio.qmd"    
+    - "team/catalina.qmd"
+    - "team/mauricio.qmd"
+    - "team/hakim.qmd"
+    - "team/laurent.qmd"
+  sort: false
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, description, categories, image]
+  image-placeholder: Blog-sidebar.jpg
+  image-align: right
+  image-height: 250px
+  page-size: 5
+  grid-columns: 3
+  max-description-length: 200
+
+- id: lrgp
+  contents: 
+    - "team/cecile.qmd"    
+    - "team/sandrine.qmd"
+  sort: false
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, description, categories, image]
+  image-placeholder: Blog-sidebar.jpg
+  image-align: right
+  image-height: 250px
+  page-size: 5
+  grid-columns: 3
+  max-description-length: 200
+
+- id: fast
+  contents: 
+    - "team/joshua.qmd"    
+    - "team/alessia.qmd"
+  sort: false
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, description, categories, image]
+  image-placeholder: Blog-sidebar.jpg
+  image-align: right
+  image-height: 250px
+  page-size: 5
+  grid-columns: 3
+  max-description-length: 200
+
+- id: lisis
+  contents: 
+    - "team/baptiste.qmd"    
+  sort: false
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, description, categories, image]
+  image-placeholder: Blog-sidebar.jpg
+  image-align: right
+  image-height: 250px
+  page-size: 5
+  grid-columns: 3
+  max-description-length: 200
+
+- id: usach
+  contents: 
+    - "team/andrea.qmd"    
+  sort: false
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, description, categories, image]
+  image-placeholder: Blog-sidebar.jpg
+  image-align: right
+  image-height: 250px
+  page-size: 5
+  grid-columns: 3
+  max-description-length: 200  
+toc: false
 ---
+
+
+# Équipe de Recherche sur le Processus Innovatifs (ERPI) - Université de Lorraine
+
+## Researchers Team
+
+::: {.column-margin}
+[![](../images/logos/UL.png){width="80%"}](https://erpi.univ-lorraine.fr/)
+
+[![](../images/logos/ERPI.svg){width="80%"}](https://erpi.univ-lorraine.fr/){target="_blank"}
+:::
+
+:::{#erpi}
+
+
+:::
+
+
+# Laboratoire Réactions et Génie des Procédés -- Université de Lorraine
+
+::: {.column-margin}
+[![](../images/logos/UL.png){width="80%"}](https://erpi.univ-lorraine.fr/)
+
+[![](../images/logos/LGRP.png){width="80%"}](https://lrgp-nancy.cnrs.fr/){target="_blank"}
+:::
+
+:::{#lrgp}
+
+
+:::
+
+---
+
+# Free Appropriate Sustainable Technology (FAST) -- Western University
+
+::: {.column-margin}
+[![](../images/logos/FAST.png){width="250px" fig-align="center"}](https://www.appropedia.org/FAST){target="_blank"}
+:::
+
+
+::: {#fast}
+:::
+
+
+---
+
+# Laboratoire Interdisciplinaire Sciences Innovations Sociétés
+
+::: {.column-margin}
+[![](../images/logos/LISIS.jpg){width="250px" fig-align="center"}](https://umr-lisis.fr/membre/baptiste-monsaingeon/){target="_blank"}
+:::
+
+
+::: {#lisis}
+:::
+
+
+
+---
+
+# Universidad Santiago de Chile -- USACH
+
+::: {.column-margin}
+[![](../images/logos/CL-USACH.png){width="250px" fig-align="center"}](){target="_blank"}
+:::
+
+
+::: {#usach}
+:::
+

@@ -1,0 +1,46 @@
+---
+title: "Fabio A. Cruz Sanchez"
+subtitle: "Assistant Professor on Distributed Recycling"
+pagetitle: "Fabio A. <br> Cruz Sanchez"
+categories:
+ - 3D Printing
+ - UPCYCLING
+
+image: "../../images/people/fabio-cruz.jpg"
+image-alt: "Fabio A. Cruz Sanchez"
+
+description: "UP3DCYCLING is coordinated by Associate Professor (Maître de conférences) [{{< fa brands orcid >}}](https://orcid.org/0000-0001-8529-5327) Fabio A. Cruz Sanchez.  He works at the École Nationale Supérieure en Génie des Systèmes et de l’Innovation (ENSGSI) and a researcher at the ERPI Laboratory (Équipe de Recherche sur les Processus Innovatifs), Université de Lorraine, Nancy, France. His research focuses on distributed recycling through additive manufacturing (DRAM), open-source manufacturing technologies and the development of sustainable production systems based on circular economy principles. His main research interests include plastic and polymer recycling, 3D printing and additive manufacturing, open-source hardware, distributed manufacturing networks, and the technical, logistical and environmental assessment of recycling processes. He also investigates the role of FabLabs and collaborative innovation spaces in enabling local recycling initiatives, closing material loops and promoting socio-technical transitions towards more sustainable and decentralized manufacturing systems."
+
+date: 11/04/2026
+date-modified: last-modified
+
+about:
+  template: solana
+  image-width: 28em
+  id: hero-heading
+  links:
+    - icon: github
+      aria-label: GitHub
+      href: https://github.com/fabbiocrux
+    - icon: linkedin
+      aria-label: "LinkedIn"
+      href: https://linkedin.com/in/fabbiocrux
+    - text: "{{< ai orcid >}}"
+      href: https://orcid.org/0000-0001-8529-5327
+    - text: "{{< ai google-scholar >}}"
+      aria-label: "Google Scholar"
+      href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+
+
+I work at the [Équipe de Recherche sur le Processus Innovatifs --ERPI--](https://erpi.univ-lorraine.fr/) and teach at the [École Nationale Supérieure en Génie des Systèmes et de l'Innovation --ENSGSI--](https://ensgsi.univ-lorraine.fr/nos-formations/) at Nancy - France.
+
+My research is developed at the [Lorraine Fab Living Lab](https://lf2l.fr/) on projects related to the concept of [**Distributed Recycling via Additive Manufacturing (DRAM)**](/publications/articles/2020-04-15-fabio/index.html). for circular economy perspectives valuing the junction between *open source* tools, social innovation spaces, holistic indicators. 
+I hope this research contributes to way to put in place sustainability approaches for a post-growth scenarios.
+
+
+<!-- [Learn more about my research &rarr;](/about){.about-links .subtitle} -->
+

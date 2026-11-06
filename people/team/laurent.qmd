@@ -1,0 +1,34 @@
+---
+title: "Laurent Dupont"
+pagetitle: "Laurent Dupont"
+subtitle: "Research Engineer (HDR)"
+image: "../../images/people/Laurent-Dupont.png"
+image-alt: "Laurent Dupont"
+
+description: "Laurent Dupont is a Research Engineer (HDR – Accreditation to Supervise Research) at the Université de Lorraine and a researcher at the ERPI Laboratory (Équipe de Recherche sur les Processus Innovatifs). His research focuses on innovation engineering, collaborative design and user-driven innovation, particularly in the context of smart and sustainable cities and territories.  His main research interests include Living Labs and Fab Living Labs, open innovation spaces, collaborative innovation processes, user participation in the design and evaluation of new products and services, and immersive collaborative environments. He is also interested in the role of digital technologies, data-driven approaches and multi-stakeholder partnerships in supporting urban transformation and sustainable territorial development. He is co-founder and scientific manager of the Lorraine Fab Living Lab and co-creator of the Lorraine Smart Cities Living Lab, where he develops and experiments with methodologies for collaborative innovation involving citizens, businesses, researchers and public authorities."
+
+date: 11/04/2026
+date-modified: last-modified
+
+
+about:
+  template: solana
+  image-width: 20em
+  id: hero-heading
+  # links:
+  #   - icon: github
+  #     aria-label: GitHub
+  #     href: https://github.com/fabbiocrux
+  #   - icon: linkedin
+  #     aria-label: "LinkedIn"
+  #     href: https://linkedin.com/in/fabbiocrux
+  #   - text: "{{< ai orcid >}}"
+  #     href: https://orcid.org/0000-0001-8529-5327
+  #   - text: "{{< ai google-scholar >}}"
+  #     aria-label: "Google Scholar"
+  #     href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+

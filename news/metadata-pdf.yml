@@ -1,0 +1,20 @@
+format:
+  html: default
+  pdf:
+    documentclass: article
+    geometry:
+     - top=25mm
+     - left=20mm
+     - bottom=25mm
+     - right=20mm     
+    number-sections: true
+    fontsize: 11pt
+    colorlinks: true
+    citecolor: blue
+    linestretch: 1.1    
+    linkcolor: blue
+    urlcolor: blue
+    link-citations: true
+    template-partials: 
+     - ../assets/before-body.tex
+

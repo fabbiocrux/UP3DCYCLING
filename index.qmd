@@ -6,113 +6,266 @@ details: |
 sidebar: false
 page-layout: article
 course-logo: /assets/img/logo-mdp.png
-# format:
-#   html:
-#     template-partials:
-#       - assets/html/title-block.html
-
 format:
   html:
     toc: false
     number-sections: false
+    template-partials:
+      - assets/html/title-block.html
+
+listing: 
+- id: news
+  contents: 
+    - "news/*/*/*/index.qmd"
+  sort: date desc
+  type: grid
+  grid-columns: 1
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, image]
+  max-items: 1
+  image-height: "200"
+# - id: talk
+#   contents: 
+#     - "../talk/*/index.qmd"
+#     - "../talk/*/index.markdown"
+#   sort: date desc
+#   type: grid
+#   grid-columns: 1
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, subtitle, image]
+#   max-items: 1
+#   image-height: "200"
+# - id: publication
+#   contents: 
+#     - "../resources/publications/*/*/index.qmd"
+#   sort: date desc
+#   type: grid
+#   grid-columns: 1
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, image]
+#   max-items: 1
+#   image-height: "200"
+#   image-placeholder: ../publication/featured.jpg
+# - id: project
+#   contents: 
+#     - "../project/*/index.qmd"
+#     - "../project/*/index.markdown"
+#   sort: date desc
+#   type: grid
+#   grid-columns: 1
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, subtitle, image]
+#   max-items: 1
+#   image-height: "200"
 ---
 
 
-:::{.column-screen-inset}
-![Banner de la Sexitude](https://placehold.co/1500x200){width="100%"}
+
+<!-- HERO -->
+:::{.hero-section .column-screen}
+:::{.hero-content}
+
+[RESEARCH · MATERIALS · CIRCULARITY]{.eyebrow}
+
+# Turning plastic waste into tomorrow's   <span>materials.</span>
+
+Exploring distributed upcycling of mixed plastic waste through open-source additive manufacturing.
+
+:::{.hero-buttons}
+
+[Discover the project →](research/){.btn-primary}
+
+[Explore our research ↓](research/){.btn-secondary}
+
+:::
+:::
 :::
 
 
 
-::: {.grid .align-items-center }
-
-::: {.g-col-12 }
-
-![Banner de la Sexitude](https://placehold.co/1500x400){width="100%"}
-:::
-:::
 
 
 
+<br><br>
 
+[OUR AIM]{.eyebrow}
 
-::: {.grid .align-items-center }
-
-::: {.g-col-4 }
-
-## Our Aim
+## From waste to new [possibilities]{style="color: green;"}
 
 Our overall research aims is to study, implement, and evaluate the ***upcycling potential*** of mixed plastic waste via in-situ reactive compatibilization using **open-source additive manufacturing**.
 
+
+
+
+::: {.grid .process-section}
+
+::: {.g-col-12 .g-col-md-3 .process-card}
+
+![](images/Plastic-00.jpg){alt="Mixed plastic waste"}
+[01]{.step-number}
+
+### Mixed plastic waste
+Sorting and cleaning process make difficult to treat post-consumer plastics.
+
 :::
 
-::: {.g-col-8}
+::: {.g-col-12 .g-col-md-3 .process-card}
+
+![](images/Plastic-01.jpg){alt="Mixed plastic waste"}
+[02]{.step-number}
+
+### Reactive compatibilization
+
+Enhance the properties of mixed plastic blends.
+
+:::
+
+::: {.g-col-12 .g-col-md-3 .process-card}
+
+![](images/recycled-object.jpg){alt="Mixed plastic waste"}
+[03]{.step-number}
+
+### Open-source 3D printing
+Give a new purpose to post-consumer plastics.
+
+:::
 
 
-![Logo of UP3Dcycling](https://blocks.astratic.com/img/general-img-landscape.png){width="85%" fig-align="center"}
+::: {.g-col-12 .g-col-md-3 .process-card}
+
+![](images/Octroi.jpg){alt="Mixed plastic waste"}
+[04]{.step-number}
+
+### Socio-technical Perspective
+
+Better understanding the appropriate use of plastic waste by a urban manufacturing community.
 
 :::
 
 :::
 
----
+
+
+
+
 
 ::: {.grid .align-items-center }
 
-::: {.g-col-8}
+::: {.g-col-12 .g-col-md-7 }
 
+[OUR APPRAOCH]{.eyebrow}
 
-![Logo of UP3Dcycling](https://blocks.astratic.com/img/general-img-landscape.png){width="85%"}
+## Multi-level perspective of the [Distributed Upcycling]{fg="orange"}
+
+Our overall research aims is to study, implement, and evaluate the ***upcycling potential*** of mixed plastic waste via in-situ reactive compatibilization using **open-source additive manufacturing**.
+
+UP3DCYCLING project is supported by multidisciplinary expertise spanning three domains: 1) polymer science, 2) additive manufacturing processes, and 3) socio-technical systems.
+The interaction across these three levels is supported by experimental, modeling, and scenario approaches, which constitute a key added value of the project, enabling a holistic understanding of both technical and social dynamics.
+
 
 :::
+
+::: {.g-col-12 .g-col-md-5 }
+
+
+![](images/Multilevel-00.png){width="100%" fig-align="center"}
+
+:::
+
+:::
+
+
+
+
+
+## Latest project [News]{fg="green"}
+
+
+:::: {.grid}
 
 ::: {.g-col-4}
 
-# Mission
+#### News
 
-Our overall research aims is to study, implement, and evaluate the ***upcycling potential*** of mixed plastic waste via in-situ reactive compatibilization using **open-source additive manufacturing**.
+::: {#news}
+
+:::
+[More details &rarr;](news/){.btn-primary}
+:::
+
+
+::: {.g-col-4}
+
+<!-- #### Dissemination Activities -->
+
+<!-- ::: {#project}
+
+::: -->
 
 
 :::
 
-::: 
 
 
+::: {.g-col-4}
 
-# News of the Project
+<!-- #### Publications
+::: {#publication}
+
+::: -->
 
 
-
-:::{.column-screen-inset}
-![News](https://placehold.co/1500x200){width="100%"}
 :::
+::::
+
+
 
 
 
 # Our Academical Allies {style="text-align: center"}
 
-::: {.grid .align-items-center }
+::: {.grid .align-items-center .column-page-inset}
 
-::: {.g-col-3}
-![LRGP](images/logos/LGRP.png){width="85%" fig-align="center"}
+::: {.g-col-2}
+![](images/logos/ERPI.svg){width="150px" fig-align="center"}
 :::
 
-::: {.g-col-3}
-![Western University](images/logos/Western.svg){width="85%" fig-align="center"}
+::: {.g-col-2}
+![](images/logos/ENSGSI.png){width="100px" fig-align="center"}
 :::
 
-::: {.g-col-3}
-![](images/logos/LISIS.jpg){width="85%" fig-align="center"}
+
+::: {.g-col-2}
+![](images/logos/LGRP.png){width="120px" fig-align="center"}
 :::
 
-::: {.g-col-3}
-![](images/logos/Western.svg){width="85%" fig-align="center"}
+::: {.g-col-2}
+![](images/logos/Western.svg){width="200px" fig-align="center"}
+:::
+
+::: {.g-col-2}
+![](images/logos/LISIS.jpg){width="120px" fig-align="center"}
+:::
+
+::: {.g-col-2}
+![](images/logos/CL-USACH.png){width="240px" fig-align="center"}
 :::
 
 ::: 
 
-# Our Societal Allies {.title-block style="text-align: center"}
 
+
+
+
+# Our Societal Allies {.title-block style="text-align: center"}
 
 ::: {.grid .align-items-center }
 

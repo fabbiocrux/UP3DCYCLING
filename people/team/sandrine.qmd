@@ -1,0 +1,34 @@
+---
+title: "Sandrine Hoppe"
+pagetitle: "Sandrine Hoppe"
+subtitle: "Research Engineerv (CNRS)"
+image: "../../images/people/Sandrine-Hoppe.jpg"
+image-alt: "Sandrine Hoppe"
+
+description: "Sandrine Hoppe is a CNRS researcher at the Laboratoire Réactions et Génie des Procédés (LRGP) in Nancy, France. Her research focuses on the development, processing and characterization of polymeric materials with controlled properties and structures. Her main research interests include polymer processing and reactive extrusion, micro- and nanostructured polymer composites, bio-based and sustainable materials, and the valorization and recycling of plastics. She also works on process modelling, simulation and optimization, with the aim of developing innovative and more sustainable materials and manufacturing processes."
+
+date: 11/04/2026
+date-modified: last-modified
+
+
+about:
+  template: solana
+  image-width: 20em
+  id: hero-heading
+  # links:
+  #   - icon: github
+  #     aria-label: GitHub
+  #     href: https://github.com/fabbiocrux
+  #   - icon: linkedin
+  #     aria-label: "LinkedIn"
+  #     href: https://linkedin.com/in/fabbiocrux
+  #   - text: "{{< ai orcid >}}"
+  #     href: https://orcid.org/0000-0001-8529-5327
+  #   - text: "{{< ai google-scholar >}}"
+  #     aria-label: "Google Scholar"
+  #     href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+

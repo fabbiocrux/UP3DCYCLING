@@ -1,0 +1,35 @@
+---
+title: "Baptiste Monsaingeon"
+pagetitle: "Baptiste Monsaingeon"
+subtitle: "Associate Professor"
+image: "../../images/people/Baptiste-MONSAINGEON.jpeg"
+image-alt: "Baptiste Monsaingeon"
+
+description: "Baptiste Monsaingeon is a sociologist specializing in science, technology, and the environment. A lecturer at the University of Reims Champagne-Ardenne, he is currently on secondment as a research fellow at the CNRS, within the LISIS. His research focuses on analyzing the relationships between contemporary societies and their waste. Since 2016, he has been particularly interested in plastics, seeking to reconstruct their socio-technical trajectories—both in terms of the history of their production and uses, as well as their impacts and regulation. Between 2022 and 2025, he served as scientific co-leader in charge of the social and human sciences (SHS) for the INRAE and CNRS Collective Scientific Expertise on plastics used in agriculture and food (ESCo Plastiques). In 2024, he received the CNRS Bronze Medal."
+
+
+
+date: 11/04/2026
+date-modified: last-modified
+
+about:
+  template: solana
+  image-width: 20em
+  id: hero-heading
+  # links:
+  #   - icon: github
+  #     aria-label: GitHub
+  #     href: https://github.com/fabbiocrux
+  #   - icon: linkedin
+  #     aria-label: "LinkedIn"
+  #     href: https://linkedin.com/in/fabbiocrux
+  #   - text: "{{< ai orcid >}}"
+  #     href: https://orcid.org/0000-0001-8529-5327
+  #   - text: "{{< ai google-scholar >}}"
+  #     aria-label: "Google Scholar"
+  #     href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+

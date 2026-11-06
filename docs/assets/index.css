@@ -1,0 +1,351 @@
+
+/* =================================
+   UP3DCYCLING DESIGN SYSTEM
+================================= */
+
+:root {
+  --forest: #153C30;
+  --green: #78B52B;
+  --ivory: #F7F5EB;
+  --sage: #E9EEDB;
+  --charcoal: #242A27;
+  --white: #FFFFFF;
+}
+
+body {
+  background: var(--ivory);
+  color: var(--charcoal);
+  font-family: "Inter", "Arial", sans-serif;
+  margin: 0;
+}
+
+/* GLOBAL */
+
+#quarto-content {
+  padding: 0;
+}
+
+main.content {
+  max-width: none !important;
+  padding: 0 !important;
+}
+
+h1, h2, h3 {
+  color: var(--forest);
+  font-weight: 750;
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+p {
+  line-height: 1.65;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  border-bottom: 1px solid #e5e3d9;
+  padding: 15px 4%;
+  font-weight: 600;
+}
+
+.navbar-brand img {
+  max-height: 48px;
+}
+
+/* HERO */
+
+.hero-section {
+  min-height: 590px;
+  display: flex;
+  align-items: center;
+  padding: 65px 5%;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(247,245,235,.98) 0%,
+      rgba(247,245,235,.90) 38%,
+      rgba(247,245,235,.05) 75%
+    ),
+    url("images/hero-3dprinter.jpg")
+    center / cover no-repeat;
+}
+
+.hero-content {
+  max-width: 610px;
+}
+
+.eyebrow {
+  color: var(--forest);
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .20em;
+  text-transform: uppercase;
+}
+
+.hero-content h1 {
+  font-size: clamp(3rem, 5.5vw, 5rem);
+  line-height: 1.02;
+  margin: 25px 0;
+}
+
+.hero-content h1 span {
+  color: var(--green);
+}
+
+.hero-content p {
+  font-size: 1.15rem;
+  max-width: 490px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: .25s ease;
+}
+
+.btn-primary {
+  background: var(--forest);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--green);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  border: 1px solid var(--forest);
+  color: var(--forest);
+}
+
+.btn-secondary:hover {
+  background: var(--forest);
+  color: white;
+}
+
+/* SECTIONS */
+
+.process-section,
+.partners-section,
+.news-section {
+  padding: 85px 5%;
+}
+
+.section-intro {
+  max-width: 650px;
+  margin-bottom: 45px;
+}
+
+/* PROCESS CARDS */
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+.process-card {
+  position: relative;
+  text-align: center;
+}
+
+.process-card img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.process-card h3 {
+  font-size: 1.3rem;
+}
+
+.step-number {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 105px);
+  background: var(--green);
+  color: white;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+}
+
+/* RESEARCH */
+
+.research-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--sage);
+  border-radius: 35px;
+  margin: 20px 3%;
+  overflow: hidden;
+}
+
+.research-text {
+  padding: 65px;
+  align-self: center;
+}
+
+.research-image {
+  min-height: 360px;
+  background: url("images/research-lab.jpg")
+    center / cover no-repeat;
+}
+
+/* PARTNERS */
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.partner {
+  text-align: center;
+  font-weight: 750;
+  font-size: 1.25rem;
+  padding: 25px;
+  border-right: 1px solid #c8c9be;
+}
+
+/* NEWS */
+
+.news-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 35px;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.news-card {
+  background: white;
+  border: 1px solid #e2e0d6;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: .25s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px #153c3015;
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-body {
+  padding: 25px;
+}
+
+.news-date {
+  color: var(--green);
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+/* FOOTER */
+
+.site-footer {
+  background: var(--forest);
+  color: white;
+  padding: 55px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer-funding {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-funding img {
+  width: 75px;
+}
+
+.site-footer a {
+  color: white;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .hero-section {
+    min-height: 600px;
+    background-position: 65% center;
+  }
+
+  .hero-content {
+    background: #f7f5ebd9;
+    padding: 25px;
+    border-radius: 20px;
+  }
+
+  .process-grid,
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-section {
+    grid-template-columns: 1fr;
+  }
+
+  .research-text {
+    padding: 35px;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partner {
+    border-right: none;
+  }
+
+  .news-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

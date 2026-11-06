@@ -1,0 +1,101 @@
+---
+title: "UP3DCYCLING"
+page-layout: full
+css: assets/index.css
+---
+
+<!-- HERO -->
+:::{.hero-section}
+:::{.hero-content}
+
+[RESEARCH · MATERIALS · CIRCULARITY]{.eyebrow}
+
+# Turning plastic waste into tomorrow's   <span>materials.</span>
+
+Exploring distributed upcycling of mixed plastic waste through open-source additive manufacturing.
+
+:::{.hero-buttons}
+
+[Discover the project →](research/){.btn-primary}
+
+[Explore our research ↓](research/){.btn-secondary}
+
+:::
+:::
+:::
+
+
+
+
+
+<!-- TRANSFORMATION -->
+:::{.process-section}
+
+:::{.section-intro}
+  
+## From waste to new possibilities
+
+UP3DCYCLING transforms mixed plastic waste into high-performance materials for 3D printing.
+
+[OUR APPROACH]{.eyebrow}
+:::
+
+:::{.process-grid}
+
+:::{.process-card}
+
+![](images/plastic-waste.jpg){alt="Mixed plastic waste"}
+[01]{.step-number}
+
+### Mixed plastic waste
+Give a new purpose to post-consumer plastics.
+
+:::
+
+:::{.process-card}
+![](images/plastic-waste.jpg){alt="Recycled plastic pellets"}
+[02]{.step-number}
+      
+### Reactive compatibilization
+
+Enhance the properties of mixed plastic blends.
+
+:::
+
+
+:::
+:::
+
+
+
+
+<section class="process-section">
+<div class="section-intro">
+<span class="eyebrow">OUR APPROACH</span>
+<h2>From waste to new possibilities</h2>
+<p> UP3DCYCLING transforms mixed plastic waste into high-performance materials for 3D printing.</p>
+</div>
+
+<div class="process-grid">
+<div class="process-card">
+<img src="images/plastic-waste.jpg" alt="Mixed plastic waste">
+<span class="step-number">01</span>
+<h3>Mixed plastic waste</h3>
+<p>Give a new purpose to post-consumer plastics.</p>
+</div>
+
+<div class="process-card">
+<img src="images/plastic-pellets.jpg" alt="Recycled plastic pellets">
+<span class="step-number">02</span>
+<h3>Reactive compatibilization</h3>
+<p>Enhance the properties of mixed plastic blends.</p>
+</div>
+<div class="process-card">
+<img src="images/recycled-object.jpg" alt="3D printed recycled object">
+<span class="step-number">03</span>
+<h3>Open-source 3D printing</h3>
+<p>Create high-performance materials locally.</p>
+</div>
+
+</div>
+</section>
