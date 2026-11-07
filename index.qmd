@@ -26,6 +26,7 @@ listing:
   fields: [title, subtitle, image]
   max-items: 1
   image-height: "200"
+
 # - id: talk
 #   contents: 
 #     - "../talk/*/index.qmd"
