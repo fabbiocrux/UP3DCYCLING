@@ -19,12 +19,12 @@ listing:
     - "news/*/*/*/index.qmd"
   sort: date desc
   type: grid
-  grid-columns: 1
+  grid-columns: 5
   categories: false
   sort-ui: false
   filter-ui: false
   fields: [title, subtitle, image]
-  max-items: 1
+  max-items: 3
   image-height: "200"
 
 # - id: talk
@@ -187,45 +187,17 @@ The interaction across these three levels is supported by experimental, modeling
 
 
 
-## Latest project [News]{fg="green"}
+## Latest Project [News]{fg="green"}
 
 
-:::: {.grid}
-
-::: {.g-col-4}
-
-#### News
 
 ::: {#news}
 
 :::
-[More details &rarr;](news/){.btn-primary}
-:::
+
+[More news &rarr;](news/){.btn-primary}
 
 
-::: {.g-col-4}
-
-<!-- #### Dissemination Activities -->
-
-<!-- ::: {#project}
-
-::: -->
-
-
-:::
-
-
-
-::: {.g-col-4}
-
-<!-- #### Publications
-::: {#publication}
-
-::: -->
-
-
-:::
-::::
 
 
 

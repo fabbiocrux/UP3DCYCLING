@@ -1,7 +1,6 @@
 ---
-lang: en
-title: "Polymer characterization of blends for 3D printing"
-subtitle: "Internship proposition at the ERPI Laboratory 2026 - 2027"
+title: "***Polymer characterization*** of blends for 3D printing"
+subtitle: "Internship at the ERPI Laboratory 2026 - 2027"
 date: 11/06/2026
 date-format: "[Updated on] MMMM D, YYYY"
 format:

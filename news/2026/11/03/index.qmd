@@ -1,7 +1,6 @@
 ---
-lang: en
-title: "Ethnographic Analysis of Urban Manufacturing Ecosystems"
-subtitle: "Internship proposition at the ERPI Laboratory 2026 - 2027"
+title: "**Ethnographic Analysis** of Urban Manufacturing Ecosystems"
+subtitle: "Internship Master M2 at the ERPI Laboratory 2026 - 2027"
 date: 11/03/2026
 date-format: "[Updated on] MMMM D, YYYY"
 format:
