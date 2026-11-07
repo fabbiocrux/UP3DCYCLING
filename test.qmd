@@ -1,101 +1,26 @@
----
-title: "UP3DCYCLING"
-page-layout: full
-css: assets/index.css
----
+Examples de LInkedIN POst:
 
-<!-- HERO -->
-:::{.hero-section}
-:::{.hero-content}
+🎓 OFFRE DE THÈSE | Régénération de flottes de systèmes critiques confrontées à l'obsolescence
 
-[RESEARCH · MATERIALS · CIRCULARITY]{.eyebrow}
+🔎 Comment prolonger la durée d'utilisation de systèmes industriels complexes tout en préservant les ressources et les possibilités de régénération futures ?
+Dans les secteurs de l'énergie, des transports, de la défense ou des infrastructures industrielles, de nombreux systèmes critiques sont exploités pendant plusieurs décennies. Pourtant, certains de leurs constituants peuvent devenir obsolètes bien avant la fin de leur durée d'utilisation.
+Face à ces situations, plusieurs stratégies peuvent être envisagées : réparation, reconditionnement, refabrication, mise à niveau, réutilisation ou récupération de constituants.
+Mais comment articuler ces stratégies à l'échelle d'une flotte, lorsque les décisions prises sur un équipement influencent les possibilités de pérennisation des autres ?
+C'est la problématique au cœur de la thèse que nous proposons au CRAN · Laboratoire de recherche fondamentale et appliquée, Université de Lorraine, dans le cadre du projet ANR PHENIX.
 
-# Turning plastic waste into tomorrow's   <span>materials.</span>
+🎯 L'objectif est de développer des modèles et des méthodes permettant de représenter et d'évaluer les trajectoires de régénération de flottes de systèmes critiques, en tenant compte des interdépendances entre équipements et des conséquences des décisions présentes sur leurs possibilités futures de pérennisation.
 
-Exploring distributed upcycling of mixed plastic waste through open-source additive manufacturing.
+🌱 Ce sujet, à l'interface du génie industriel, de la modélisation des systèmes à événements discrets et de l'aide à la décision, s'inscrit dans les enjeux de développement durable, d'économie circulaire et de préservation des ressources.
 
-:::{.hero-buttons}
+👤 Profil recherché
+Nous recherchons un(e) candidat(e) titulaire d'un diplôme d'ingénieur ou d'un Master 2 en génie industriel, automatique ou dans un domaine connexe.
+Des connaissances en modélisation et simulation des systèmes à événements discrets, un intérêt pour la programmation, un goût pour la recherche scientifique et une sensibilité aux problématiques de développement durable seront particulièrement appréciés.
 
-[Discover the project →](research/){.btn-primary}
+📍 Lieu : CRAN – Université de Lorraine, Nancy
+📅 Début envisagé : janvier 2027
+👥 Direction de thèse : Éric Levrat et Pascale Marangé
+Encadrement : Sébastien Remy
 
-[Explore our research ↓](research/){.btn-secondary}
+🔁 N'hésitez pas à partager cette offre auprès des étudiants de Master 2, des élèves ingénieurs et des jeunes diplômés intéressés par la recherche et les enjeux de durabilité des systèmes industriels.
 
-:::
-:::
-:::
-
-
-
-
-
-<!-- TRANSFORMATION -->
-:::{.process-section}
-
-:::{.section-intro}
-  
-## From waste to new possibilities
-
-UP3DCYCLING transforms mixed plastic waste into high-performance materials for 3D printing.
-
-[OUR APPROACH]{.eyebrow}
-:::
-
-:::{.process-grid}
-
-:::{.process-card}
-
-![](images/plastic-waste.jpg){alt="Mixed plastic waste"}
-[01]{.step-number}
-
-### Mixed plastic waste
-Give a new purpose to post-consumer plastics.
-
-:::
-
-:::{.process-card}
-![](images/plastic-waste.jpg){alt="Recycled plastic pellets"}
-[02]{.step-number}
-      
-### Reactive compatibilization
-
-Enhance the properties of mixed plastic blends.
-
-:::
-
-
-:::
-:::
-
-
-
-
-<section class="process-section">
-<div class="section-intro">
-<span class="eyebrow">OUR APPROACH</span>
-<h2>From waste to new possibilities</h2>
-<p> UP3DCYCLING transforms mixed plastic waste into high-performance materials for 3D printing.</p>
-</div>
-
-<div class="process-grid">
-<div class="process-card">
-<img src="images/plastic-waste.jpg" alt="Mixed plastic waste">
-<span class="step-number">01</span>
-<h3>Mixed plastic waste</h3>
-<p>Give a new purpose to post-consumer plastics.</p>
-</div>
-
-<div class="process-card">
-<img src="images/plastic-pellets.jpg" alt="Recycled plastic pellets">
-<span class="step-number">02</span>
-<h3>Reactive compatibilization</h3>
-<p>Enhance the properties of mixed plastic blends.</p>
-</div>
-<div class="process-card">
-<img src="images/recycled-object.jpg" alt="3D printed recycled object">
-<span class="step-number">03</span>
-<h3>Open-source 3D printing</h3>
-<p>Create high-performance materials locally.</p>
-</div>
-
-</div>
-</section>
+#OffreDeThèse #Doctorat #PhD #CRAN #UniversitéDeLorraine #Modélisation #AideÀLaDécision #Obsolescence #ÉconomieCirculaire #DéveloppementDurable

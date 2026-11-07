@@ -88,11 +88,17 @@ table <- tribble(~`Project`, ~`UP3DCYCLING`,
 "Place",
 "Laboratoire ERPI (Equipe de Recherche sur les Processus Innovatifs) – 8 rue Bastien Lepage, 54000 Nancy, France",
 
+"",
+"Laboratoire LGRP (Laboratoire Réactions et Génie des Procédés) – 1 Rue Grandville, 54000 Nancy, France",
+
 "Period",
 "Feb/March - August 2027 – 6 months",
 
 "More Information",
-"fabio.cruz[at]univ-lorraine.fr -- suescung1[at]univ-lorraine.fr -- (https://up3dcycling.fr/) "
+"suescung1[at]univ-lorraine.fr -- (https://up3dcycling.fr/)",
+
+"",
+"fabio.cruz[at]univ-lorraine.fr"
 )
 
 table %>%
@@ -117,12 +123,23 @@ Particularly, one of its current areas of focus is on urban manufacturing approa
 # Main Issue
 
 Plastic packaging waste poses an environmental challenge but also represents a potential source of secondary raw materials for additive manufacturing within the framework of distributed recycling via additive manufacturing (DRAM)[@cruzsanchez2020, @kassab2023]. 
-Approximately 12 % of the plastics deposited in recycling bins are rejected at sorting centres in the region of Paris. Of this rejected fraction, films account for roughly 43 %, while pots and trays represent arround 36 %. These packaging formats include polypropylene (PP) and multilayer structures combining polymers such as polyethylene terephthalate (PET) and low-density polyethylene (LDPE). An analysis of 1,190 packaging items using Fourier-transform infrared spectroscopy (FTIR) revealed that 17.4% were made of polypropylene (PP), while multilayer packaging accounted for 12.5% of the sample. 
-Within the multilayer fraction, approximately 51% consisted of PET/LDPE structures and 4.5% of PP/LDPE structures.[@schmidt2022]. While highly predominant in the packaging the recycling of multilayer remains technically challenging.This as the constituent polymers are often immiscible, which can compromise the properties of the resulting materials. Consequently, these waste streams may be landfilled or incinerated.
+Approximately 12 % of the plastics deposited in recycling bins are rejected at sorting centres in the region of Paris. 
+Of this rejected fraction, films account for roughly 43 %, while pots and trays represent arround 36 %. 
+These packaging formats include polypropylene (PP) and multilayer structures combining polymers such as polyethylene terephthalate (PET) and low-density polyethylene (LDPE). 
+An analysis of 1,190 packaging items using Fourier-transform infrared spectroscopy (FTIR) revealed that 17.4% were made of polypropylene (PP), while multilayer packaging accounted for 12.5% of the sample. 
+Within the multilayer fraction, approximately 51% consisted of PET/LDPE structures and 4.5% of PP/LDPE structures [@schmidt2022]. 
+While highly predominant in the packaging the recycling of multilayer remains technically challenging.
+This as the constituent polymers are often immiscible, which can compromise the properties of the resulting materials. 
+Consequently, these waste streams may be landfilled or incinerated.
 
-Therefore, such packaging represents a relevant feedstock for exploring alternative recycling pathways, including additive manufacturing. Nevertheless, differences in the thermal behaviour, flow properties and interfacial compatibility of the constituent polymers can affect both processing stability and the quality of printed parts.
+Therefore, such packaging represents a relevant feedstock for exploring alternative recycling pathways, including additive manufacturing. 
+Nevertheless, differences in the thermal behaviour, flow properties and interfacial compatibility of the constituent polymers can affect both processing stability and the quality of printed parts.
 
-This internship therefore focuses on recycled polyethylene terephthalate (rPET) blended with either recycled polypropylene (rPP) or recycled low-density polyethylene (rLDPE), sourced from plastic packaging. It investigates the use of styrene–ethylene–butylene–styrene (SEBS) as a blend modifier, examining how its concentration and the processing conditions influence blend morphology, printability and the properties of printed parts. A central feature of the project is the direct feeding of the blend components into a fused granular fabrication (FGF) 3D printer called Gigabot XL, without a separate melt-compounding step. This approach raises questions about the printer’s ability to melt, mix and deposit the materials consistently, particularly when processing polymers with different thermal and rheological characteristics. A design of experiments (DoE) approach will be used to systematically evaluate the effects of selected printing parameters and their interactions parting from previous work .
+This internship therefore focuses on recycled polyethylene terephthalate (rPET) blended with either recycled polypropylene (rPP) or recycled low-density polyethylene (rLDPE), sourced from plastic packaging. 
+It investigates the use of styrene–ethylene–butylene–styrene (SEBS) as a blend modifier, examining how its concentration and the processing conditions influence blend morphology, printability and the properties of printed parts. 
+A central feature of the project is the direct feeding of the blend components into a fused granular fabrication (FGF) 3D printer called Gigabot XL, without a separate melt-compounding step. 
+This approach raises questions about the printer’s ability to melt, mix and deposit the materials consistently, particularly when processing polymers with different thermal and rheological characteristics. 
+A design of experiments (DoE) approach will be used to systematically evaluate the effects of selected printing parameters and their interactions parting from previous work.
 
 The main research question is therefore:
 
@@ -132,7 +149,7 @@ The project aims to support the valorisation of recycled plastic packaging by id
 
 ## Objective of the Internship
 
-TThe internship aims to develop and experimentally assess recycled polymer blends for direct pellet-based 3D printing, building on the previous work.
+The internship aims to develop and experimentally assess recycled polymer blends for direct pellet-based 3D printing, building on the previous work.
 
 Its specific objectives are:
 
@@ -146,7 +163,7 @@ Its specific objectives are:
 
 The methodology will combine a review of previous work, material preparation, experimental design, direct printing trials and characterization.
 
-1. Review of Previous Work and Material Selection
+1. **Review of Previous Work and Material Selection**
 
 The internship will begin with an analysis of previous work, focusing on the materials, formulations, processing conditions and limitations identified.
 A targeted literature review will complement this analysis to guide the selection of:
@@ -160,7 +177,7 @@ A targeted literature review will complement this analysis to guide the selectio
 The suitability of the selected SEBS grade for the chosen polymer pair will be assessed rather than assumed. 
 If both blend systems are available, preliminary screening will help determine whether one should be prioritized for the main experimental campaign.
 
-2. Material Preparation and Preliminary Trials
+2. **Material Preparation and Preliminary Trials**
 
 The recycled feedstocks will be documented according to their origin, available composition information and physical form. Material preparation will include size control, removal of identifiable contaminants and appropriate drying.
 Preliminary trials will establish a feasible processing window for the Gigabot XL. 
@@ -170,11 +187,17 @@ The components will be shredded, clean, and dry before being introduced into the
 
 ## Deliverable 
 
-1. 
 
-2. 
+1. Experimental protocols and designs: documented procedures for material preparation, blend formulation, direct printing and characterization.
 
-3. 
+2. Experimental dataset: structured records of material compositions, processing conditions, printing observations and characterization results, including raw data and metadata.
+
+3.  Printed specimens and demonstrator: specimens for characterization and, where feasible, a demonstrator produced using a promising formulation.
+
+4. Final report and processing recommendations: analysis of the relationships between formulation, printing conditions and material performance, with identified limitations and recommendations for further work.
+
+5.  A scientific document presenting the DoE, the methodology and the first results.
+
 
  
 # Application and Contact
@@ -182,7 +205,7 @@ The components will be shredded, clean, and dry before being introduced into the
 Send the CV and cover letter to:  
 
 - MCF Fabio A. Cruz Sanchez (fabio.cruz[at]univ-lorraine.fr)
-- Dr. Catalina Suescun Gonzalez (suescung1[at]univ-lorraine.fr)
+- PhD. Catalina Suescun Gonzalez (suescung1[at]univ-lorraine.fr)
 
 
 # References

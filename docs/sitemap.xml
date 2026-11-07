@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>/test.html</loc>
-    <lastmod>2026-11-02T17:13:04.420Z</lastmod>
+    <lastmod>2026-11-07T10:58:33.509Z</lastmod>
   </url>
   <url>
     <loc>/people/team/mauricio.html</loc>
@@ -74,6 +74,10 @@
   </url>
   <url>
     <loc>/news/2026/11/10/index.html</loc>
-    <lastmod>2026-11-06T17:45:48.625Z</lastmod>
+    <lastmod>2026-11-07T10:56:51.300Z</lastmod>
+  </url>
+  <url>
+    <loc>/news/internships/2027-chemical/index.html</loc>
+    <lastmod>2026-11-07T10:45:14.003Z</lastmod>
   </url>
 </urlset>
