@@ -184,7 +184,7 @@ Particular attention will be paid to feeding consistency and extrusion stability
 The components will be shredded, clean, and dry before being introduced into the printer. 
 
 
-## Deliverable 
+## Deliverables 
 
 
 1. Experimental protocols and designs: documented procedures for material preparation, blend formulation, direct printing and characterization.
