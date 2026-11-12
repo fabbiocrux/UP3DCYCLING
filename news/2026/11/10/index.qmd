@@ -121,20 +121,22 @@ Particularly, one of its current areas of focus is on urban manufacturing approa
 
 # Main Issue
 
-Plastic packaging waste poses an environmental challenge but also represents a potential source of secondary raw materials for additive manufacturing within the framework of distributed recycling via additive manufacturing (DRAM)[@cruzsanchez2020, @kassab2023]. 
+Plastic packaging waste poses an environmental challenge but also represents a potential source of secondary raw materials for additive manufacturing within the framework of distributed recycling via additive manufacturing (DRAM)[@cruzsanchez2020; @kassab2023]. 
 Approximately 12 % of the plastics deposited in recycling bins are rejected at sorting centres in the region of Paris. 
 Of this rejected fraction, films account for roughly 43 %, while pots and trays represent arround 36 %. 
-These packaging formats include polypropylene (PP) and multilayer structures combining polymers such as polyethylene terephthalate (PET) and low-density polyethylene (LDPE). 
+These packaging formats include polypropylene (PP) and multilayer structures combining polymers such as polyethylene terephthalate (PET) and low-density polyethylene (LDPE).
 An analysis of 1,190 packaging items using Fourier-transform infrared spectroscopy (FTIR) revealed that 17.4% were made of polypropylene (PP), while multilayer packaging accounted for 12.5% of the sample. 
 Within the multilayer fraction, approximately 51% consisted of PET/LDPE structures and 4.5% of PP/LDPE structures [@schmidt2022]. 
+
 While highly predominant in the packaging the recycling of multilayer remains technically challenging.
 This as the constituent polymers are often immiscible, which can compromise the properties of the resulting materials. 
 Consequently, these waste streams may be landfilled or incinerated.
-
 Therefore, such packaging represents a relevant feedstock for exploring alternative recycling pathways, including additive manufacturing. 
 Nevertheless, differences in the thermal behaviour, flow properties and interfacial compatibility of the constituent polymers can affect both processing stability and the quality of printed parts.
 
 This internship therefore focuses on recycled polyethylene terephthalate (rPET) blended with either recycled polypropylene (rPP) or recycled low-density polyethylene (rLDPE), sourced from plastic packaging. 
+**The purpose is to investigate the blending process for open source 3D printing** [@suescungonzalez2026;@gonzalez2025; @suescungonzalez2024]
+
 It investigates the use of styrene–ethylene–butylene–styrene (SEBS) as a blend modifier, examining how its concentration and the processing conditions influence blend morphology, printability and the properties of printed parts. 
 A central feature of the project is the direct feeding of the blend components into a fused granular fabrication (FGF) 3D printer called Gigabot XL, without a separate melt-compounding step. 
 This approach raises questions about the printer’s ability to melt, mix and deposit the materials consistently, particularly when processing polymers with different thermal and rheological characteristics. 
