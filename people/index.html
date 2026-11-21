@@ -191,6 +191,28 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   });
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-uc .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-description','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-uc'] = new List('listing-uc', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -298,7 +320,7 @@ window.Quarto = {
 
 
 <section id="équipe-de-recherche-sur-le-processus-innovatifs-erpi---université-de-lorraine" class="level1 page-columns page-full">
-<h1>Équipe de Recherche sur le Processus Innovatifs (ERPI) - Université de Lorraine</h1>
+<h1>🇫🇷 Équipe de Recherche sur le Processus Innovatifs (ERPI) - Université de Lorraine</h1>
 <section id="researchers-team" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="researchers-team">Researchers Team</h2>
 
@@ -307,7 +329,7 @@ window.Quarto = {
 <p><a href="https://erpi.univ-lorraine.fr/" target="_blank"><img src="../images/logos/ERPI.svg" class="img-fluid" style="width:80.0%"></a></p>
 </div></div><div id="listing-erpi" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="M0QlMjBQcmludGluZyUyQ1VQQ1lDTElORw==" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795281482094" data-listing-date-modified-sort="1795281482000" data-listing-reading-time-sort="1" data-listing-word-count-sort="94">
+<div class="g-col-1" data-index="0" data-categories="M0QlMjBQcmludGluZyUyQ1VQQ1lDTElORw==" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795282270517" data-listing-date-modified-sort="1795282270000" data-listing-reading-time-sort="1" data-listing-word-count-sort="94">
 <a href="../people/team/fabio.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -333,7 +355,7 @@ Assistant Professor on Distributed Recycling
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795281482094" data-listing-date-modified-sort="1795281482000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795282270517" data-listing-date-modified-sort="1795282270000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="../people/team/catalina.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -352,7 +374,7 @@ Post Doc on UP3DCYCLING
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795281482094" data-listing-date-modified-sort="1795281482000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="g-col-1" data-index="2" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795282270517" data-listing-date-modified-sort="1795282270000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="../people/team/mauricio.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -371,7 +393,7 @@ Professor at Université de Lorraine
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795281482094" data-listing-date-modified-sort="1795281482000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="g-col-1" data-index="3" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795282270517" data-listing-date-modified-sort="1795282270000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="../people/team/hakim.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -390,7 +412,7 @@ Professor at Université de Lorraine
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795281482094" data-listing-date-modified-sort="1795281482000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="g-col-1" data-index="4" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795282270517" data-listing-date-modified-sort="1795282270000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="../people/team/laurent.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -415,14 +437,14 @@ Research Engineer (HDR)
 </section>
 </section>
 <section id="laboratoire-réactions-et-génie-des-procédés-université-de-lorraine" class="level1 page-columns page-full">
-<h1>Laboratoire Réactions et Génie des Procédés – Université de Lorraine</h1>
+<h1>🇫🇷 Laboratoire Réactions et Génie des Procédés – Université de Lorraine</h1>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <p><a href="https://erpi.univ-lorraine.fr/"><img src="../images/logos/UL.png" class="img-fluid" style="width:80.0%"></a></p>
 <p><a href="https://lrgp-nancy.cnrs.fr/" target="_blank"><img src="../images/logos/LGRP.png" class="img-fluid" style="width:80.0%"></a></p>
 </div></div><div id="listing-lrgp" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795281482094" data-listing-date-modified-sort="1795281482000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795282270517" data-listing-date-modified-sort="1795282270000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="../people/team/cecile.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -441,7 +463,7 @@ Professor
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795281482094" data-listing-date-modified-sort="1795281482000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795282270517" data-listing-date-modified-sort="1795282270000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="../people/team/sandrine.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -466,7 +488,7 @@ Research Engineerv (CNRS)
 <hr>
 </section>
 <section id="free-appropriate-sustainable-technology-fast-western-university" class="level1 page-columns page-full">
-<h1>Free Appropriate Sustainable Technology (FAST) – Western University</h1>
+<h1>🇨🇦 Free Appropriate Sustainable Technology (FAST) – Western University</h1>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
@@ -476,7 +498,7 @@ Research Engineerv (CNRS)
 </div>
 </div></div><div id="listing-fast" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795281482094" data-listing-date-modified-sort="1795281482000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795282270517" data-listing-date-modified-sort="1795282270000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="../people/team/joshua.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -495,7 +517,7 @@ Professor
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795281482094" data-listing-date-modified-sort="1795281482000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795282270517" data-listing-date-modified-sort="1795282270000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="../people/team/alessia.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -520,7 +542,7 @@ Post Doc at Western University
 <hr>
 </section>
 <section id="laboratoire-interdisciplinaire-sciences-innovations-sociétés" class="level1 page-columns page-full">
-<h1>Laboratoire Interdisciplinaire Sciences Innovations Sociétés</h1>
+<h1>🇫🇷 Laboratoire Interdisciplinaire Sciences Innovations Sociétés</h1>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
@@ -530,7 +552,7 @@ Post Doc at Western University
 </div>
 </div></div><div id="listing-lisis" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795281482094" data-listing-date-modified-sort="1795281482000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795282270517" data-listing-date-modified-sort="1795282270000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="../people/team/baptiste.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -555,7 +577,7 @@ Associate Professor
 <hr>
 </section>
 <section id="universidad-santiago-de-chile-usach" class="level1 page-columns page-full">
-<h1>Universidad Santiago de Chile – USACH</h1>
+<h1>🇨🇱 Universidad Santiago de Chile – USACH</h1>
 
 <div class="no-row-height column-margin column-container"><div class="">
 <div class="quarto-figure quarto-figure-center">
@@ -565,7 +587,7 @@ Associate Professor
 </div>
 </div></div><div id="listing-usach" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795281482094" data-listing-date-modified-sort="1795281482000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795282270517" data-listing-date-modified-sort="1795282270000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="../people/team/andrea.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -580,6 +602,41 @@ Professor
 </div>
 <div class="card-text listing-description">
 <p>Prof.&nbsp;Andrea Espinoza Pérez is an associate professor in the Industrial Engineering Department at Universidad de Santiago de Chile. She belongs to the Program for the Development of Sustainable…</p>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<hr>
+</section>
+<section id="universidad-central-de-colombia-uc" class="level1 page-columns page-full">
+<h1>🇨🇴 Universidad Central de Colombia – UC</h1>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="" target="_blank"><img src="../images/logos/UC.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="250"></a></p>
+</figure>
+</div>
+</div></div><div id="listing-uc" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1795219200000" data-listing-file-modified-sort="1795282270517" data-listing-date-modified-sort="1795282270000" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../people/team/sandra.html" class="quarto-grid-link no-external-icon">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/people/sandra.jpg" class="thumbnail-image card-img" style="height: 250px;" alt="Andrea-Perez.png">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="universidad-central-de-colombia-uc">
+Sandra Cecilia Bautista Rodríguez
+</h5>
+<div class="card-subtitle listing-subtitle">
+Professor
+</div>
+<div class="card-text listing-description">
+<p>Prof.&nbsp;Sandra Cecilia Bautista Rodríguez is an associate professor in the Environmental Engineering program at Universidad Central (Colombia) and a recognized Associate Researcher by Minciencias. She…</p>
 </div>
 </div>
 </div></a>
