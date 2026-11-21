@@ -114,7 +114,7 @@ Our overall research aims is to study, implement, and evaluate the ***upcycling 
 [01]{.step-number}
 
 ### Mixed plastic waste
-Sorting and cleaning process make difficult to treat post-consumer plastics.
+Sorting and cleaning process make difficult to treat post-consumer plastics locally.
 
 :::
 
