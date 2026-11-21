@@ -1,0 +1,34 @@
+---
+title: "Sandra Cecilia Bautista Rodríguez"
+pagetitle: "Sandra Cecilia Bautista Rodríguez"
+subtitle: "Professor"
+image: "../../images/people/sandra.jpg"
+image-alt: "Andrea-Perez.png"
+
+description: "Prof. Sandra Cecilia Bautista Rodríguez is an associate professor in the Environmental Engineering program at Universidad Central (Colombia) and a recognized Associate Researcher by Minciencias. She holds a dual Ph.D. in Industrial Systems Engineering from Université de Lorraine and in Chemical Engineering from Universidad Nacional de Colombia, with active research lines in environmental technologies, chemical and biochemical processes, and operations design and management. Her research interests lie in sustainability assessment, circular economy, environmental modeling and system dynamics, cleaner production, and solid waste management."
+
+date: 11/21/2026
+date-modified: last-modified
+
+
+about:
+  template: solana
+  image-width: 20em
+  id: hero-heading
+  # links:
+  #   - icon: github
+  #     aria-label: GitHub
+  #     href: https://github.com/fabbiocrux
+  #   - icon: linkedin
+  #     aria-label: "LinkedIn"
+  #     href: https://linkedin.com/in/fabbiocrux
+  #   - text: "{{< ai orcid >}}"
+  #     href: https://orcid.org/0000-0001-8529-5327
+  #   - text: "{{< ai google-scholar >}}"
+  #     aria-label: "Google Scholar"
+  #     href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+

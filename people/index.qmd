@@ -89,11 +89,27 @@ listing:
   page-size: 5
   grid-columns: 3
   max-description-length: 200  
+
+- id: uc
+  contents: 
+    - "team/sandra.qmd"    
+  sort: false
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, description, categories, image]
+  image-placeholder: Blog-sidebar.jpg
+  image-align: right
+  image-height: 250px
+  page-size: 5
+  grid-columns: 3
+  max-description-length: 200  
 toc: false
 ---
 
 
-# Équipe de Recherche sur le Processus Innovatifs (ERPI) - Université de Lorraine
+# 🇫🇷 Équipe de Recherche sur le Processus Innovatifs (ERPI) - Université de Lorraine
 
 ## Researchers Team
 
@@ -109,7 +125,7 @@ toc: false
 :::
 
 
-# Laboratoire Réactions et Génie des Procédés -- Université de Lorraine
+# 🇫🇷 Laboratoire Réactions et Génie des Procédés -- Université de Lorraine
 
 ::: {.column-margin}
 [![](../images/logos/UL.png){width="80%"}](https://erpi.univ-lorraine.fr/)
@@ -124,7 +140,7 @@ toc: false
 
 ---
 
-# Free Appropriate Sustainable Technology (FAST) -- Western University
+# 🇨🇦 Free Appropriate Sustainable Technology (FAST) -- Western University
 
 ::: {.column-margin}
 [![](../images/logos/FAST.png){width="250px" fig-align="center"}](https://www.appropedia.org/FAST){target="_blank"}
@@ -137,7 +153,7 @@ toc: false
 
 ---
 
-# Laboratoire Interdisciplinaire Sciences Innovations Sociétés
+# 🇫🇷 Laboratoire Interdisciplinaire Sciences Innovations Sociétés
 
 ::: {.column-margin}
 [![](../images/logos/LISIS.jpg){width="250px" fig-align="center"}](https://umr-lisis.fr/membre/baptiste-monsaingeon/){target="_blank"}
@@ -151,7 +167,7 @@ toc: false
 
 ---
 
-# Universidad Santiago de Chile -- USACH
+# 🇨🇱 Universidad Santiago de Chile -- USACH
 
 ::: {.column-margin}
 [![](../images/logos/CL-USACH.png){width="250px" fig-align="center"}](){target="_blank"}
@@ -161,3 +177,15 @@ toc: false
 ::: {#usach}
 :::
 
+
+----
+
+# 🇨🇴 Universidad Central de Colombia -- UC
+
+::: {.column-margin}
+[![](../images/logos/UC.png){width="250px" fig-align="center"}](){target="_blank"}
+:::
+
+
+::: {#uc}
+:::
