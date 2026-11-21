@@ -1,0 +1,55 @@
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[R]{ENSGSI 2AP - Mécanique des Solidés Déformables}
+
+\fancyfoot[L]{Guillaume PRONOST | Fabio CRUZ}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{ENSGSI - 2023/2024}
+\renewcommand{\footrulewidth}{0.3pt}% default is 0pt
+\setlength{\headheight}{15pt}
+\usepackage{mathtools}
+\usepackage[makeroom]{cancel}
+
+\usepackage{fancyhdr} % en-têtes et pieds de page
+
+\let\paragraph\oldparagraph
+\let\subparagraph\oldsubparagraph
+
+\usepackage[explicit]{titlesec} % titres de chapitres, sections, etc.
+
+
+
+
+% Mise en forme des titres de chapitres : 
+
+\titlespacing*{\chapter}{0pt}{-50pt}{5pt} 
+\titleformat{\chapter}[display]
+  {\LARGE\bfseries\sffamily}
+  {}
+  {12pt}
+  {%
+\begin{tcolorbox}[
+	enhanced jigsaw,
+	title={Mécanique du Point Matériel},
+	fonttitle=\normalsize\sffamily,
+	halign=center,
+	top=\baselineskip,
+	colback=red!10!white,
+	colframe=red!50!black,
+	boxrule=1.2pt,
+	colbacktitle=red!50!white!75!black,
+	attach boxed title to top center={yshift=-0.25mm-\tcboxedtitleheight/			2,yshifttext=2mm-\tcboxedtitleheight/2},
+	boxed title style={enhanced,boxrule=0.5mm,
+	frame code={ \path[tcb fill frame] ([xshift=-4mm]frame.west) -- 				(frame.north west)
+    -- (frame.north east) -- ([xshift=4mm]frame.east)
+    -- (frame.south east) -- (frame.south west) -- cycle; },
+    interior code={ \path[tcb fill interior] ([xshift=-2mm]interior.west)
+    -- (interior.north west) -- (interior.north east)
+    -- ([xshift=2mm]interior.east) -- (interior.south east) -- (interior.south 		west)
+    -- cycle;}  },
+ 	drop shadow]
+    #1
+\end{tcolorbox}
+}
+
+\renewcommand\thesection{\arabic{section}}
