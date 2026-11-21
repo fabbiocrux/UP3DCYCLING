@@ -166,8 +166,6 @@ Better understanding the appropriate use of plastic waste by a urban manufacturi
 
 ## Multi-level perspective of the [Distributed Upcycling]{fg="orange"}
 
-Our overall research aims is to study, implement, and evaluate the ***upcycling potential*** of mixed plastic waste via in-situ reactive compatibilization using **open-source additive manufacturing**.
-
 UP3DCYCLING project is supported by multidisciplinary expertise spanning three domains: 1) polymer science, 2) additive manufacturing processes, and 3) socio-technical systems.
 The interaction across these three levels is supported by experimental, modeling, and scenario approaches, which constitute a key added value of the project, enabling a holistic understanding of both technical and social dynamics.
 

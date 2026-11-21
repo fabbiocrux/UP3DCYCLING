@@ -25,7 +25,8 @@ bibliography: ../../assets/library.bib
 
 **Purpose**: The purpose of this study is to present the evaluation of a distributed upcycling approach to process multi-material post-consumer plastic waste using open-source additive manufacturing (AM) technologies. More precisely, the study aims to assess the technical feasibility and print quality of using mixed plastic wastes as a feedstock for AM mapping the role of material compatibilizers.
 
-**Materials and methods**: Post-consumer water bottles where collected from Nancy (France) and Kirkland (Canada). The composition is approximately 90 wt% PET (body) and 10 wt%. HDPE (cap). 
+**Materials and methods**: Post-consumer water bottles where collected from Nancy (France) and Kirkland (Canada). 
+The composition is approximately 90 wt% PET (body) and 10 wt%. HDPE (cap). 
 The bottles were shredded and re-granulated to produce a feedstock for additive manufacturing. 
 Moreover, Kraton G-1650 and G-1652 by Kraton Polymers (Almere, Netherlands) were used as non-reactive compatibilizers.
 Both are linear SEBS copolymer including about 30 wt% of polystyrene units.
@@ -45,4 +46,5 @@ In contrast, printed samples exhibited less degradation and a more crystalline s
 **Conclusions and perspectives**:
 Distributed upcycling offers a pathway to reduce manufacturing costs by transforming plastic waste into 3D printing feedstock. 
 While compounding process remains a well-established technology, the direct 3D printing process still faces challenges in achieving consistent material properties. The single-screw extrusion mechanism of the FGF printer limits blend homogenization and reduces compatibilizer effectiveness. Nevertheless, this approach holds promise for recycling multimaterial blends and can be optimized through more reliable printing methods, including the implementation of a twin-screw or planetary roller extruder to enhance blend homogenization.
-Additionally, refining printing parameters adapted to the compatibilizers could further enhance the mechanical properties and consistency of printed objects. Future work should also investigate the recyclability of printed materials over multiple cycles, assess the environmental and economical feasibility of using FGF to process post-consumer plastic waste. Expanding this approach to other common plastics such as PP, LDPE, PS could expand its applicability of this method. This would require re-optimizing the compatibilizer system and adjusting printing parameters to account for the different processing behaviors of these polymers.
+Additionally, refining printing parameters adapted to the compatibilizers could further enhance the mechanical properties and consistency of printed objects. Future work should also investigate the recyclability of printed materials over multiple cycles, assess the environmental and economical feasibility of using FGF to process post-consumer plastic waste. 
+Expanding this approach to other common plastics such as PP, LDPE, PS could expand its applicability of this method. This would require re-optimizing the compatibilizer system and adjusting printing parameters to account for the different processing behaviors of these polymers.

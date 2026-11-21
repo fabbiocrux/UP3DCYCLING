@@ -146,4 +146,18 @@ bibliography:
   - assets/catalina.bib
 
 date-format: long  
-lang: en
+
+
+# babelquarto:
+#   languagecodes:
+#   - name: en
+#     text: "English"
+#   - name: fr
+#     text: "Français"
+#   mainlanguage: 'en'
+#   languages: ['en']
+# title-en: UP3DCYCLING
+# description-en: UP3DCYCLING
+# author-en: Fabio Cruz
+# lang: en
+
