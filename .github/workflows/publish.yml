@@ -8,12 +8,18 @@ name: Quarto Publish
 jobs:
   build-deploy:
     if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[actualizar]')
-    runs-on: ubuntu-latest
+
+  babelquarto:
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: write
+
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
+
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -46,9 +52,15 @@ jobs:
       - name: Set up R dependencies
         uses: r-lib/actions/setup-renv@v2
 
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Render Website
+        run: Rscript -e 'babelquarto::render_website()'
         with:
           target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+      # - name: Render and Publish
+      #   uses: quarto-dev/quarto-actions/publish@v2
+      #   with:
+      #     target: gh-pages
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
