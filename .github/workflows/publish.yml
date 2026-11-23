@@ -15,15 +15,13 @@ jobs:
     runs-on: ubuntu-24.04
     permissions:
       contents: write
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Install TinyTeX
-        run: quarto install tinytex --no-prompt
 
       - name: Install system dependencies
         run: |
@@ -32,7 +30,11 @@ jobs:
             libcurl4-openssl-dev libssl-dev libxml2-dev \
             libfontconfig1-dev libharfbuzz-dev libfribidi-dev \
             libfreetype6-dev libpng-dev libtiff-dev libjpeg-dev \
-            libwebp-dev zlib1g-dev libicu-dev
+            libwebp-dev zlib1g-dev libicu-dev libcairo2-dev \
+            libgit2-dev
+
+      - name: Install TinyTeX
+        run: quarto install tinytex --no-prompt
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
@@ -43,13 +45,16 @@ jobs:
       - name: Restore R dependencies
         uses: r-lib/actions/setup-renv@v2
 
-      - name: Ensure Babelquarto is available
+      - name: Verify R environment
         shell: Rscript {0}
         run: |
-          if (!requireNamespace("babelquarto", quietly = TRUE)) {
-            renv::install("ropensci/babelquarto")
-          }
-          stopifnot(requireNamespace("babelquarto", quietly = TRUE))
+          stopifnot(
+            as.character(getRversion()) == "4.6.1",
+            as.character(packageVersion("babelquarto")) == "0.1.0.9000",
+            as.character(packageVersion("quarto")) == "1.5.1",
+            as.character(packageVersion("renv")) == "1.3.1"
+          )
+          sessionInfo()
 
       - name: Render multilingual website
         shell: Rscript {0}
