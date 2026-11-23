@@ -7,13 +7,6 @@
     ]
   },
   {
-    "listing": "/index.html",
-    "items": [
-      "/news/2026/11/10/index.html",
-      "/news/2026/11/03/index.html"
-    ]
-  },
-  {
     "listing": "/people/index.html",
     "items": [
       "/people/team/fabio.html",
@@ -28,6 +21,13 @@
       "/people/team/baptiste.html",
       "/people/team/andrea.html",
       "/people/team/sandra.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/news/2026/11/10/index.html",
+      "/news/2026/11/03/index.html"
     ]
   }
 ]
