@@ -10,7 +10,7 @@ project:
 
 website:
   title: "UP3DCYCLING"
-  site-url: ""
+  site-url: https://up3dcycling.fr
   repo-url: https://github.com/fabbiocrux/UP3DCYCLING  
   bread-crumbs: true
   draft-mode: gone
@@ -55,14 +55,11 @@ website:
 #    title: true
     collapse-below: lg
     right:
-      - text: "Research"
-        file: research/index.qmd    
-      - text: "People"
-        file: people/index.qmd
+      - file: research/index.qmd    
+      - file: people/index.qmd
       # - text: "Publications"
       #   file: TD.qmd
-      - text: "News"
-        file: news/index.qmd
+      - file: news/index.qmd
 
         # menu:
         #   - text: "Report un Erreur"
@@ -148,16 +145,21 @@ bibliography:
 date-format: long  
 
 
-# babelquarto:
-#   languagecodes:
-#   - name: en
-#     text: "English"
-#   - name: fr
-#     text: "Français"
-#   mainlanguage: 'en'
-#   languages: ['en']
-# title-en: UP3DCYCLING
-# description-en: UP3DCYCLING
-# author-en: Fabio Cruz
-# lang: en
+babelquarto:
+  languagelinks: navbar
+  languagecodes:
+  - name: en
+    text: "English"
+  - name: fr
+    text: "Français"
+  mainlanguage: 'en'
+  languages: ['fr']
+
+title-en: UP3DCYCLING
+description-en: UP3DCYCLING
+author-en: Fabio Cruz
+title-fr: UP3DCYCLING
+description-fr: "Projet de recherche UP3DCYCLING finanacé par l'Agence Nationale de la Recherche ANR"
+author-fr: Fabio Cruz
+lang: en
 

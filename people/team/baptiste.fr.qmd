@@ -1,0 +1,35 @@
+---
+title: "Baptiste Monsaingeon"
+pagetitle: "Baptiste Monsaingeon"
+subtitle: "Maître de conférences"
+image: "../../images/people/Baptiste-MONSAINGEON.jpeg"
+image-alt: "Baptiste Monsaingeon"
+
+description: "Baptiste Monsaingeon est sociologue, spécialiste des sciences, des techniques et de l’environnement. Maître de conférences à l’Université de Reims Champagne-Ardenne, il est actuellement en détachement au CNRS en tant que chargé de recherche au sein du LISIS. Ses recherches portent sur l’analyse des relations que les sociétés contemporaines entretiennent avec leurs déchets. Depuis 2016, il s’intéresse particulièrement aux plastiques, dont il cherche à reconstituer les trajectoires sociotechniques, tant du point de vue de l’histoire de leur production et de leurs usages que de leurs impacts et de leur régulation. Entre 2022 et 2025, il a assuré le copilotage scientifique, en charge des sciences humaines et sociales (SHS), de l’expertise scientifique collective de l’INRAE et du CNRS sur les plastiques utilisés en agriculture et dans l’alimentation (ESCo Plastiques). En 2024, il a reçu la médaille de bronze du CNRS."
+
+
+
+date: 11/04/2026
+date-modified: last-modified
+
+about:
+  template: solana
+  image-width: 20em
+  id: hero-heading
+  # links:
+  #   - icon: github
+  #     aria-label: GitHub
+  #     href: https://github.com/fabbiocrux
+  #   - icon: linkedin
+  #     aria-label: "LinkedIn"
+  #     href: https://linkedin.com/in/fabbiocrux
+  #   - text: "{{< ai orcid >}}"
+  #     href: https://orcid.org/0000-0001-8529-5327
+  #   - text: "{{< ai google-scholar >}}"
+  #     aria-label: "Google Scholar"
+  #     href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+

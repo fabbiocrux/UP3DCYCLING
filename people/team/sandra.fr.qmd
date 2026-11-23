@@ -1,0 +1,34 @@
+---
+title: "Sandra Cecilia Bautista Rodríguez"
+pagetitle: "Sandra Cecilia Bautista Rodríguez"
+subtitle: "Professeure"
+image: "../../images/people/sandra.jpg"
+image-alt: "Andrea-Perez.png"
+
+description: "Sandra Cecilia Bautista Rodríguez est professeure associée au sein de la formation en génie environnemental de l’Universidad Central (Colombie) et bénéficie de la reconnaissance de Minciencias en tant que chercheuse associée. Elle est titulaire d’un double doctorat en génie des systèmes industriels de l’Université de Lorraine et en génie chimique de l’Universidad Nacional de Colombia. Ses axes de recherche portent sur les technologies environnementales, les procédés chimiques et biochimiques, ainsi que la conception et la gestion des opérations. Elle s’intéresse notamment à l’évaluation de la durabilité, à l’économie circulaire, à la modélisation environnementale et à la dynamique des systèmes, à la production plus propre et à la gestion des déchets solides."
+
+date: 11/21/2026
+date-modified: last-modified
+
+
+about:
+  template: solana
+  image-width: 20em
+  id: hero-heading
+  # links:
+  #   - icon: github
+  #     aria-label: GitHub
+  #     href: https://github.com/fabbiocrux
+  #   - icon: linkedin
+  #     aria-label: "LinkedIn"
+  #     href: https://linkedin.com/in/fabbiocrux
+  #   - text: "{{< ai orcid >}}"
+  #     href: https://orcid.org/0000-0001-8529-5327
+  #   - text: "{{< ai google-scholar >}}"
+  #     aria-label: "Google Scholar"
+  #     href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+

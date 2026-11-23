@@ -1,0 +1,206 @@
+---
+title: "***Caractérisation de mélanges de polymères*** pour l’impression 3D"
+subtitle: "Stage au laboratoire ERPI 2026 - 2027"
+date: 11/06/2026
+lang: fr
+date-format: "[Mis à jour le] D MMMM YYYY"
+format:
+  html: default
+  pdf:
+    documentclass: article
+    geometry:
+     - top=25mm
+     - left=20mm
+     - bottom=25mm
+     - right=20mm     
+    number-sections: true
+    fontsize: 11pt
+    colorlinks: true
+    citecolor: blue
+    linestretch: 1.1    
+    linkcolor: blue
+    urlcolor: blue
+    link-citations: true
+    template-partials: 
+     - ../../../../assets/before-body.tex
+    include-in-header:    
+      - text: |
+          \usepackage{tikz}
+          \usepackage{tabularx}
+          \usepackage{datetime2}
+          \usepackage{fancyhdr}
+          \pagestyle{fancy}
+          \fancyhf{}
+          \fancyhead[C]{Proposition de stage}
+          \fancyhead[R]{\includegraphics[width=2cm]{../../../../images/logos/ERPI.png}}
+          \fancyhead[L]{\includegraphics[width=2cm]{../../../../images/logos/UL.png}}
+          \fancyfoot[L]{ERPI - 2026/2027}
+          \fancyfoot[C]{Version: \today}
+          \fancyfoot[R]{\thepage}
+          \usepackage{pgfgantt}
+          \renewcommand{\footrulewidth}{0.3pt}      
+
+categories:
+  - Stages
+
+image: ERPI.png
+---
+
+
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.retina = 3, message = FALSE, warning = FALSE)
+options(knitr.kable.NA = '')
+
+library(tidyverse)
+library(kableExtra)
+library(readxl)
+```
+
+
+```{r}
+#| label: tbl-wp1
+#| tbl-cap: "Présentation du stage au laboratoire ERPI"
+#| tbl-pos: H
+
+
+table <- tribble(~`Projet`, ~`UP3DCYCLING`, 
+
+"Profil",
+"Étudiant·e en Master 2 de génie chimique, avec une spécialisation en impression 3D.",
+
+"Compétences clés",
+"Science des polymères, caractérisation expérimentale, analyse de données",
+
+
+"Langues",
+"Français et anglais",
+
+"Gratification",
+"Barème de gratification des stages de l’Université de Lorraine",
+
+"Encadrement",
+"MCF Fabio A. Cruz Sanchez (ERPI)",
+
+" ",
+"Dr Catalina Suescun Gonzalez (ERPI)",
+
+
+"Lieu",
+"Laboratoire ERPI (Equipe de Recherche sur les Processus Innovatifs) – 8 rue Bastien Lepage, 54000 Nancy, France",
+
+"",
+"Laboratoire LGRP (Laboratoire Réactions et Génie des Procédés) – 1 Rue Grandville, 54000 Nancy, France",
+
+"Période",
+"Février/mars - août 2027 – 6 mois",
+
+"Informations complémentaires",
+"suescung1[at]univ-lorraine.fr -- (https://up3dcycling.fr/)",
+
+"",
+"fabio.cruz[at]univ-lorraine.fr"
+)
+
+table %>%
+  mutate_all(linebreak) %>%
+  kbl( booktabs = T, escape = F, align = c('l','l', 'l', 'l'),
+      linesep = " ") %>%
+   kable_styling(full_width = TRUE,                 
+                font_size = 11)  |> 
+   row_spec(0, color = "black", background = "white", bold = T, font_size = 12) %>%
+   column_spec(1, width = c("3cm"), bold = TRUE) 
+   
+```
+
+
+# Contexte du stage
+
+Le stage se déroule au sein de l’[Équipe de Recherche sur les Processus Innovatifs -- ERPI (https://erpi.univ-lorraine.fr/)](https://erpi.univ-lorraine.fr/), laboratoire de recherche de l’Université de Lorraine.
+L’ERPI s’intéresse au développement de méthodologies, d’outils et d’études de cas dans le domaine du management des processus d’innovation.
+L’un de ses axes de recherche actuels porte notamment sur les approches de fabrication urbaine dans le cadre du [projet UP3DCYCLING (https://up3dcycling.fr/)](https://up3dcycling.fr/), dont le principal objectif se situe à l’intersection de la fabrication additive, de l’économie circulaire et des espaces de fabrication urbaine, tels que les Fablabs, les tiers-lieux et les autres formes de fabrication relevant de l’économie sociale et solidaire.
+
+# Problématique
+
+Les déchets d’emballages plastiques constituent un défi environnemental, mais représentent également une source potentielle de matières premières secondaires pour la fabrication additive, dans le cadre du recyclage distribué par fabrication additive (DRAM) [@cruzsanchez2020; @kassab2023].
+Environ 12 % des plastiques déposés dans les bacs de recyclage sont rejetés dans les centres de tri de la région parisienne.
+Dans cette fraction de refus de tri, les films représentent environ 43 %, tandis que les pots et barquettes représentent environ 36 %.
+Ces types d’emballages comprennent du polypropylène (PP) et des structures multicouches associant des polymères tels que le polyéthylène téréphtalate (PET) et le polyéthylène basse densité (PEBD, ou LDPE en anglais).
+Une analyse de 1 190 emballages par spectroscopie infrarouge à transformée de Fourier (FTIR) a révélé que 17,4 % étaient constitués de polypropylène (PP), tandis que les emballages multicouches représentaient 12,5 % de l’échantillon.
+Au sein de la fraction multicouche, environ 51 % correspondaient à des structures PET/LDPE et 4,5 % à des structures PP/LDPE [@schmidt2022].
+
+Bien que très répandus dans le secteur de l’emballage, les matériaux multicouches restent difficiles à recycler sur le plan technique.
+En effet, les polymères qui les constituent sont souvent non miscibles, ce qui peut compromettre les propriétés des matériaux obtenus.
+Par conséquent, ces flux de déchets peuvent être mis en décharge ou incinérés.
+Ces emballages constituent donc une matière première pertinente pour explorer des voies alternatives de recyclage, notamment par fabrication additive.
+Toutefois, les différences de comportement thermique, de propriétés d’écoulement et de compatibilité interfaciale des polymères constitutifs peuvent affecter à la fois la stabilité du procédé et la qualité des pièces imprimées.
+
+Ce stage porte ainsi sur des mélanges de polyéthylène téréphtalate recyclé (rPET) avec du polypropylène recyclé (rPP) ou du polyéthylène basse densité recyclé (rLDPE), issus d’emballages plastiques.
+**L’objectif est d’étudier le procédé de mélange des polymères pour l’impression 3D open source** [@suescungonzalez2026;@gonzalez2025; @suescungonzalez2024].
+
+Il s’agit d’étudier l’utilisation du styrène–éthylène–butylène–styrène (SEBS) comme modificateur de mélange, en examinant l’influence de sa concentration et des conditions de mise en œuvre sur la morphologie des mélanges, leur imprimabilité et les propriétés des pièces imprimées.
+Une particularité centrale du projet réside dans l’alimentation directe des constituants du mélange dans une imprimante 3D par extrusion de granulés fondus (Fused Granular Fabrication, FGF), appelée Gigabot XL, sans étape préalable distincte de mélange à l’état fondu (compoundage).
+Cette approche soulève des questions quant à la capacité de l’imprimante à assurer de manière régulière la fusion, le mélange et le dépôt des matériaux, notamment lors de la mise en œuvre de polymères présentant des caractéristiques thermiques et rhéologiques différentes.
+Une démarche de plans d’expériences (DoE) sera utilisée pour évaluer systématiquement les effets de certains paramètres d’impression et de leurs interactions, en s’appuyant sur les travaux antérieurs.
+
+La principale question de recherche est donc la suivante :
+
+*Comment la composition du mélange, la teneur en SEBS et les conditions d’impression influencent-elles la qualité du mélange, l’imprimabilité et les propriétés des mélanges recyclés PET/PP et PET/LDPE mis en œuvre directement dans une imprimante 3D FGF ?*
+
+Le projet vise à contribuer à la valorisation des emballages plastiques recyclés en identifiant des formulations et des conditions de mise en œuvre adaptées à la production de pièces imprimées aux propriétés reproductibles.
+
+## Objectifs du stage
+
+Le stage vise à développer et à évaluer expérimentalement des mélanges de polymères recyclés destinés à l’impression 3D directe à partir de granulés, en s’appuyant sur les travaux antérieurs.
+
+Ses objectifs spécifiques sont les suivants :
+
+- Analyser les travaux expérimentaux antérieurs et la littérature pertinente afin de sélectionner le système de polymères, le grade de SEBS et les plages initiales de formulation.
+- Élaborer un plan d’expériences pour évaluer les effets du rapport PET/polyoléfine et de la teneur en SEBS sur la mise en œuvre et l’imprimabilité des mélanges.
+- Évaluer si la mise en œuvre directe dans la Gigabot XL permet d’obtenir une qualité de mélange suffisante et un dépôt stable du matériau.
+- Étudier les relations entre la formulation, les conditions d’impression, la morphologie des mélanges et les propriétés des pièces imprimées.
+- Identifier les formulations et les conditions de mise en œuvre prometteuses en vue de développements ultérieurs.
+
+# Méthodologie
+
+La méthodologie associera une analyse des travaux antérieurs, la préparation des matériaux, l’élaboration de plans d’expériences, des essais d’impression directe et la caractérisation.
+
+1. **Analyse des travaux antérieurs et sélection des matériaux**
+
+Le stage débutera par une analyse des travaux antérieurs, portant sur les matériaux, les formulations, les conditions de mise en œuvre et les limites identifiées.
+Une revue ciblée de la littérature complétera cette analyse afin d’orienter la sélection :
+
+- Du système de mélange : rLDPE/rPP ou rPET/rLDPE.
+- De la plage de composition des polymères.
+- Du grade de SEBS et de sa plage de concentration.
+- Des variables de mise en œuvre et des méthodes de caractérisation.
+
+L’adéquation du grade de SEBS sélectionné au couple de polymères retenu sera évaluée plutôt que présupposée.
+Si les deux systèmes de mélange sont disponibles, des essais préliminaires permettront de déterminer si l’un d’entre eux doit être privilégié pour la campagne expérimentale principale.
+
+2. **Préparation des matériaux et essais préliminaires**
+
+Les matières premières recyclées seront documentées en fonction de leur origine, des informations disponibles sur leur composition et de leur forme physique. La préparation des matériaux comprendra le contrôle de leur granulométrie, l’élimination des contaminants identifiables et un séchage approprié.
+Les essais préliminaires permettront de déterminer une fenêtre de mise en œuvre adaptée à la Gigabot XL.
+Une attention particulière sera portée à la régularité de l’alimentation et à la stabilité de l’extrusion.
+Les constituants seront broyés, propres et secs avant leur introduction dans l’imprimante.
+
+## Livrables
+
+1. Protocoles expérimentaux et plans d’expériences : procédures documentées de préparation des matériaux, de formulation des mélanges, d’impression directe et de caractérisation.
+
+2. Jeu de données expérimentales : enregistrements structurés des compositions des matériaux, des conditions de mise en œuvre, des observations lors de l’impression et des résultats de caractérisation, incluant les données brutes et les métadonnées.
+
+3. Éprouvettes imprimées et démonstrateur : éprouvettes destinées à la caractérisation et, dans la mesure du possible, un démonstrateur réalisé à partir d’une formulation prometteuse.
+
+4. Rapport final et recommandations de mise en œuvre : analyse des relations entre la formulation, les conditions d’impression et les performances des matériaux, avec identification des limites et recommandations pour la poursuite des travaux.
+
+5. Un document scientifique présentant le plan d’expériences, la méthodologie et les premiers résultats.
+
+# Candidature et contact
+
+Envoyer le CV et la lettre de motivation à :
+
+- MCF Fabio A. Cruz Sanchez (fabio.cruz[at]univ-lorraine.fr)
+- Dr Catalina Suescun Gonzalez (suescung1[at]univ-lorraine.fr)
+
+# Références

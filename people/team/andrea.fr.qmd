@@ -1,0 +1,34 @@
+---
+title: "Andrea Perez"
+pagetitle: "Andrea Perez"
+subtitle: "Professeure"
+image: "../../images/people/Andrea-Perez.png"
+image-alt: "Andrea-Perez.png"
+
+description: "Andrea Espinoza Pérez est professeure associée au département de génie industriel de l’Universidad de Santiago de Chile. Elle fait partie du programme de développement des systèmes de production durables (PDSPS) et du master en sciences de l’ingénieur, spécialité génie industriel (MCII), de cette université. Ses recherches portent sur la durabilité, la conception et la gestion des chaînes logistiques, l’innovation, les métaheuristiques et l’optimisation mono- et multiobjectif."
+
+date: 11/04/2026
+date-modified: last-modified
+
+
+about:
+  template: solana
+  image-width: 20em
+  id: hero-heading
+  # links:
+  #   - icon: github
+  #     aria-label: GitHub
+  #     href: https://github.com/fabbiocrux
+  #   - icon: linkedin
+  #     aria-label: "LinkedIn"
+  #     href: https://linkedin.com/in/fabbiocrux
+  #   - text: "{{< ai orcid >}}"
+  #     href: https://orcid.org/0000-0001-8529-5327
+  #   - text: "{{< ai google-scholar >}}"
+  #     aria-label: "Google Scholar"
+  #     href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+

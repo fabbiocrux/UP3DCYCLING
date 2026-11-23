@@ -1,0 +1,34 @@
+---
+title: "Hakim Boudaoud"
+pagetitle: "Hakim Boudaoud"
+subtitle: "Professeur à l’Université de Lorraine"
+image: "../../images/people/Hakim-Boudaoud.png"
+image-alt: "Hakim Boudaoud"
+
+description: "Hakim Boudaoud est professeur à l’École nationale supérieure en génie des systèmes et de l’innovation (ENSGSI) et chercheur au laboratoire ERPI (Équipe de recherche sur les processus innovatifs) de l’Université de Lorraine, à Nancy, en France. Ses recherches portent sur le génie mécanique, la fabrication additive et le développement de matériaux et de procédés de production innovants et durables. Ses principaux axes de recherche comprennent le recyclage des polymères et l’économie circulaire, la fabrication additive open source et distribuée, la caractérisation mécanique et la modélisation des matériaux, ainsi que l’optimisation des procédés d’impression 3D. Il étudie également le potentiel du matériel open source et des technologies de fabrication décentralisée pour soutenir les initiatives locales de recyclage, réduire les impacts environnementaux et favoriser des systèmes de production plus durables."
+
+date: 11/04/2026
+date-modified: last-modified
+
+
+about:
+  template: solana
+  image-width: 20em
+  id: hero-heading
+  # links:
+  #   - icon: github
+  #     aria-label: GitHub
+  #     href: https://github.com/fabbiocrux
+  #   - icon: linkedin
+  #     aria-label: "LinkedIn"
+  #     href: https://linkedin.com/in/fabbiocrux
+  #   - text: "{{< ai orcid >}}"
+  #     href: https://orcid.org/0000-0001-8529-5327
+  #   - text: "{{< ai google-scholar >}}"
+  #     aria-label: "Google Scholar"
+  #     href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+

@@ -1,4 +1,5 @@
 ---
+lang: en
 title: "**Ethnographic Analysis** of Urban Manufacturing Ecosystems"
 subtitle: "Internship Master M2 at the ERPI Laboratory 2026 - 2027"
 date: 11/03/2026

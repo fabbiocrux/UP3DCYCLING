@@ -1,0 +1,33 @@
+---
+title: "Mauricio Camargo"
+pagetitle: "Mauricio Camargo"
+subtitle: "Professeur à l’Université de Lorraine"
+image: "../../images/people/Mauricio-Camargo.png"
+image-alt: "Mauricio Camargo"
+
+description: "Mauricio Camargo est professeur en management des technologies et de l’innovation à l’École nationale supérieure en génie des systèmes et de l’innovation (ENSGSI) de l’Université de Lorraine, à Nancy, en France, et directeur du laboratoire ERPI (Équipe de recherche sur les processus innovatifs). Ses recherches portent sur l’ingénierie de l’innovation ainsi que sur le management, la conception et l’évaluation des processus d’innovation. Ses principaux axes de recherche comprennent le développement de nouveaux produits, la prise de décision dans la conception de produits et de procédés, le management des technologies et de l’innovation, ainsi que les méthodes d’aide à la décision multicritère et multiobjectif. Il étudie également les approches collaboratives et interdisciplinaires de l’innovation, notamment l’innovation ouverte et les Living Labs, ainsi que le développement de méthodologies et d’outils pour accompagner les stratégies d’innovation et la transformation durable des systèmes industriels et organisationnels."
+
+date: 11/04/2026
+date-modified: last-modified
+
+about:
+  template: solana
+  image-width: 20em
+  id: hero-heading
+  # links:
+  #   - icon: github
+  #     aria-label: GitHub
+  #     href: https://github.com/fabbiocrux
+  #   - icon: linkedin
+  #     aria-label: "LinkedIn"
+  #     href: https://linkedin.com/in/fabbiocrux
+  #   - text: "{{< ai orcid >}}"
+  #     href: https://orcid.org/0000-0001-8529-5327
+  #   - text: "{{< ai google-scholar >}}"
+  #     aria-label: "Google Scholar"
+  #     href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+

@@ -1,0 +1,252 @@
+---
+title: "Surcyclage distribué des déchets plastiques en mélange : enjeux liés aux matériaux, aux procédés et aux systèmes sociotechniques"
+subtitle: "UP3DCYCLING"
+details: |
+   Laboratoire ERPI <br> Université de Lorraine
+sidebar: false
+page-layout: article
+course-logo: /assets/img/logo-mdp.png
+format:
+  html:
+    toc: false
+    number-sections: false
+    template-partials:
+      - assets/html/title-block.html
+
+listing: 
+- id: news
+  contents: 
+    - "news/*/*/*/index.qmd"
+  sort: date desc
+  type: grid
+  grid-columns: 5
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  fields: [title, subtitle, image]
+  max-items: 3
+  image-height: "200"
+
+# - id: talk
+#   contents: 
+#     - "../talk/*/index.qmd"
+#     - "../talk/*/index.markdown"
+#   sort: date desc
+#   type: grid
+#   grid-columns: 1
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, subtitle, image]
+#   max-items: 1
+#   image-height: "200"
+# - id: publication
+#   contents: 
+#     - "../resources/publications/*/*/index.qmd"
+#   sort: date desc
+#   type: grid
+#   grid-columns: 1
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, image]
+#   max-items: 1
+#   image-height: "200"
+#   image-placeholder: ../publication/featured.jpg
+# - id: project
+#   contents: 
+#     - "../project/*/index.qmd"
+#     - "../project/*/index.markdown"
+#   sort: date desc
+#   type: grid
+#   grid-columns: 1
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, subtitle, image]
+#   max-items: 1
+#   image-height: "200"
+---
+
+
+
+<!-- HERO -->
+:::{.hero-section .column-screen}
+:::{.hero-content}
+
+[RECHERCHE · MATÉRIAUX · CIRCULARITÉ]{.eyebrow}
+
+# Transformer les déchets plastiques en <span>matériaux de demain.</span>
+
+Explorer le surcyclage distribué des déchets plastiques en mélange grâce à la fabrication additive open source.
+
+:::{.hero-buttons}
+
+[Découvrir le projet →](research/){.btn-primary}
+
+[Explorer nos recherches ↓](research/){.btn-secondary}
+
+:::
+:::
+:::
+
+
+
+
+
+
+<br><br>
+
+[NOTRE OBJECTIF]{.eyebrow}
+
+## Des déchets à de nouvelles [possibilités]{style="color: green;"}
+
+Notre objectif de recherche est d’étudier, de mettre en œuvre et d’évaluer le ***potentiel de surcyclage*** des déchets plastiques en mélange par compatibilisation réactive in situ, en s’appuyant sur la **fabrication additive open source**.
+
+
+
+
+::: {.grid .process-section}
+
+::: {.g-col-12 .g-col-md-3 .process-card}
+
+![](images/Plastic-00.jpg){alt="Déchets plastiques en mélange"}
+[01]{.step-number}
+
+### Déchets plastiques en mélange
+Les opérations de tri et de nettoyage rendent difficile le traitement local des plastiques post-consommation.
+
+:::
+
+::: {.g-col-12 .g-col-md-3 .process-card}
+
+![](images/Plastic-01.jpg){alt="Déchets plastiques en mélange"}
+[02]{.step-number}
+
+### Compatibilisation réactive
+
+Améliorer les propriétés des mélanges de matières plastiques.
+
+:::
+
+::: {.g-col-12 .g-col-md-3 .process-card}
+
+![](images/recycled-object.jpg){alt="Déchets plastiques en mélange"}
+[03]{.step-number}
+
+### Impression 3D open source
+Donner de nouveaux usages aux plastiques post-consommation.
+
+:::
+
+
+::: {.g-col-12 .g-col-md-3 .process-card}
+
+![](images/Octroi.jpg){alt="Déchets plastiques en mélange"}
+[04]{.step-number}
+
+### Perspective sociotechnique
+
+Mieux comprendre les usages appropriés des déchets plastiques au sein d’une communauté de fabrication urbaine.
+
+:::
+
+:::
+
+
+
+
+
+
+::: {.grid .align-items-center }
+
+::: {.g-col-12 .g-col-md-7 }
+
+[NOTRE APPROCHE]{.eyebrow}
+
+## Une perspective multiniveau du [surcyclage distribué]{fg="orange"}
+
+Le projet UP3DCYCLING s’appuie sur une expertise pluridisciplinaire couvrant trois domaines : 1) la science des polymères, 2) les procédés de fabrication additive et 3) les systèmes sociotechniques.
+L’articulation de ces trois niveaux repose sur des approches expérimentales, de modélisation et de construction de scénarios. Elle constitue une valeur ajoutée majeure du projet, permettant une compréhension globale des dynamiques techniques et sociales.
+
+
+:::
+
+::: {.g-col-12 .g-col-md-5 }
+
+
+![](images/Multilevel-00.png){width="100%" fig-align="center"}
+
+:::
+
+:::
+
+
+
+
+
+## Dernières [actualités] du projet{fg="green"}
+
+
+
+::: {#news}
+
+:::
+
+[Plus d’actualités &rarr;](news/){.btn-primary}
+
+
+
+
+
+
+
+# Nos partenaires académiques {style="text-align: center"}
+
+::: {.grid .align-items-center .column-page-inset}
+
+::: {.g-col-2}
+![](images/logos/ERPI.svg){width="150px" fig-align="center"}
+:::
+
+::: {.g-col-2}
+![](images/logos/ENSGSI.png){width="100px" fig-align="center"}
+:::
+
+
+::: {.g-col-2}
+![](images/logos/LGRP.png){width="120px" fig-align="center"}
+:::
+
+::: {.g-col-2}
+![](images/logos/Western.svg){width="200px" fig-align="center"}
+:::
+
+::: {.g-col-2}
+![](images/logos/LISIS.jpg){width="120px" fig-align="center"}
+:::
+
+::: {.g-col-2}
+![](images/logos/CL-USACH.png){width="240px" fig-align="center"}
+:::
+
+::: 
+
+
+
+
+
+# Nos partenaires de la société civile {.title-block style="text-align: center"}
+
+::: {.grid .align-items-center }
+
+::: {.g-col-3 .g-start-2}
+![Réseau Français des Fablabs](images/logos/RFF.svg){width="85%" fig-align="center"}
+:::
+
+::: {.g-col-3 .g-start-5}
+![Association L'OK3 Nancy](images/logos/Octroi.png){width="85%" fig-align="center"}
+:::
+
+::: 
+

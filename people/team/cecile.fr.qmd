@@ -1,0 +1,34 @@
+---
+title: "Cecile Nouvel"
+pagetitle: "Cecile Nouvel"
+subtitle: "Professeure"
+image: "../../images/people/Cecile-Nouvel.jpg"
+image-alt: "Cecile Nouvel"
+
+description: "Cécile Nouvel est professeure à l’École nationale supérieure des industries chimiques (ENSIC) et chercheuse au Laboratoire Réactions et Génie des Procédés (LRGP). Ses recherches portent sur l’ingénierie des produits polymères, notamment la conception, la formulation, la mise en œuvre et la caractérisation de matériaux polymères fonctionnels. Ses principaux axes de recherche comprennent la synthèse et le développement de (co)polymères fonctionnels, les émulsifiants polymères et les nanoémulsions, la mise en œuvre des polymères par extrusion et impression 3D, ainsi que le développement de matériaux avancés pour les applications biomédicales et l’administration de médicaments. Plus récemment, ses travaux abordent également les matériaux polymères durables, notamment le recyclage et les stratégies innovantes de mise en œuvre visant à améliorer les performances et la recyclabilité des matériaux."
+
+
+date: 11/04/2026
+date-modified: last-modified
+
+about:
+  template: solana
+  image-width: 20em
+  id: hero-heading
+  # links:
+  #   - icon: github
+  #     aria-label: GitHub
+  #     href: https://github.com/fabbiocrux
+  #   - icon: linkedin
+  #     aria-label: "LinkedIn"
+  #     href: https://linkedin.com/in/fabbiocrux
+  #   - text: "{{< ai orcid >}}"
+  #     href: https://orcid.org/0000-0001-8529-5327
+  #   - text: "{{< ai google-scholar >}}"
+  #     aria-label: "Google Scholar"
+  #     href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+

@@ -1,0 +1,34 @@
+---
+title: "Catalina Suescun"
+pagetitle: "Catalina Suescun"
+subtitle: "Chercheuse postdoctorale sur le projet UP3DCYCLING"
+image: "../../images/people/Catalina-Suescun.jpg"
+image-alt: "Catalina Suescun"
+
+description: "Catalina poursuit ses recherches postdoctorales au sein des laboratoires ERPI et LRGP de l’Université de Lorraine, en étroite collaboration avec le Dr J. M. Pearce du laboratoire FAST de Western University. Son projet vise à transformer les déchets plastiques multimatériaux en matières premières pour l’impression 3D à grande échelle, tout en améliorant les propriétés et la compatibilité des matériaux grâce à l’ajout d’agents compatibilisants. Catalina croit au potentiel de l’innovation pour construire un avenir plus durable et inclusif, en développant des solutions technologiques open source au bénéfice de la société et de l’environnement."
+
+
+date: 11/04/2026
+date-modified: last-modified
+
+about:
+  template: solana
+  image-width: 20em
+  id: hero-heading
+  # links:
+  #   - icon: github
+  #     aria-label: GitHub
+  #     href: https://github.com/fabbiocrux
+  #   - icon: linkedin
+  #     aria-label: "LinkedIn"
+  #     href: https://linkedin.com/in/fabbiocrux
+  #   - text: "{{< ai orcid >}}"
+  #     href: https://orcid.org/0000-0001-8529-5327
+  #   - text: "{{< ai google-scholar >}}"
+  #     aria-label: "Google Scholar"
+  #     href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+

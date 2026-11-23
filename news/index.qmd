@@ -1,11 +1,14 @@
 ---
-title: "News and Advances of UP3DCYCLING"
+title: "News"
 subtitle: "Research · Pedagogy · Open Science"
 citation: false
 comments: false
 #description: |
 
+    
 listing: 
+  include:
+    lang: en
   contents: 
     - "**/index.qmd"    
   sort: "date desc"

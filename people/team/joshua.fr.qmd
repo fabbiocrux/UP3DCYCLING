@@ -1,0 +1,34 @@
+---
+title: "Joshua Pearce"
+pagetitle: "Joshua Pearce"
+subtitle: "Professeur"
+image: "../../images/people/Joshua-Pearce.png"
+image-alt: "Joshua Pearce"
+
+description: "Joshua Pearce dirige le groupe de recherche [Free Appropriate Sustainability Technology (FAST) -- https://www.appropedia.org/FAST](https://www.appropedia.org/FAST) à Western University, qui figure parmi les vingt premières universités mondiales dans les nouveaux classements internationaux en matière de durabilité. Ses recherches portent sur l’utilisation de technologies appropriées open source (OSAT) pour élaborer des solutions collaboratives aux enjeux de durabilité et réduire la pauvreté. Ses travaux couvrent l’ingénierie des technologies solaires photovoltaïques, le matériel open source, le recyclage distribué et la fabrication additive (DRAM) à l’aide de l’impression 3D RepRap, ainsi que les politiques publiques et l’économie."
+
+date: 11/04/2026
+date-modified: last-modified
+
+
+about:
+  template: solana
+  image-width: 20em
+  id: hero-heading
+  # links:
+  #   - icon: github
+  #     aria-label: GitHub
+  #     href: https://github.com/fabbiocrux
+  #   - icon: linkedin
+  #     aria-label: "LinkedIn"
+  #     href: https://linkedin.com/in/fabbiocrux
+  #   - text: "{{< ai orcid >}}"
+  #     href: https://orcid.org/0000-0001-8529-5327
+  #   - text: "{{< ai google-scholar >}}"
+  #     aria-label: "Google Scholar"
+  #     href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+

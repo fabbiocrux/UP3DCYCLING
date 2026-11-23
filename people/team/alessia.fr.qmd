@@ -1,0 +1,34 @@
+---
+title: "Alessia Romani"
+pagetitle: "Alessia Romani"
+subtitle: "Chercheuse postdoctorale à Western University"
+image: "../../images/people/Alessia-Romani.jpg"
+image-alt: "Alessia Romani"
+
+description: "Alessia Romani est lauréate d’une bourse postdoctorale de Western University et chercheuse postdoctorale au laboratoire FAST de cette université (Canada). Ses travaux se situent à l’intersection de la conception de produits, de la conception en ingénierie, des matériaux, de la fabrication numérique et de la durabilité, avec un intérêt particulier pour les pratiques circulaires et la conception ouverte. Son parcours et son expérience de recherche associent le génie des matériaux à la conception de produits et à l’ingénierie, notamment à travers le développement et la caractérisation de matériaux durables pour le design et l’impression 3D, selon une approche expérimentale orientée vers les applications."
+
+date: 11/04/2026
+date-modified: last-modified
+
+about:
+  template: solana
+  image-width: 20em
+  id: hero-heading
+  links:
+  #   - icon: github
+  #     aria-label: GitHub
+  #     href: https://github.com/fabbiocrux
+  #   - icon: linkedin
+  #     aria-label: "LinkedIn"
+  #     href: https://linkedin.com/in/fabbiocrux
+    - text: "{{< ai orcid >}}"
+      href: https://orcid.org/0000-0001-8602-0974
+  #   - text: "{{< ai google-scholar >}}"
+  #     aria-label: "Google Scholar"
+  #     href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+
+

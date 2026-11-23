@@ -1,0 +1,45 @@
+---
+title: "Fabio A. Cruz Sanchez"
+subtitle: "Maître de conférences – Recyclage distribué"
+pagetitle: "Fabio A. <br> Cruz Sanchez"
+categories:
+ - Impression 3D
+ - SURCYCLAGE
+
+image: "../../images/people/fabio-cruz.jpg"
+image-alt: "Fabio A. Cruz Sanchez"
+
+description: "Le projet UP3DCYCLING est coordonné par [{{< fa brands orcid >}}](https://orcid.org/0000-0001-8529-5327) Fabio A. Cruz Sanchez, maître de conférences à l’École nationale supérieure en génie des systèmes et de l’innovation (ENSGSI) et chercheur au laboratoire ERPI (Équipe de recherche sur les processus innovatifs) de l’Université de Lorraine, à Nancy, en France. Ses recherches portent sur le recyclage distribué par fabrication additive (DRAM), les technologies de fabrication open source et le développement de systèmes de production durables fondés sur les principes de l’économie circulaire. Ses principaux axes de recherche comprennent le recyclage des plastiques et des polymères, l’impression 3D et la fabrication additive, le matériel open source, les réseaux de fabrication distribuée et l’évaluation technique, logistique et environnementale des procédés de recyclage. Il étudie également le rôle des FabLabs et des espaces d’innovation collaborative dans le développement d’initiatives locales de recyclage, le bouclage des flux de matières et les transitions sociotechniques vers des systèmes de fabrication plus durables et décentralisés."
+
+date: 11/04/2026
+date-modified: last-modified
+
+about:
+  template: solana
+  image-width: 28em
+  id: hero-heading
+  links:
+    - icon: github
+      aria-label: GitHub
+      href: https://github.com/fabbiocrux
+    - icon: linkedin
+      aria-label: "LinkedIn"
+      href: https://linkedin.com/in/fabbiocrux
+    - text: "{{< ai orcid >}}"
+      href: https://orcid.org/0000-0001-8529-5327
+    - text: "{{< ai google-scholar >}}"
+      aria-label: "Google Scholar"
+      href: https://scholar.google.com/citations?user=8Cuoaf4AAAAJ&hl=en
+
+---
+
+
+
+
+Je travaille au sein de l’[Équipe de recherche sur les processus innovatifs --ERPI--](https://erpi.univ-lorraine.fr/) et j’enseigne à l’[École nationale supérieure en génie des systèmes et de l’innovation --ENSGSI--](https://ensgsi.univ-lorraine.fr/nos-formations/), à Nancy, en France.
+
+Je mène mes recherches au [Lorraine Fab Living Lab](https://lf2l.fr/) dans le cadre de projets liés au concept de [**recyclage distribué par fabrication additive (DRAM)**](/publications/articles/2020-04-15-fabio/index.html), dans une perspective d’économie circulaire privilégiant l’articulation entre les outils *open source*, les espaces d’innovation sociale et les indicateurs holistiques.
+
+J’espère que ces recherches contribueront à la mise en place de démarches de durabilité dans des scénarios de post-croissance.
+
+<!-- [En savoir plus sur mes recherches &rarr;](/about){.about-links .subtitle} -->
