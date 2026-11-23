@@ -1,66 +1,70 @@
+name: Quarto Babelquarto Publish
+
 on:
   workflow_dispatch:
   push:
-    branches: master
+    branches: [master]
 
-name: Quarto Publish
+concurrency:
+  group: quarto-publish
+  cancel-in-progress: false
 
 jobs:
   build-deploy:
     if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[actualizar]')
-
-  babelquarto:
-    env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
-
-    runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v7
-
+        uses: actions/checkout@v4
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Install TinyTeX
-        run: quarto install tinytex
+        run: quarto install tinytex --no-prompt
 
       - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y \
-            libcurl4-openssl-dev \
-            libssl-dev \
-            libxml2-dev \
-            libfontconfig1-dev \
-            libharfbuzz-dev \
-            libfribidi-dev \
-            libfreetype6-dev \
-            libpng-dev \
-            libtiff5-dev \
-            libjpeg-dev \
-            libwebp-dev \
-            zlib1g-dev
+            libcurl4-openssl-dev libssl-dev libxml2-dev \
+            libfontconfig1-dev libharfbuzz-dev libfribidi-dev \
+            libfreetype6-dev libpng-dev libtiff-dev libjpeg-dev \
+            libwebp-dev zlib1g-dev libicu-dev
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
         with:
+          r-version: '4.6.1'
           pak-version: stable
 
-      - name: Set up R dependencies
+      - name: Restore R dependencies
         uses: r-lib/actions/setup-renv@v2
 
-      - name: Render Website
-        run: Rscript -e 'babelquarto::render_website()'
+      - name: Ensure Babelquarto is available
+        shell: Rscript {0}
+        run: |
+          if (!requireNamespace("babelquarto", quietly = TRUE)) {
+            renv::install("ropensci/babelquarto")
+          }
+          stopifnot(requireNamespace("babelquarto", quietly = TRUE))
+
+      - name: Render multilingual website
+        shell: Rscript {0}
+        run: |
+          babelquarto::render_website()
+
+      - name: Verify both languages
+        run: |
+          test -s docs/index.html
+          test -s docs/fr/index.html
+
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target: gh-pages
-
-
-      # - name: Render and Publish
-      #   uses: quarto-dev/quarto-actions/publish@v2
-      #   with:
-      #     target: gh-pages
-        # env:
-        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
+          cname: up3dcycling.fr
